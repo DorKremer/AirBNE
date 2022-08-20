@@ -27,6 +27,30 @@ namespace OOP_Project
             get { return pool; }
             set { pool = value; }
         }
+
+        public bool Gym
+        {
+            get { return gym; }
+            set { gym = value; }
+        }
+
+        public int RoomNumber
+        {
+            get { return roomNumber; }
+            set { roomNumber = value; }
+        }
+
+        public byte Pension
+        {
+            get { return pension; }
+            set { pension = value; }
+        }
+
+        public byte HotelGrade
+        {
+            get { return hotelGrade; }
+            set { hotelGrade = value; }
+        }
     }
 
 }
