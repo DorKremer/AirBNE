@@ -3,7 +3,7 @@
   <Class Name="OOP_Project.Form1" Collapsed="true">
     <Position X="0.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAAAAAAAAAQAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Form1.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -27,37 +27,37 @@
     </TypeIdentifier>
   </Class>
   <Class Name="OOP_Project.Rentable" Collapsed="true">
-    <Position X="6.5" Y="0.5" Width="1.5" />
+    <Position X="7.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAARAQAAEQQgAAAEIQAAAAEAAAIAAAADAAAAAAAAAAA=</HashCode>
+      <HashCode>AAARAQAAEQQgAAAEIQAAAAEAAAIACAADAAiAAAAAgAA=</HashCode>
       <FileName>Rentable.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="OOP_Project.Apartment" Collapsed="true">
-    <Position X="8" Y="4.25" Width="1.5" />
+    <Position X="7.75" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAACAAAAAhAAgAAQAIAAAAAAAAQAAAAEAAAAAAAAA=</HashCode>
+      <HashCode>AAAAACAAAAAhAAgAAQAIAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Apartment.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="OOP_Project.House">
-    <Position X="8" Y="3" Width="1.5" />
+    <Position X="10.25" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>House.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="OOP_Project.HotelRoom">
-    <Position X="4.75" Y="1.75" Width="1.5" />
+  <Class Name="OOP_Project.HotelRoom" Collapsed="true">
+    <Position X="6" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAgAAAEAAAAAAAACAAAAAgAAAQAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAQgAAAEIAAIAAAACAAABAAAAAQAAAA=</HashCode>
       <FileName>HotelRoom.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="OOP_Project.Home">
-    <Position X="7.75" Y="1.75" Width="1.5" />
+  <Class Name="OOP_Project.Home" Collapsed="true">
+    <Position X="9" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAgAAAAIAAAAAAAAQAAAAEAAAAAAAAA=</HashCode>
       <FileName>Home.cs</FileName>
     </TypeIdentifier>
   </Class>

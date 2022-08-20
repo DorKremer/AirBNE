@@ -5,7 +5,7 @@ using System.Text;
 
 namespace OOP_Project
 {
-    public class House:Rentable
+    public class House:Home
     {
 
     }

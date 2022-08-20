@@ -6,26 +6,26 @@ using System.Text;
 
 namespace OOP_Project
 {
-    public class Apartment:Rentable
+    public class Apartment:Home
     {
-        private int roomCount;
         private int floor;
         private bool porch;
         private bool elevator;
 
         public Apartment():base()
         {
-            roomCount = 0;
             floor = 0;
             porch = false;
             elevator = false;
         }
 
-        public int RoomCount
+        public Apartment(int floor, bool porch,bool elevator) : base()
         {
-            get { return roomCount; }
-            set { roomCount = value; }
+            floor = 0;
+            porch = false;
+            elevator = false;
         }
+
         public int Floor
         {
             get { return floor; }

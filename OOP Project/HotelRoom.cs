@@ -8,24 +8,24 @@ namespace OOP_Project
 {
     public class HotelRoom : Rentable
     {
-        private bool pool;
         private bool gym;
         private int roomNumber;
         private byte pension;
         private byte hotelGrade;
         public HotelRoom() : base()
         {
-            pool = false;
             gym = false;
             roomNumber = 0;
             pension = 0;
             hotelGrade = 0;
         }
 
-        public bool Pool
+        public HotelRoom(bool gym, int roomNumber,byte pension,byte hotelGrade) : base()
         {
-            get { return pool; }
-            set { pool = value; }
+            this.gym = gym;
+            this.roomNumber = roomNumber;
+            this.pension = pension;
+            this.hotelGrade = hotelGrade;
         }
 
         public bool Gym

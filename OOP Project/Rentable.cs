@@ -7,6 +7,7 @@ namespace OOP_Project
 {
     public abstract class Rentable
     {
+        //Picture
         private string address;
         private string description;
         private int zipCode;
@@ -14,22 +15,32 @@ namespace OOP_Project
         private int residents;
         private bool pets;
         private bool occupied;
+        private bool pool;
+        private bool wifi;
 
         public Rentable()
         {
             this.address = "";
+            this.description = "";
             this.price = 0;
             this.zipCode = 0;
             this.residents = 0;
             this.pets = false;
+            this.occupied = false;
+            this.pool = false;
+            this.wifi = false;
         }
-        Rentable(string address,int zipCode,double price, int residents, bool pets)
+        Rentable(string address,string description,int zipCode,double price, int residents, bool pets,bool occupied,bool pool,bool wifi)
         {
             this.address = address;
+            this.description = description;
             this.zipCode = zipCode;
             this.price = price;
             this.residents = residents;
             this.pets = pets;
+            this.occupied = occupied;
+            this.pool = pool;
+            this.wifi = wifi;
         }
         public string Address
         {
@@ -66,6 +77,18 @@ namespace OOP_Project
         {
             get { return description; }
             set { description = value; }
+        }
+
+        public bool Pool
+        {
+            get { return pool; }
+            set { pool = value; }
+        }
+
+        public bool Wifi
+        {
+            get { return wifi; }
+            set { wifi = value; }
         }
 
     }
