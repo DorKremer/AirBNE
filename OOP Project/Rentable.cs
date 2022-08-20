@@ -18,6 +18,11 @@ namespace OOP_Project
         private bool pool;
         private bool wifi;
 
+        //public string toString()
+        //{
+        //    return "address: "+address + "\n" + "description: " + description + "\n" + "zip Code: " + zipCode + "\n" + "price: " + price + "\n" + "residents: " + residents + "\n" + "pets: " + pets + "\n" + "occupied: " + occupied + "\n" + "pool: " + pool + "\n" + "wifi: " + wifi + "\n";
+        //}
+
         public Rentable()
         {
             this.address = "";
