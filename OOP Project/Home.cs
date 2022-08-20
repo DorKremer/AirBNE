@@ -7,5 +7,6 @@ namespace OOP_Project
 {
     public class Home
     {
+        int a = 0;
     }
 }
