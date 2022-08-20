@@ -6,24 +6,10 @@ namespace OOP_Project
     public partial class AirBNE : Form
     {
         HotelRoom room = new HotelRoom();
+        Form frm=new Form();
         public AirBNE()
         {
             InitializeComponent();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void AirBNE_Load(object sender, EventArgs e)
-        {
-            
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -94,6 +80,16 @@ namespace OOP_Project
         private void button1_Click(object sender, EventArgs e)
         {
             label14.Text = room.toString();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+                frm.Location = this.Location;
+                frm.Size = this.Size;
+                frm.StartPosition = FormStartPosition.Manual;
+                frm.FormClosing += delegate { this.Show(); };
+                frm.Show();
+                this.Hide();
         }
     }
 }
