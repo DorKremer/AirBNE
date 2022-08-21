@@ -8,7 +8,7 @@
     </Compartments>
     <TypeIdentifier>
       <HashCode>AAAAAgAAACAAAAAAAACAAAACAAAYAAAAAGAAAIAAAAA=</HashCode>
-      <FileName>Form1.cs</FileName>
+      <FileName>HomePage.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="OOP_Project.Program" Collapsed="true">
@@ -54,7 +54,7 @@
   <Class Name="OOP_Project.HotelRoom">
     <Position X="6.75" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAQgAAAEJAAIAAAACAAABAAAAAQAAAA=</HashCode>
+      <HashCode>AQAAAAEAAAAAAAQgAAAEJAAIAAAACAAABAAAAAQAAAA=</HashCode>
       <FileName>HotelRoom.cs</FileName>
     </TypeIdentifier>
   </Class>
