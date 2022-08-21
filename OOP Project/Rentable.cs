@@ -14,14 +14,13 @@ namespace OOP_Project
         private double price;
         private int residents;
         private bool pets;
-        private bool occupied;
         private bool pool;
         private bool wifi;
 
-        //public string toString()
-        //{
-        //    return "address: "+address + "\n" + "description: " + description + "\n" + "zip Code: " + zipCode + "\n" + "price: " + price + "\n" + "residents: " + residents + "\n" + "pets: " + pets + "\n" + "occupied: " + occupied + "\n" + "pool: " + pool + "\n" + "wifi: " + wifi + "\n";
-        //}
+        public virtual string toString()
+        {
+            return "address: " + address + "\n" + "description: " + description + "\n" + "zip Code: " + zipCode + "\n" + "price: " + price + "\n" + "residents: " + residents + "\n" + "pets: " + pets + "\n" + "pool: " + pool + "\n" + "wifi: " + wifi + "\n";
+        }
 
         public Rentable()
         {
@@ -31,11 +30,10 @@ namespace OOP_Project
             this.zipCode = 0;
             this.residents = 0;
             this.pets = false;
-            this.occupied = false;
             this.pool = false;
             this.wifi = false;
         }
-        Rentable(string address,string description,int zipCode,double price, int residents, bool pets,bool occupied,bool pool,bool wifi)
+        public Rentable(string address,string description,int zipCode,double price, int residents, bool pets, bool pool,bool wifi)
         {
             this.address = address;
             this.description = description;
@@ -43,7 +41,6 @@ namespace OOP_Project
             this.price = price;
             this.residents = residents;
             this.pets = pets;
-            this.occupied = occupied;
             this.pool = pool;
             this.wifi = wifi;
         }
@@ -71,11 +68,6 @@ namespace OOP_Project
         {
             get { return residents; }
             set { residents = value; }
-        }
-        public bool Occupied
-        {
-            get { return occupied; }
-            set { occupied = value; }
         }
 
         public string Description

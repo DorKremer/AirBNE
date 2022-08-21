@@ -10,16 +10,33 @@ namespace OOP_Project
         private int floors;
         private bool yard;
 
+        public override string toString()
+        {
+            return base.toString() + "Floors: " + floors + "\nYard: " + yard;
+        }
+
         public House() : base()
         {
             floors = 0;
             yard = false;
         }
 
-        public House(int floors, bool yard):base()
+        public House(string address, string description, int zipCode, double price, int residents, bool pets, bool pool, bool wifi, int floors, bool yard, int roomCount):base(address, description, zipCode, price, residents, pets, pool, wifi, roomCount)
         {
             this.floors = floors;
             this.yard = yard;
+        }
+
+        public int Floors
+        {
+            get { return floors; }
+            set { floors = value; }
+        }
+
+        public bool Yard
+        {
+            get { return yard; }
+            set { yard = value; }
         }
     }
 }

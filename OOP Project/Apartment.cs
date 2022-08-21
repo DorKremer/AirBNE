@@ -1,7 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
+using System.Drawing;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Net;
+using System.Reflection.Emit;
 using System.Text;
 
 namespace OOP_Project
@@ -12,20 +16,23 @@ namespace OOP_Project
         private bool porch;
         private bool elevator;
 
+        public override string toString()
+        {
+            return base.toString()+"Floor: "+floor+"\nPorch: "+porch+"\nElevator: "+elevator;
+        }
+
         public Apartment():base()
         {
             floor = 0;
             porch = false;
             elevator = false;
         }
-
-        public Apartment(int floor, bool porch,bool elevator) : base()
+        public Apartment(string address, string description, int zipCode, double price, int residents, bool pets, bool pool, bool wifi,int roomCount,int floor, bool porch,bool elevator) : base(address, description, zipCode, price, residents, pets, pool, wifi,roomCount)
         {
             floor = 0;
             porch = false;
             elevator = false;
         }
-
         public int Floor
         {
             get { return floor; }

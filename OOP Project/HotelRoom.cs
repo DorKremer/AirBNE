@@ -13,27 +13,36 @@ namespace OOP_Project
 {
     public class HotelRoom : Rentable
     {
+        private string hotelName;
         private bool gym;
         private int roomNumber;
         private byte pension;
         private byte hotelGrade;
-        public string toString()
+        public override string toString()
         {
-            return "address: " + base.Address + "\n" + "description: " + base.Description + "\n" + "zip Code: " + base.ZipCode + "\n" + "price: " + base.Price + "\n" + "residents: " + base.Residents + "\n" + "pets: " + base.Pets + "\n" + "occupied: " + base.Occupied + "\n" + "pool: " + base.Pool + "\n" + "wifi: " + base.Wifi + "\n"+"gym: " +gym + "\n" + "roomNumber: " + roomNumber + "\n" + "pension: " + pension + "\n" + "hotelGrade: " + hotelGrade;
+            return "Hotel Name: "+hotelName+"\naddress: " + base.Address + "\ndescription: " + base.Description + "\nzip Code: " + base.ZipCode + "\nprice: " + base.Price + "\nresidents: " + base.Residents + "\npets: " + base.Pets + "\npool: " + base.Pool + "\nwifi: " + base.Wifi + "\ngym: " +gym + "\nroomNumber: " + roomNumber + "\npension: " + pension + "\nhotelGrade: " + hotelGrade;
         }
         public HotelRoom() : base()
         {
+            hotelName = "";
             gym = false;
             roomNumber = 0;
             pension = 0;
             hotelGrade = 0;
         }
-        public HotelRoom(bool gym, int roomNumber,byte pension,byte hotelGrade) : base()
+        public HotelRoom(string hotelName, string address, string description, int zipCode, double price, int residents, bool pets, bool pool, bool wifi,bool gym, int roomNumber,byte pension,byte hotelGrade) : base(address, description, zipCode, price, residents, pets, pool, wifi)
         {
+            this.hotelName = hotelName;
             this.gym = gym;
             this.roomNumber = roomNumber;
             this.pension = pension;
             this.hotelGrade = hotelGrade;
+        }
+
+        public string HotelName
+        {
+            get { return hotelName; }
+            set { hotelName = value; }
         }
         public bool Gym
         {
