@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CreateHouse));
             this.successText = new System.Windows.Forms.Label();
             this.wifiBox = new System.Windows.Forms.CheckBox();
             this.poolBox = new System.Windows.Forms.CheckBox();
@@ -60,9 +61,10 @@
             // wifiBox
             // 
             this.wifiBox.AutoSize = true;
+            this.wifiBox.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.wifiBox.Location = new System.Drawing.Point(240, 132);
             this.wifiBox.Name = "wifiBox";
-            this.wifiBox.Size = new System.Drawing.Size(92, 17);
+            this.wifiBox.Size = new System.Drawing.Size(119, 19);
             this.wifiBox.TabIndex = 25;
             this.wifiBox.Text = "Is There Wifi?";
             this.wifiBox.UseVisualStyleBackColor = true;
@@ -70,48 +72,54 @@
             // poolBox
             // 
             this.poolBox.AutoSize = true;
+            this.poolBox.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.poolBox.Location = new System.Drawing.Point(240, 80);
             this.poolBox.Name = "poolBox";
-            this.poolBox.Size = new System.Drawing.Size(105, 17);
+            this.poolBox.Size = new System.Drawing.Size(136, 19);
             this.poolBox.TabIndex = 24;
             this.poolBox.Text = "Is There A Pool?";
             this.poolBox.UseVisualStyleBackColor = true;
             // 
             // zipCodeBox
             // 
+            this.zipCodeBox.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.zipCodeBox.Location = new System.Drawing.Point(48, 184);
             this.zipCodeBox.Name = "zipCodeBox";
-            this.zipCodeBox.Size = new System.Drawing.Size(186, 20);
+            this.zipCodeBox.Size = new System.Drawing.Size(186, 21);
             this.zipCodeBox.TabIndex = 23;
             // 
             // roomCountBox
             // 
+            this.roomCountBox.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.roomCountBox.Location = new System.Drawing.Point(48, 132);
             this.roomCountBox.Name = "roomCountBox";
-            this.roomCountBox.Size = new System.Drawing.Size(186, 20);
+            this.roomCountBox.Size = new System.Drawing.Size(186, 21);
             this.roomCountBox.TabIndex = 21;
             // 
             // residentsBox
             // 
+            this.residentsBox.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.residentsBox.Location = new System.Drawing.Point(48, 106);
             this.residentsBox.Name = "residentsBox";
-            this.residentsBox.Size = new System.Drawing.Size(186, 20);
+            this.residentsBox.Size = new System.Drawing.Size(186, 21);
             this.residentsBox.TabIndex = 20;
             // 
             // priceBox
             // 
             this.priceBox.BackColor = System.Drawing.Color.White;
+            this.priceBox.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.priceBox.ForeColor = System.Drawing.Color.Black;
             this.priceBox.Location = new System.Drawing.Point(48, 80);
             this.priceBox.Name = "priceBox";
-            this.priceBox.Size = new System.Drawing.Size(186, 20);
+            this.priceBox.Size = new System.Drawing.Size(186, 21);
             this.priceBox.TabIndex = 19;
             // 
             // descriptionBox
             // 
+            this.descriptionBox.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.descriptionBox.Location = new System.Drawing.Point(48, 54);
             this.descriptionBox.Name = "descriptionBox";
-            this.descriptionBox.Size = new System.Drawing.Size(186, 20);
+            this.descriptionBox.Size = new System.Drawing.Size(186, 21);
             this.descriptionBox.TabIndex = 18;
             this.descriptionBox.Text = "Enter Description...";
             this.descriptionBox.Enter += new System.EventHandler(this.descriptionBox_Enter);
@@ -119,9 +127,10 @@
             // 
             // addressBox
             // 
+            this.addressBox.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.addressBox.Location = new System.Drawing.Point(48, 28);
             this.addressBox.Name = "addressBox";
-            this.addressBox.Size = new System.Drawing.Size(186, 20);
+            this.addressBox.Size = new System.Drawing.Size(186, 21);
             this.addressBox.TabIndex = 17;
             this.addressBox.Text = "Enter Address...";
             this.addressBox.Enter += new System.EventHandler(this.addressBox_Enter);
@@ -130,15 +139,17 @@
             // petsBox
             // 
             this.petsBox.AutoSize = true;
+            this.petsBox.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.petsBox.Location = new System.Drawing.Point(240, 28);
             this.petsBox.Name = "petsBox";
-            this.petsBox.Size = new System.Drawing.Size(112, 17);
+            this.petsBox.Size = new System.Drawing.Size(145, 19);
             this.petsBox.TabIndex = 16;
             this.petsBox.Text = "Are Pets Allowed?";
             this.petsBox.UseVisualStyleBackColor = true;
             // 
             // createBox
             // 
+            this.createBox.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.createBox.Location = new System.Drawing.Point(48, 234);
             this.createBox.Name = "createBox";
             this.createBox.Size = new System.Drawing.Size(186, 61);
@@ -150,17 +161,19 @@
             // 
             // floorsBox
             // 
+            this.floorsBox.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.floorsBox.Location = new System.Drawing.Point(48, 158);
             this.floorsBox.Name = "floorsBox";
-            this.floorsBox.Size = new System.Drawing.Size(186, 20);
+            this.floorsBox.Size = new System.Drawing.Size(186, 21);
             this.floorsBox.TabIndex = 22;
             // 
             // yardBox
             // 
             this.yardBox.AutoSize = true;
+            this.yardBox.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.yardBox.Location = new System.Drawing.Point(240, 184);
             this.yardBox.Name = "yardBox";
-            this.yardBox.Size = new System.Drawing.Size(106, 17);
+            this.yardBox.Size = new System.Drawing.Size(138, 19);
             this.yardBox.TabIndex = 26;
             this.yardBox.Text = "Is There A Yard?";
             this.yardBox.UseVisualStyleBackColor = true;
@@ -184,6 +197,7 @@
             this.Controls.Add(this.addressBox);
             this.Controls.Add(this.petsBox);
             this.Controls.Add(this.createBox);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "CreateHouse";
             this.Text = "Create A House!";
             ((System.ComponentModel.ISupportInitialize)(this.zipCodeBox)).EndInit();

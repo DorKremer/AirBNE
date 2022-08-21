@@ -36,21 +36,23 @@
             // 
             // button2
             // 
+            this.button2.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.button2.Location = new System.Drawing.Point(238, 12);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(202, 351);
             this.button2.TabIndex = 39;
-            this.button2.Text = "wallak";
+            this.button2.Text = "Add Items";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
+            this.button1.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.button1.Location = new System.Drawing.Point(12, 12);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(202, 351);
             this.button1.TabIndex = 40;
-            this.button1.Text = "noder";
+            this.button1.Text = "View Items";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 

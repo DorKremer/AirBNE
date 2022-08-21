@@ -76,7 +76,7 @@
             this.Controls.Add(this.houseButton);
             this.Controls.Add(this.apartmentButton);
             this.Name = "ItemChoice";
-            this.Text = "Form2";
+            this.Text = "Choose Item Type";
             this.ResumeLayout(false);
 
         }
