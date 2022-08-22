@@ -22,7 +22,7 @@ namespace OOP_Project
         {
             CreateApartment form = new CreateApartment();
             form.Location = this.Location;
-            form.Size = this.Size;
+            //form.Size = this.Size;
             form.StartPosition = FormStartPosition.Manual;
             form.FormClosing += delegate { this.Show(); };
             form.Show();
@@ -33,7 +33,7 @@ namespace OOP_Project
         {
             CreateHouse form = new CreateHouse();
             form.Location = this.Location;
-            form.Size = this.Size;
+            //form.Size = this.Size;
             form.StartPosition = FormStartPosition.Manual;
             form.FormClosing += delegate { this.Show(); };
             form.Show();
@@ -44,11 +44,16 @@ namespace OOP_Project
         {
             CreateHotelRoom form = new CreateHotelRoom();
             form.Location = this.Location;
-            form.Size = this.Size;
+            //form.Size = this.Size;
             form.StartPosition = FormStartPosition.Manual;
             form.FormClosing += delegate { this.Show(); };
             form.Show();
             this.Hide();
+        }
+
+        private void ItemChoice_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

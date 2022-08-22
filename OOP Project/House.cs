@@ -15,8 +15,14 @@ namespace OOP_Project
             return base.toString() + "Floors: " + floors + "\nYard: " + yard;
         }
 
+        public string getText()
+        {
+            return base.Address + "\n" + base.Price;
+        }
+
         public House() : base()
         {
+            base.Address = "House";
             floors = 0;
             yard = false;
         }

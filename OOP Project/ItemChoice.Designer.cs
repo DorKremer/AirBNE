@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ItemChoice));
             this.apartmentButton = new System.Windows.Forms.Button();
             this.houseButton = new System.Windows.Forms.Button();
             this.hotelRoomButton = new System.Windows.Forms.Button();
@@ -75,8 +76,10 @@
             this.Controls.Add(this.hotelRoomButton);
             this.Controls.Add(this.houseButton);
             this.Controls.Add(this.apartmentButton);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ItemChoice";
             this.Text = "Choose Item Type";
+            this.Load += new System.EventHandler(this.ItemChoice_Load);
             this.ResumeLayout(false);
 
         }

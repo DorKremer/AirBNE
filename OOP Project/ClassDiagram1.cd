@@ -31,35 +31,35 @@
     </TypeIdentifier>
   </Class>
   <Class Name="OOP_Project.Rentable">
-    <Position X="8.5" Y="0.5" Width="1.5" />
+    <Position X="8.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAABAQAAAQQgAAAEIQAABAEAAAIACAADAAiAAAAAgAA=</HashCode>
       <FileName>Rentable.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="OOP_Project.Apartment">
-    <Position X="10.25" Y="3.75" Width="1.5" />
+    <Position X="10" Y="4.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAACAAAAAhAAgAAQAIBAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Apartment.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="OOP_Project.House">
-    <Position X="12" Y="3.75" Width="1.5" />
+    <Position X="11.75" Y="4.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAgAABAIBAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>House.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="OOP_Project.HotelRoom">
-    <Position X="6.75" Y="1.75" Width="1.5" />
+    <Position X="6.5" Y="2" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AQAAAAEAAAAAAAQgAAAEJAAIAAAACAAABAAAAAQAAAA=</HashCode>
       <FileName>HotelRoom.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="OOP_Project.Home">
-    <Position X="10.25" Y="1" Width="1.5" />
+    <Position X="10" Y="2.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAABAAAAAAAQAAAAEAAAAAAAAA=</HashCode>
       <FileName>Home.cs</FileName>

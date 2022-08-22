@@ -21,8 +21,14 @@ namespace OOP_Project
             return base.toString()+"Floor: "+floor+"\nPorch: "+porch+"\nElevator: "+elevator;
         }
 
+        public string getText()
+        {
+            return base.Address + "\n" + base.Price;
+        }
+
         public Apartment():base()
         {
+            base.Address = "Apartment";
             floor = 0;
             porch = false;
             elevator = false;

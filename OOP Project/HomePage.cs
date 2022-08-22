@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections;
+using System.Collections.Generic;
 using System.Windows.Forms;
 
 namespace OOP_Project
 {
     public partial class AirBNE : Form
     {
-        public static ArrayList list = new ArrayList();
+        public static List<Rentable> list = new List<Rentable>();
 
         public AirBNE()
         {
@@ -17,7 +18,7 @@ namespace OOP_Project
         {
                 ItemChoice form = new ItemChoice();
                 form.Location = this.Location;
-                form.Size = this.Size;
+                //form.Size = this.Size;
                 form.StartPosition = FormStartPosition.Manual;
                 form.FormClosing += delegate { this.Show(); };
                 form.Show();
@@ -27,8 +28,26 @@ namespace OOP_Project
         private void button1_Click(object sender, EventArgs e)
         {
             ItemView form = new ItemView();
+            Random random = new Random();
+            for(int i = 0; i < 20; i++)
+            {
+                Rentable thing=null;
+                switch (random.Next(3))
+                {
+                    case 0:
+                        thing = new House();
+                        break;
+                    case 1:
+                        thing = new Apartment();
+                        break;
+                    case 2:
+                        thing = new HotelRoom();
+                        break;
+                }
+                list.Add(thing);
+            }
             form.Location = this.Location;
-            form.Size = this.Size;
+            //form.Size = this.Size;
             form.StartPosition = FormStartPosition.Manual;
             form.FormClosing += delegate { this.Show(); };
             form.Show();

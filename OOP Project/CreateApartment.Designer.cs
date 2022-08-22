@@ -213,6 +213,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "CreateApartment";
             this.Text = "Add An Apartment!";
+            this.Load += new System.EventHandler(this.CreateApartment_Load);
             ((System.ComponentModel.ISupportInitialize)(this.priceBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.residentsBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.roomCountBox)).EndInit();

@@ -21,7 +21,10 @@ namespace OOP_Project
         {
             return "address: " + address + "\n" + "description: " + description + "\n" + "zip Code: " + zipCode + "\n" + "price: " + price + "\n" + "residents: " + residents + "\n" + "pets: " + pets + "\n" + "pool: " + pool + "\n" + "wifi: " + wifi + "\n";
         }
-
+        public string getText()
+        {
+            return Address + "\n" + Price;
+        }
         public Rentable()
         {
             this.address = "";

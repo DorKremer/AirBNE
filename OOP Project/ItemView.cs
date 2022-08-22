@@ -19,13 +19,31 @@ namespace OOP_Project
 
         private void ItemView_Load(object sender, EventArgs e)
         {
-            Rentable[] realestate = AirBNE.list.ToArray(typeof(Rentable)) as Rentable[];
-            for(int i = 0; i < AirBNE.list.Count; i++)
+            foreach (Rentable item in AirBNE.list)
             {
-                if (i == 0)
-                    label1.Text = realestate[i].toString() + "\n\n";
-                else
-                    label1.Text += realestate[i].toString() + "\n\n";
+                Button button = new Button();
+                button.Size = new Size(350, 250);
+                button.Text = item.getText();
+                flowLayoutPanel1.Controls.Add(button);
+            }
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            flowLayoutPanel1.Controls.Clear();
+            string name1 = "";
+            string name2 = textBox1.Text.ToLower();
+            foreach (Rentable item in AirBNE.list)
+            {
+                name1 = item.Address.ToLower();
+                if (name1.Contains(name2))
+                {
+                    Button button = new Button();
+                    button.Size = new Size(350, 250);
+                    button.Text = item.getText();
+                    flowLayoutPanel1.Controls.Add(button);
+                }
             }
         }
     }

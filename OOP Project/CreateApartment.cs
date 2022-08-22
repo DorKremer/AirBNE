@@ -54,5 +54,10 @@ namespace OOP_Project
         {
             successText.Text = "";
         }
+
+        private void CreateApartment_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

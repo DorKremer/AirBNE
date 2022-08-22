@@ -22,8 +22,14 @@ namespace OOP_Project
         {
             return "Hotel Name: "+hotelName+"\naddress: " + base.Address + "\ndescription: " + base.Description + "\nzip Code: " + base.ZipCode + "\nprice: " + base.Price + "\nresidents: " + base.Residents + "\npets: " + base.Pets + "\npool: " + base.Pool + "\nwifi: " + base.Wifi + "\ngym: " +gym + "\nroomNumber: " + roomNumber + "\npension: " + pension + "\nhotelGrade: " + hotelGrade;
         }
+
+        public string getText()
+        {
+            return base.Address + "\n" + base.Price;
+        }
         public HotelRoom() : base()
         {
+            base.Address = "Hotel Room";
             hotelName = "";
             gym = false;
             roomNumber = 0;
