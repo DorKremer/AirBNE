@@ -18,7 +18,6 @@ namespace OOP_Project
         {
                 ItemChoice form = new ItemChoice();
                 form.Location = this.Location;
-                //form.Size = this.Size;
                 form.StartPosition = FormStartPosition.Manual;
                 form.FormClosing += delegate { this.Show(); };
                 form.Show();
@@ -47,7 +46,6 @@ namespace OOP_Project
                 list.Add(thing);
             }
             form.Location = this.Location;
-            //form.Size = this.Size;
             form.StartPosition = FormStartPosition.Manual;
             form.FormClosing += delegate { this.Show(); };
             form.Show();

@@ -7,19 +7,22 @@ namespace OOP_Project
 {
     public abstract class Rentable
     {
+        private static int idCounter = 0;
         //Picture
+        private int id;
         private string address;
         private string description;
         private int zipCode;
         private double price;
         private int residents;
         private bool pets;
+        private bool occupied;
         private bool pool;
         private bool wifi;
 
         public virtual string toString()
         {
-            return "address: " + address + "\n" + "description: " + description + "\n" + "zip Code: " + zipCode + "\n" + "price: " + price + "\n" + "residents: " + residents + "\n" + "pets: " + pets + "\n" + "pool: " + pool + "\n" + "wifi: " + wifi + "\n";
+            return "ID: " + id +"\nOccupied: "+ occupied + "\naddress: " + address + "\n" + "description: " + description + "\n" + "zip Code: " + zipCode + "\n" + "price: " + price + "\n" + "residents: " + residents + "\n" + "pets: " + pets + "\n" + "pool: " + pool + "\n" + "wifi: " + wifi + "\n";
         }
         public string getText()
         {
@@ -27,6 +30,7 @@ namespace OOP_Project
         }
         public Rentable()
         {
+            this.id = idCounter++;
             this.address = "";
             this.description = "";
             this.price = 0;
@@ -35,9 +39,11 @@ namespace OOP_Project
             this.pets = false;
             this.pool = false;
             this.wifi = false;
+            this.occupied = false;
         }
         public Rentable(string address,string description,int zipCode,double price, int residents, bool pets, bool pool,bool wifi)
         {
+            this.id = idCounter++;
             this.address = address;
             this.description = description;
             this.zipCode = zipCode;
@@ -46,6 +52,17 @@ namespace OOP_Project
             this.pets = pets;
             this.pool = pool;
             this.wifi = wifi;
+            this.occupied = false;
+        }
+
+        public bool Occupied
+        {
+            get { return occupied; }
+            set { occupied = value; }
+        }
+        public int Id
+        {
+            get { return id; }
         }
         public string Address
         {
