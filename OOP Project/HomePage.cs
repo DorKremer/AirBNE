@@ -28,23 +28,6 @@ namespace OOP_Project
         {
             ItemView form = new ItemView();
             Random random = new Random();
-            for(int i = 0; i < 20; i++)
-            {
-                Rentable thing=null;
-                switch (random.Next(3))
-                {
-                    case 0:
-                        thing = new House();
-                        break;
-                    case 1:
-                        thing = new Apartment();
-                        break;
-                    case 2:
-                        thing = new HotelRoom();
-                        break;
-                }
-                list.Add(thing);
-            }
             form.Location = this.Location;
             form.StartPosition = FormStartPosition.Manual;
             form.FormClosing += delegate { this.Show(); };

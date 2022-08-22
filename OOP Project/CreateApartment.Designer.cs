@@ -71,7 +71,6 @@
             this.createBox.Text = "Add Apartment";
             this.createBox.UseVisualStyleBackColor = true;
             this.createBox.Click += new System.EventHandler(this.createBox_Click);
-         
             // 
             // petsBox
             // 
@@ -118,6 +117,11 @@
             this.priceBox.ForeColor = System.Drawing.Color.Black;
             this.priceBox.Location = new System.Drawing.Point(15, 63);
             this.priceBox.Margin = new System.Windows.Forms.Padding(4);
+            this.priceBox.Maximum = new decimal(new int[] {
+            10000000,
+            0,
+            0,
+            0});
             this.priceBox.Name = "priceBox";
             this.priceBox.Size = new System.Drawing.Size(248, 24);
             this.priceBox.TabIndex = 5;
@@ -157,6 +161,11 @@
             this.zipCodeBox.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.zipCodeBox.Location = new System.Drawing.Point(14, 191);
             this.zipCodeBox.Margin = new System.Windows.Forms.Padding(4);
+            this.zipCodeBox.Maximum = new decimal(new int[] {
+            1000000000,
+            0,
+            0,
+            0});
             this.zipCodeBox.Name = "zipCodeBox";
             this.zipCodeBox.Size = new System.Drawing.Size(248, 24);
             this.zipCodeBox.TabIndex = 9;

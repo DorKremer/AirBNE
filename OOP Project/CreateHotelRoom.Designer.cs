@@ -91,6 +91,11 @@
             this.zipCodeBox.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.zipCodeBox.Location = new System.Drawing.Point(6, 230);
             this.zipCodeBox.Margin = new System.Windows.Forms.Padding(4);
+            this.zipCodeBox.Maximum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
             this.zipCodeBox.Name = "zipCodeBox";
             this.zipCodeBox.Size = new System.Drawing.Size(248, 24);
             this.zipCodeBox.TabIndex = 23;
@@ -100,6 +105,11 @@
             this.pensionBox.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.pensionBox.Location = new System.Drawing.Point(7, 198);
             this.pensionBox.Margin = new System.Windows.Forms.Padding(4);
+            this.pensionBox.Maximum = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
             this.pensionBox.Name = "pensionBox";
             this.pensionBox.Size = new System.Drawing.Size(248, 24);
             this.pensionBox.TabIndex = 22;
@@ -129,6 +139,11 @@
             this.priceBox.ForeColor = System.Drawing.Color.Black;
             this.priceBox.Location = new System.Drawing.Point(7, 102);
             this.priceBox.Margin = new System.Windows.Forms.Padding(4);
+            this.priceBox.Maximum = new decimal(new int[] {
+            100000,
+            0,
+            0,
+            0});
             this.priceBox.Name = "priceBox";
             this.priceBox.Size = new System.Drawing.Size(248, 24);
             this.priceBox.TabIndex = 19;
@@ -181,7 +196,6 @@
             this.createBox.Text = "Add Hotel Room";
             this.createBox.UseVisualStyleBackColor = true;
             this.createBox.Click += new System.EventHandler(this.createBox_Click);
-           
             // 
             // hotelNameBox
             // 
@@ -213,6 +227,11 @@
             this.hotelGrade.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.hotelGrade.Location = new System.Drawing.Point(6, 262);
             this.hotelGrade.Margin = new System.Windows.Forms.Padding(4);
+            this.hotelGrade.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             this.hotelGrade.Name = "hotelGrade";
             this.hotelGrade.Size = new System.Drawing.Size(248, 24);
             this.hotelGrade.TabIndex = 31;

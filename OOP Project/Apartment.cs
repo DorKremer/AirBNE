@@ -30,9 +30,18 @@ namespace OOP_Project
         }
         public Apartment(string address, string description, int zipCode, double price, int residents, bool pets, bool pool, bool wifi,int roomCount,int floor, bool porch,bool elevator) : base(address, description, zipCode, price, residents, pets, pool, wifi,roomCount)
         {
-            floor = 0;
-            porch = false;
-            elevator = false;
+            this.Address = address;
+            this.Description = description;
+            this.Price = price;
+            this.Residents=residents;
+            this.Pets=pets; 
+            this.Pool=pool;
+            this.Wifi=wifi;
+            this.RoomCount = roomCount;
+            this.Floor=floor;
+            this.porch = porch;
+            this.elevator=elevator;
+           
         }
         public int Floor
         {

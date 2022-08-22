@@ -86,6 +86,11 @@
             this.zipCodeBox.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.zipCodeBox.Location = new System.Drawing.Point(6, 261);
             this.zipCodeBox.Margin = new System.Windows.Forms.Padding(5);
+            this.zipCodeBox.Maximum = new decimal(new int[] {
+            100000000,
+            0,
+            0,
+            0});
             this.zipCodeBox.Name = "zipCodeBox";
             this.zipCodeBox.Size = new System.Drawing.Size(310, 24);
             this.zipCodeBox.TabIndex = 23;
@@ -115,6 +120,11 @@
             this.priceBox.ForeColor = System.Drawing.Color.Black;
             this.priceBox.Location = new System.Drawing.Point(6, 101);
             this.priceBox.Margin = new System.Windows.Forms.Padding(5);
+            this.priceBox.Maximum = new decimal(new int[] {
+            10000000,
+            0,
+            0,
+            0});
             this.priceBox.Name = "priceBox";
             this.priceBox.Size = new System.Drawing.Size(310, 24);
             this.priceBox.TabIndex = 19;
@@ -167,7 +177,6 @@
             this.createBox.Text = "Add House";
             this.createBox.UseVisualStyleBackColor = true;
             this.createBox.Click += new System.EventHandler(this.createBox_Click);
-         
             // 
             // floorsBox
             // 

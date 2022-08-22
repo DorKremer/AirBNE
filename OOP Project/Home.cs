@@ -26,7 +26,7 @@ namespace OOP_Project
 
         public override string toString()
         {
-            return base.toString()+"\nRoom Count: "+roomCount;
+            return base.toString()+"Room Count: "+roomCount+"\n";
         }
     }
 }

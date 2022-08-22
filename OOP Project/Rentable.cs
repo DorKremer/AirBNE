@@ -22,7 +22,7 @@ namespace OOP_Project
 
         public virtual string toString()
         {
-            return "ID: " + id +"\nOccupied: "+ occupied + "\naddress: " + address + "\n" + "description: " + description + "\n" + "zip Code: " + zipCode + "\n" + "price: " + price + "\n" + "residents: " + residents + "\n" + "pets: " + pets + "\n" + "pool: " + pool + "\n" + "wifi: " + wifi + "\n";
+            return "ID: " + id +"\nOccupied: "+ occupied + "\naddress: " + address + "\n" + "description: " + description + "\n" + "zip Code: " + zipCode + "\n" + "price: " + price + "\n" + "residents:" + residents + "\n" + "pets: " + pets + "\n" + "pool: " + pool + "\n" + "wifi: " + wifi + "\n";
         }
         public string getText()
         {
