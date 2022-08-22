@@ -71,6 +71,12 @@
     <Compile Include="ItemChoice.Designer.cs">
       <DependentUpon>ItemChoice.cs</DependentUpon>
     </Compile>
+    <Compile Include="ItemInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItemInfo.Designer.cs">
+      <DependentUpon>ItemInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="ItemView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,6 +106,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ItemChoice.resx">
       <DependentUpon>ItemChoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemInfo.resx">
+      <DependentUpon>ItemInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ItemView.resx">
       <DependentUpon>ItemView.cs</DependentUpon>
