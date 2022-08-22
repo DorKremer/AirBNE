@@ -46,5 +46,10 @@ namespace OOP_Project
                 }
             }
         }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
