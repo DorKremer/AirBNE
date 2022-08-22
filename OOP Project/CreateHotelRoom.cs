@@ -22,8 +22,8 @@ namespace OOP_Project
             int size = AirBNE.list.Count;
             HotelRoom hotelRoom = new HotelRoom(hotelNameBox.Text,addressBox.Text,descriptionBox.Text,Convert.ToInt32(zipCodeBox.Value),Convert.ToDouble(priceBox.Value),Convert.ToInt32(residentsBox.Value),petsBox.Checked,poolBox.Checked,wifiBox.Checked,gymBox.Checked,Convert.ToInt32(roomNumberBox.Value),Convert.ToByte(pensionBox.Value),Convert.ToByte(hotelGrade.Value));
             AirBNE.list.Add(hotelRoom);
-            if (size < AirBNE.list.Count)
-                successText.Text = "The Room Was Successfully Added To The List!";
+       
+              
         }
 
         private void hotelNameBox_Enter(object sender, EventArgs e)
@@ -62,10 +62,7 @@ namespace OOP_Project
                 descriptionBox.Text = "Enter Description...";
         }
 
-        private void createBox_Leave(object sender, EventArgs e)
-        {
-            successText.Text = "";
-        }
+       
 
         private void label1_Click(object sender, EventArgs e)
         {

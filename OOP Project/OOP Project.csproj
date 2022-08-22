@@ -124,6 +124,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">
@@ -138,6 +139,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\267316381.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2673163811.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-photo-106399.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\348233595.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\this-is-a-photo-of-a.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BETransparentBlackLogocopy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\milky-way-2695569_1280.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

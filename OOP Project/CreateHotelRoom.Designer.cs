@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CreateHotelRoom));
-            this.successText = new System.Windows.Forms.Label();
             this.wifiBox = new System.Windows.Forms.CheckBox();
             this.poolBox = new System.Windows.Forms.CheckBox();
             this.zipCodeBox = new System.Windows.Forms.NumericUpDown();
@@ -62,16 +61,6 @@
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // successText
-            // 
-            this.successText.AutoSize = true;
-            this.successText.ForeColor = System.Drawing.Color.Lime;
-            this.successText.Location = new System.Drawing.Point(72, 406);
-            this.successText.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.successText.Name = "successText";
-            this.successText.Size = new System.Drawing.Size(0, 16);
-            this.successText.TabIndex = 28;
             // 
             // wifiBox
             // 
@@ -184,7 +173,7 @@
             // createBox
             // 
             this.createBox.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            this.createBox.Location = new System.Drawing.Point(38, 385);
+            this.createBox.Location = new System.Drawing.Point(306, 385);
             this.createBox.Margin = new System.Windows.Forms.Padding(4);
             this.createBox.Name = "createBox";
             this.createBox.Size = new System.Drawing.Size(248, 75);
@@ -192,7 +181,7 @@
             this.createBox.Text = "Add Hotel Room";
             this.createBox.UseVisualStyleBackColor = true;
             this.createBox.Click += new System.EventHandler(this.createBox_Click);
-            this.createBox.Leave += new System.EventHandler(this.createBox_Leave);
+           
             // 
             // hotelNameBox
             // 
@@ -335,7 +324,6 @@
             this.ClientSize = new System.Drawing.Size(798, 473);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.successText);
             this.Controls.Add(this.createBox);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -353,13 +341,10 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label successText;
         private System.Windows.Forms.CheckBox wifiBox;
         private System.Windows.Forms.CheckBox poolBox;
         private System.Windows.Forms.NumericUpDown zipCodeBox;

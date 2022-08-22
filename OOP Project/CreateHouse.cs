@@ -22,8 +22,7 @@ namespace OOP_Project
             int size=AirBNE.list.Count;
             House house = new House(addressBox.Text,descriptionBox.Text,Convert.ToInt32(zipCodeBox.Value),Convert.ToDouble(priceBox.Value),Convert.ToInt32(residentsBox.Value),petsBox.Checked,poolBox.Checked,wifiBox.Checked,Convert.ToInt32(floorsBox.Value),yardBox.Checked,Convert.ToInt32(roomCountBox.Value));
             AirBNE.list.Add(house);
-            if (size < AirBNE.list.Count)
-                successText.Text = "The House Was Successfully Added To The List!";
+           
         }
 
         private void addressBox_Leave(object sender, EventArgs e)
@@ -50,11 +49,10 @@ namespace OOP_Project
                 descriptionBox.Text = "Enter Description...";
         }
 
-        private void createBox_Leave(object sender, EventArgs e)
-        {
-            successText.Text = "";
-        }
 
-     
+        private void CreateHouse_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
