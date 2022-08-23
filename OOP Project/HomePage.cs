@@ -51,5 +51,16 @@ namespace OOP_Project
             form.Show();
             this.Hide();
         }
+
+        private void btnorder_Click(object sender, EventArgs e)
+        {
+            Order form = new Order();
+            form.Location = this.Location;
+            form.StartPosition = FormStartPosition.Manual;
+            form.FormClosing += delegate { this.Show(); };
+            form.Show();
+            this.Hide();
+
+        }
     }
 }

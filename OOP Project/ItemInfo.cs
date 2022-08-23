@@ -39,9 +39,18 @@ namespace OOP_Project
             {
                 if(itemID == item.Id)
                 {
+                    if (item.Occupied == true)
+                    {
+                        MessageBox.Show("Not Available");
+                    }
+
+                    else 
+                    { 
                     item.Occupied = true;
+                        Order.order = item;
                     break;
-                }
+                    }
+                   }
             }
             label1.Text = item.toString();
 

@@ -16,7 +16,7 @@ namespace OOP_Project
         private string hotelName;
         private bool gym;
         private int roomNumber;
-        private byte pension;
+        private string pension;
         private byte hotelGrade;
         public override string toString()
         {
@@ -28,10 +28,10 @@ namespace OOP_Project
             hotelName = "";
             gym = false;
             roomNumber = 0;
-            pension = 0;
+            pension = "";
             hotelGrade = 0;
         }
-        public HotelRoom(string hotelName, string address, string description, int zipCode, double price, int residents, bool pets, bool pool, bool wifi,bool gym, int roomNumber,byte pension,byte hotelGrade) : base(address, description, zipCode, price, residents, pets, pool, wifi)
+        public HotelRoom(string hotelName, string address, string description, int zipCode, double price, int residents, bool pets, bool pool, bool wifi,bool gym, int roomNumber,string pension,byte hotelGrade) : base(address, description, zipCode, price, residents, pets, pool, wifi)
         {
             this.hotelName = hotelName;
             this.gym = gym;
@@ -55,7 +55,7 @@ namespace OOP_Project
             get { return roomNumber; }
             set { roomNumber = value; }
         }
-        public byte Pension
+        public string Pension
         {
             get { return pension; }
             set { pension = value; }

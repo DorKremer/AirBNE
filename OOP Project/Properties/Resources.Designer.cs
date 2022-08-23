@@ -93,6 +93,16 @@ namespace OOP_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _800px_COLOURBOX18688230 {
+            get {
+                object obj = ResourceManager.GetObject("800px_COLOURBOX18688230", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap BETransparentBlackLogocopy {
             get {
                 object obj = ResourceManager.GetObject("BETransparentBlackLogocopy", resourceCulture);
