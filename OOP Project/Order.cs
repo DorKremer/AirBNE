@@ -32,19 +32,23 @@ namespace OOP_Project
             if (order == null)
             {
                 MessageBox.Show("Your Order List Is Empty");
-            }
-           foreach(Rentable item in AirBNE.list)
-            {
-                if (order.Id == item.Id)
-                {
-                    item.Occupied = false;
-                    label1.Text = "Empty";
-                    MessageBox.Show("Check out Complate");
-                    break;
-                }
 
             }
-            order = null;
+            else
+            {
+                foreach (Rentable item in AirBNE.list)
+                {
+                    if (order.Id == item.Id)
+                    {
+                        item.Occupied = false;
+                        label1.Text = "Empty";
+                        MessageBox.Show("Check out Complate");
+                        break;
+                    }
+
+                }
+                order = null;
+            }
         }
     }
 }
