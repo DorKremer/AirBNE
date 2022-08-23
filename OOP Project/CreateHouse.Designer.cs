@@ -300,7 +300,6 @@
             this.Name = "CreateHouse";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Create A House!";
-            this.Load += new System.EventHandler(this.CreateHouse_Load);
             ((System.ComponentModel.ISupportInitialize)(this.zipCodeBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.roomCountBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.residentsBox)).EndInit();

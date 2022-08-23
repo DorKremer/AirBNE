@@ -48,11 +48,5 @@ namespace OOP_Project
             if (descriptionBox.Text == "")
                 descriptionBox.Text = "Enter Description...";
         }
-
-
-        private void CreateHouse_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

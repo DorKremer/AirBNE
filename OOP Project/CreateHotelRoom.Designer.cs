@@ -206,7 +206,6 @@
             this.hotelNameBox.Size = new System.Drawing.Size(247, 24);
             this.hotelNameBox.TabIndex = 29;
             this.hotelNameBox.Text = "Enter Hotel Name...";
-            this.hotelNameBox.TextChanged += new System.EventHandler(this.hotelNameBox_TextChanged);
             this.hotelNameBox.Enter += new System.EventHandler(this.hotelNameBox_Enter);
             this.hotelNameBox.Leave += new System.EventHandler(this.hotelNameBox_Leave);
             // 

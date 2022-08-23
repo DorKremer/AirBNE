@@ -25,6 +25,8 @@ namespace OOP_Project
                 renderButton(item);
             }
 
+
+
         }
         private void renderButton(Rentable item)
         {
@@ -63,11 +65,6 @@ namespace OOP_Project
                 if (name1.Contains(name2))
                     renderButton(item);
             }
-        }
-
-        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

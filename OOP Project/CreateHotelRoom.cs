@@ -61,17 +61,5 @@ namespace OOP_Project
             if (descriptionBox.Text == "")
                 descriptionBox.Text = "Enter Description...";
         }
-
-       
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void hotelNameBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

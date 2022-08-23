@@ -106,7 +106,6 @@
             this.descriptionBox.Size = new System.Drawing.Size(247, 71);
             this.descriptionBox.TabIndex = 4;
             this.descriptionBox.Text = "Enter Description...";
-            this.descriptionBox.TextChanged += new System.EventHandler(this.descriptionBox_TextChanged);
             this.descriptionBox.Enter += new System.EventHandler(this.descriptionBox_Enter);
             this.descriptionBox.Leave += new System.EventHandler(this.descriptionBox_Leave);
             // 
@@ -125,7 +124,6 @@
             this.priceBox.Name = "priceBox";
             this.priceBox.Size = new System.Drawing.Size(248, 24);
             this.priceBox.TabIndex = 5;
-            this.priceBox.ValueChanged += new System.EventHandler(this.priceBox_ValueChanged);
             // 
             // residentsBox
             // 
@@ -135,7 +133,6 @@
             this.residentsBox.Name = "residentsBox";
             this.residentsBox.Size = new System.Drawing.Size(248, 24);
             this.residentsBox.TabIndex = 6;
-            this.residentsBox.ValueChanged += new System.EventHandler(this.residentsBox_ValueChanged);
             // 
             // roomCountBox
             // 
@@ -145,7 +142,6 @@
             this.roomCountBox.Name = "roomCountBox";
             this.roomCountBox.Size = new System.Drawing.Size(248, 24);
             this.roomCountBox.TabIndex = 7;
-            this.roomCountBox.ValueChanged += new System.EventHandler(this.roomCountBox_ValueChanged);
             // 
             // floorBox
             // 
@@ -241,7 +237,6 @@
             this.groupBox1.TabIndex = 15;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Register Apartment";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // label7
             // 
@@ -272,7 +267,6 @@
             this.label5.Size = new System.Drawing.Size(163, 25);
             this.label5.TabIndex = 15;
             this.label5.Text = "How many Floors";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label4
             // 
@@ -282,7 +276,6 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(0, 25);
             this.label4.TabIndex = 14;
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label3
             // 
@@ -312,7 +305,6 @@
             this.label2.Size = new System.Drawing.Size(56, 25);
             this.label2.TabIndex = 11;
             this.label2.Text = "Price";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // groupBox2
             // 
@@ -328,7 +320,6 @@
             this.groupBox2.TabIndex = 16;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Inofrmation for Guests";
-            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // CreateApartment
             // 
@@ -343,7 +334,6 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "CreateApartment";
             this.Text = "Add An Apartment!";
-            this.Load += new System.EventHandler(this.CreateApartment_Load);
             ((System.ComponentModel.ISupportInitialize)(this.priceBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.residentsBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.roomCountBox)).EndInit();
