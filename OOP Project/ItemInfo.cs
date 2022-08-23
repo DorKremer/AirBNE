@@ -35,7 +35,12 @@ namespace OOP_Project
 
         private void orderBox_Click(object sender, EventArgs e)
         {
-            foreach(Rentable item in AirBNE.list)
+            foreach (Rentable item in AirBNE.list)
+            {
+                if (itemID != item.Id)
+                    item.Occupied = false;
+            }
+                foreach (Rentable item in AirBNE.list)
             {
                 if(itemID == item.Id)
                 {
@@ -51,7 +56,7 @@ namespace OOP_Project
                     break;
                     }
                    }
-            }
+                 }
             label1.Text = item.toString();
 
         }

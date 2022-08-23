@@ -50,7 +50,7 @@
             // orderBox
             // 
             this.orderBox.Location = new System.Drawing.Point(72, 434);
-            this.orderBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.orderBox.Margin = new System.Windows.Forms.Padding(4);
             this.orderBox.Name = "orderBox";
             this.orderBox.Size = new System.Drawing.Size(452, 98);
             this.orderBox.TabIndex = 1;
@@ -65,7 +65,7 @@
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(601, 388);
+            this.groupBox1.Size = new System.Drawing.Size(764, 388);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "CheckIn Information";
@@ -77,12 +77,12 @@
             this.BackColor = System.Drawing.Color.DimGray;
             this.BackgroundImage = global::OOP_Project.Properties.Resources.BETransparentBlackLogocopy;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(726, 545);
+            this.ClientSize = new System.Drawing.Size(788, 545);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.orderBox);
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ItemInfo";
             this.Text = "ItemInfo";
             this.Load += new System.EventHandler(this.ItemInfo_Load);
