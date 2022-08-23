@@ -50,7 +50,7 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.SteelBlue;
+            this.button1.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.button1.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.button1.Location = new System.Drawing.Point(103, 20);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
@@ -63,7 +63,7 @@
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.SteelBlue;
+            this.button2.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.button2.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.button2.Location = new System.Drawing.Point(103, 78);
             this.button2.Margin = new System.Windows.Forms.Padding(4);
@@ -76,7 +76,7 @@
             // 
             // btnorder
             // 
-            this.btnorder.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnorder.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.btnorder.BackgroundImage = global::OOP_Project.Properties.Resources.BETransparentBlackLogocopy;
             this.btnorder.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnorder.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));

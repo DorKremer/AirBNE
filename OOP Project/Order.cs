@@ -24,6 +24,27 @@ namespace OOP_Project
             {
                 label1.Text = order.toString();
             }
+            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (order == null)
+            {
+                MessageBox.Show("Your Order List Is Empty");
+            }
+           foreach(Rentable item in AirBNE.list)
+            {
+                if (order.Id == item.Id)
+                {
+                    item.Occupied = false;
+                    label1.Text = "Empty";
+                    MessageBox.Show("Check out Complate");
+                    break;
+                }
+
+            }
+            order = null;
         }
     }
 }

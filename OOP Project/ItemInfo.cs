@@ -47,7 +47,7 @@ namespace OOP_Project
                     else 
                     { 
                     item.Occupied = true;
-                        Order.order = item;
+                    Order.order = item;
                     break;
                     }
                    }
