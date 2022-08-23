@@ -34,6 +34,7 @@ namespace OOP_Project
             int size=AirBNE.list.Count;
             Apartment apartment = new Apartment(addressBox.Text, descriptionBox.Text, Convert.ToInt32(zipCodeBox.Value), Convert.ToDouble(priceBox.Value), Convert.ToInt32(residentsBox.Value), petsBox.Checked, poolBox.Checked, wifiBox.Checked, Convert.ToInt32(roomCountBox.Value), Convert.ToInt32(floorBox.Value), porchBox.Checked, elevatorBox.Checked);
             AirBNE.list.Add(apartment);
+            MessageBox.Show("Apartment Created ");
         }
 
         private void descriptionBox_Enter(object sender, EventArgs e)
