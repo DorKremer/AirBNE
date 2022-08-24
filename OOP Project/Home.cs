@@ -40,7 +40,7 @@ namespace OOP_Project
 
         public override string toString()
         {
-            return base.toString()+"Room Count: "+roomCount+"\n";
+            return base.toString()+"Home Information ::"+"\n"+"###################"+"\n"+"Room Count: "+roomCount+"\n"+"###########"+"\n";
         }
     }
 }

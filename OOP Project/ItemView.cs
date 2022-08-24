@@ -30,12 +30,13 @@ namespace OOP_Project
         }
         private void renderButton(Rentable item)
         {
-            Button button = new Button();
-            button.Name = Convert.ToString(item.Id);
-            button.Size = new Size(350, 250);
-            button.Text = item.getText();
-            button.Click += new EventHandler(this.itemClick);
-            flowLayoutPanel1.Controls.Add(button);
+                Button button = new Button();
+                button.Name = Convert.ToString(item.Id);
+                button.Size = new Size(350, 250);
+                button.Text = item.getText();
+                button.Click += new EventHandler(this.itemClick);
+                flowLayoutPanel1.Controls.Add(button);
+            
         }
         private void itemClick(object sender, EventArgs e)
         {
@@ -64,6 +65,15 @@ namespace OOP_Project
                 name1 = item.Address.ToLower();
                 if (name1.Contains(name2))
                     renderButton(item);
+            }
+        }
+
+        private void buttonRefresh_Click(object sender, EventArgs e)
+        {
+            flowLayoutPanel1.Controls.Clear();
+            foreach (Rentable item in AirBNE.list)
+            {
+                renderButton(item);
             }
         }
     }

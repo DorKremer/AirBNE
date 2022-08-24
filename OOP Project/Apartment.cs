@@ -22,7 +22,7 @@ namespace OOP_Project
 
         public override string toString()
         {
-            return base.toString()+"Floor: "+floor+"\nPorch: "+porch+"\nElevator: "+elevator;
+            return base.toString()+"Apertment Information :: "+"\n"+"##################"+"\n"+"Floor: "+floor+"\nPorch: "+porch+"\nElevator: "+elevator;
         }
 
         public override void GetObjectData(SerializationInfo info, StreamingContext context)

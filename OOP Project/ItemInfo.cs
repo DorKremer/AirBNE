@@ -34,15 +34,36 @@ namespace OOP_Project
 
         private void orderBox_Click(object sender, EventArgs e)
         {
-            foreach(Rentable item in AirBNE.list)
+            foreach (Rentable item in AirBNE.list)
+            {
+                if (itemID != item.Id)
+                    item.Occupied = false;
+            }
+                foreach (Rentable item in AirBNE.list)
             {
                 if(itemID == item.Id)
                 {
+                    if (item.Occupied == true)
+                    {
+                        MessageBox.Show("Not Available");
+                    }
+
+                    else 
+                    { 
                     item.Occupied = true;
+                    Order.order = item;
                     break;
-                }
-            }
+                    }
+                   }
+                 }
             label1.Text = item.toString();
+        }
+
+        private void deleteBtn_Click(object sender, EventArgs e)
+        {
+            AirBNE.list.Remove(item);
+            MessageBox.Show("Item Removed");
+            this.Close();
         }
     }
 }
