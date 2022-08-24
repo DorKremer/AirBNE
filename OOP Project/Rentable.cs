@@ -2,10 +2,15 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Runtime.Serialization;
+using System.Runtime.Serialization.Formatters;
+using System.Xml.Serialization;
 
 namespace OOP_Project
 {
-    public abstract class Rentable
+    [XmlInclude(typeof(Rentable))]
+    [Serializable()]
+    public abstract class Rentable : ISerializable
     {
         private static int idCounter = 0;
         //Picture
@@ -28,6 +33,36 @@ namespace OOP_Project
         {
             return Address + "\n" + Price;
         }
+
+        public Rentable(SerializationInfo info, StreamingContext context)
+        {
+            idCounter = (int)info.GetValue("IdCounter", typeof(int));
+            id = (int)info.GetValue("Id",typeof(int));
+            address=(string)info.GetValue("Address",typeof(string));
+            description=(string)info.GetValue("Description",typeof(string));
+            zipCode = (int)info.GetValue("ZipCode",typeof(int));
+            price=(double)info.GetValue("Price",typeof(double));
+            residents=(int)info.GetValue("Residents",typeof(int));
+            pets=(bool)info.GetValue("Pets",typeof(bool));
+            occupied = (bool)info.GetValue("Occupied", typeof(bool));
+            wifi = (bool)info.GetValue("Wifi", typeof(bool));
+        }
+
+        public virtual void GetObjectData(SerializationInfo info, StreamingContext context)
+        {
+            info.AddValue("IdCounter", idCounter);
+            info.AddValue("Id", Id);
+            info.AddValue("Address", Address);
+            info.AddValue("Description", Description);
+            info.AddValue("ZipCode", ZipCode);
+            info.AddValue("Price",Price);
+            info.AddValue("Residents", Residents);
+            info.AddValue("Pets", Pets);
+            info.AddValue("Occupied", Occupied);
+            info.AddValue("Pool", Pool);
+            info.AddValue("Wifi", Wifi);
+        }
+
         public Rentable()
         {
             this.id = idCounter++;

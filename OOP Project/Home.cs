@@ -1,14 +1,28 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Text;
+using System.Xml.Serialization;
 
 namespace OOP_Project
 {
+    [XmlInclude(typeof(Home))]
+    [Serializable()]
     public abstract class Home:Rentable
     {
         private int roomCount;
 
+        public override void GetObjectData(SerializationInfo info, StreamingContext context)
+        {
+            base.GetObjectData(info, context);
+            info.AddValue("RoomCount", RoomCount);
+        }
+
+        public Home(SerializationInfo info, StreamingContext context):base(info, context)
+        {
+            roomCount = (int)info.GetValue("RoomCount", typeof(int));
+        }
         public Home() : base()
         {
             roomCount = 0;

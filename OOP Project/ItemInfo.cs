@@ -28,7 +28,6 @@ namespace OOP_Project
                     this.item = item;
                     break;
                 }
-
             }
             label1.Text =item.toString();
         }
@@ -44,7 +43,6 @@ namespace OOP_Project
                 }
             }
             label1.Text = item.toString();
-
         }
     }
 }

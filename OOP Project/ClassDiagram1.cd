@@ -7,7 +7,7 @@
       <Compartment Name="Methods" Collapsed="true" />
     </Compartments>
     <TypeIdentifier>
-      <HashCode>AAAAAgAAACAAAAAAAACAAAACAAAYAAAAAGAAAIAAAAA=</HashCode>
+      <HashCode>AAAAAgAAACAAABAAAACAAAACAAAYAAAAAGAAQIBAAAA=</HashCode>
       <FileName>HomePage.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -21,7 +21,7 @@
   <Class Name="OOP_Project.Properties.Resources" Collapsed="true">
     <Position X="2.25" Y="1.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+      <HashCode>AAAAAgAAAAAAAAQAAAABEAABASAAAABAGAAAAAAAAIA=</HashCode>
     </TypeIdentifier>
   </Class>
   <Class Name="OOP_Project.Properties.Settings" Collapsed="true">
@@ -30,17 +30,10 @@
       <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
     </TypeIdentifier>
   </Class>
-  <Class Name="OOP_Project.Rentable">
-    <Position X="8.25" Y="0.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAABAQAAAQQgAAAEIQAABAEAAAIACAADAAiAAAAAgAA=</HashCode>
-      <FileName>Rentable.cs</FileName>
-    </TypeIdentifier>
-  </Class>
   <Class Name="OOP_Project.Apartment">
     <Position X="10" Y="4.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAACAAAAAhAAgAAQAIBAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAACAAAAAhAAgAAQAIBAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Apartment.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -61,9 +54,17 @@
   <Class Name="OOP_Project.Home">
     <Position X="10" Y="2.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAABAAAAAAAQAAAAEAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAABAAgAAAAQAAAAEAAAAAAAAA=</HashCode>
       <FileName>Home.cs</FileName>
     </TypeIdentifier>
+  </Class>
+  <Class Name="OOP_Project.Rentable">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAATAQAAEQQgAAAEIQAADAEwAAIACAADAAiAAAAAggA=</HashCode>
+      <FileName>Rentable.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

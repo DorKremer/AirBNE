@@ -6,10 +6,14 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Net;
 using System.Reflection.Emit;
+using System.Runtime.Serialization;
 using System.Text;
+using System.Xml.Serialization;
 
 namespace OOP_Project
 {
+    [XmlInclude(typeof(Apartment))]
+    [Serializable()]
     public class Apartment:Home
     {
         private int floor;
@@ -19,6 +23,21 @@ namespace OOP_Project
         public override string toString()
         {
             return base.toString()+"Floor: "+floor+"\nPorch: "+porch+"\nElevator: "+elevator;
+        }
+
+        public override void GetObjectData(SerializationInfo info, StreamingContext context)
+        {
+            base.GetObjectData(info, context);
+            info.AddValue("Floor", Floor);
+            info.AddValue("Porch", Porch);
+            info.AddValue("Elevator", Elevator);
+        }
+
+        public Apartment(SerializationInfo info, StreamingContext context) : base(info, context)
+        {
+            floor = (int)info.GetValue("Floor", typeof(int));
+            porch = (bool)info.GetValue("Porch", typeof(bool));
+            elevator = (bool)info.GetValue("Elevator", typeof(bool));
         }
 
         public Apartment():base()
