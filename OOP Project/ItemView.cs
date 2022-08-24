@@ -30,14 +30,16 @@ namespace OOP_Project
         }
         private void renderButton(Rentable item)
         {
-                Button button = new Button();
-            
-                button.Name = Convert.ToString(item.Id);
-                button.Size = new Size(350, 250);
-                button.Text = item.getText();
-                button.Click += new EventHandler(this.itemClick);
-                flowLayoutPanel1.Controls.Add(button);
-            
+            Button button = new Button();
+            //string uri = @"Resources\800px_COLOURBOX18688230.jpg";
+            //button.BackgroundImage= new Bitmap(uri);
+            //button.BackgroundImageLayout = ImageLayout.Zoom;
+            button.Name = Convert.ToString(item.Id);
+            button.Size = new Size(350, 250);
+            button.Text = item.getText();
+            button.Click += new EventHandler(this.itemClick);
+            flowLayoutPanel1.Controls.Add(button);
+
         }
         private void itemClick(object sender, EventArgs e)
         {
@@ -52,7 +54,14 @@ namespace OOP_Project
             ItemInfo form = new ItemInfo();
             form.Location = this.Location;
             form.StartPosition = FormStartPosition.Manual;
-            form.FormClosing += delegate { this.Show(); };
+            form.FormClosing += delegate { 
+                flowLayoutPanel1.Controls.Clear();
+                foreach (Rentable item in AirBNE.list)
+                {
+                    renderButton(item);
+                }
+                this.Show();
+            };
             form.Show();
             this.Hide();
         }

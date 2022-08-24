@@ -59,7 +59,7 @@ namespace OOP_Project
             label1.Text = item.toString();
         }
 
-        private void deleteBtn_Click(object sender, EventArgs e)
+        private void deleteButton_Click(object sender, EventArgs e)
         {
             Order.item = null;
             AirBNE.list.Remove(item);
