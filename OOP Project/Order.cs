@@ -16,20 +16,20 @@ namespace OOP_Project
         {
             InitializeComponent();
         }
-        public static Rentable order=null;
+        public static Rentable item=null;
 
         private void Order_Load(object sender, EventArgs e)
         {
-            if (order != null)
+            if (item != null)
             {
-                label1.Text = order.toString();
+                label1.Text = item.toString();
             }
             
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (order == null)
+            if (item == null)
             {
                 MessageBox.Show("Your Order List Is Empty");
 
@@ -38,7 +38,7 @@ namespace OOP_Project
             {
                 foreach (Rentable item in AirBNE.list)
                 {
-                    if (order.Id == item.Id)
+                    if (Order.item.Id == item.Id)
                     {
                         item.Occupied = false;
                         label1.Text = "Empty";
@@ -47,7 +47,7 @@ namespace OOP_Project
                     }
 
                 }
-                order = null;
+                item = null;
             }
         }
     }

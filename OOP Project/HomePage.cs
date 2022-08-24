@@ -98,8 +98,14 @@ namespace OOP_Project
             {
                 Stream stream = File.Open(openFileDialog1.FileName, FileMode.Open);
                 var binaryFormatter = new System.Runtime.Serialization.Formatters.Binary.BinaryFormatter();
+                Rentable item;
                 while(stream.Position < stream.Length)
-                    list.Add((Rentable)binaryFormatter.Deserialize(stream));
+                {
+                    item = (Rentable)binaryFormatter.Deserialize(stream);
+                    if (item.Occupied)
+                        Order.item = item;
+                    list.Add(item);
+                }
                 pictureBox1.Invalidate();
             }
         }
