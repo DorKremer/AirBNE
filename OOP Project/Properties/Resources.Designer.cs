@@ -22,7 +22,7 @@ namespace OOP_Project.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
+    public class Resources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace OOP_Project.Properties {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("OOP_Project.Properties.Resources", typeof(Resources).Assembly);
@@ -51,7 +51,7 @@ namespace OOP_Project.Properties {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -63,27 +63,7 @@ namespace OOP_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _267316381 {
-            get {
-                object obj = ResourceManager.GetObject("267316381", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _2673163811 {
-            get {
-                object obj = ResourceManager.GetObject("2673163811", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _348233595 {
+        public static System.Drawing.Bitmap _348233595 {
             get {
                 object obj = ResourceManager.GetObject("348233595", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -93,7 +73,7 @@ namespace OOP_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _800px_COLOURBOX18688230 {
+        public static System.Drawing.Bitmap _800px_COLOURBOX18688230 {
             get {
                 object obj = ResourceManager.GetObject("800px_COLOURBOX18688230", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -103,7 +83,17 @@ namespace OOP_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap BETransparentBlackLogocopy {
+        public static System.Drawing.Bitmap Apartment {
+            get {
+                object obj = ResourceManager.GetObject("Apartment", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap BETransparentBlackLogocopy {
             get {
                 object obj = ResourceManager.GetObject("BETransparentBlackLogocopy", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -113,29 +103,29 @@ namespace OOP_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap milky_way_2695569_1280 {
+        public static System.Drawing.Bitmap Hotel {
+            get {
+                object obj = ResourceManager.GetObject("Hotel", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap House {
+            get {
+                object obj = ResourceManager.GetObject("House", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap milky_way_2695569_1280 {
             get {
                 object obj = ResourceManager.GetObject("milky-way-2695569_1280", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap pexels_photo_106399 {
-            get {
-                object obj = ResourceManager.GetObject("pexels-photo-106399", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap this_is_a_photo_of_a {
-            get {
-                object obj = ResourceManager.GetObject("this-is-a-photo-of-a", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

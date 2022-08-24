@@ -7,7 +7,7 @@
       <Compartment Name="Methods" Collapsed="true" />
     </Compartments>
     <TypeIdentifier>
-      <HashCode>AAAAAgAAACAAAACAAACAAAACAAAYAAAAAAAAYIBACAA=</HashCode>
+      <HashCode>AAAAAgAAACAAAACAAACBAAACAAAYAAAAAAAAYIBACAA=</HashCode>
       <FileName>HomePage.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -16,12 +16,6 @@
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
       <FileName>Program.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="OOP_Project.Properties.Resources" Collapsed="true">
-    <Position X="2.25" Y="1.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAgAQAAAAAAQAAAABEAABASAAAABAGAAAAAAAAIA=</HashCode>
     </TypeIdentifier>
   </Class>
   <Class Name="OOP_Project.Properties.Settings" Collapsed="true">
@@ -40,14 +34,14 @@
   <Class Name="OOP_Project.House">
     <Position X="11.75" Y="4.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAgAABAIBAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAgAABAIBAAwAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>House.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="OOP_Project.HotelRoom">
     <Position X="6.5" Y="2" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AQAAAAEAAAAAAAQgAAAEJAAIAAAACAAABAAAAAQAAAA=</HashCode>
+      <HashCode>AQAAAAEAAAAAAAQgAAAEJAAoAAAACAAABAAAAAQAAAA=</HashCode>
       <FileName>HotelRoom.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -65,6 +59,12 @@
       <FileName>Rentable.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="OOP_Project.Properties.Resources" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAkAQAAAAAAQAAAABEAAAASAAAAAAAAIAQAAAAIA=</HashCode>
+    </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

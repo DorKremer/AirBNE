@@ -1,14 +1,29 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Text;
 
 namespace OOP_Project
 {
+    [Serializable]
     public class House:Home
     {
         private int floors;
         private bool yard;
+
+        public override void GetObjectData(SerializationInfo info, StreamingContext context)
+        {
+            base.GetObjectData(info, context);
+            info.AddValue("Floors", Floors);
+            info.AddValue("Yard", Yard);
+        }
+
+        public House(SerializationInfo info, StreamingContext context) : base(info, context)
+        {
+            floors = (int)info.GetValue("Floors", typeof(int));
+            yard = (bool)info.GetValue("Yard", typeof(bool));
+        }
 
         public override string toString()
         {

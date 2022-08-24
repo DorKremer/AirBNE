@@ -36,7 +36,7 @@
             // 
             // apartmentButton
             // 
-            this.apartmentButton.BackgroundImage = global::OOP_Project.Properties.Resources._267316381;
+            this.apartmentButton.BackgroundImage = global::OOP_Project.Properties.Resources.Apartment;
             this.apartmentButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.apartmentButton.Font = new System.Drawing.Font("MS Reference Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.apartmentButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -51,7 +51,7 @@
             // 
             // hotelRoomButton
             // 
-            this.hotelRoomButton.BackgroundImage = global::OOP_Project.Properties.Resources.this_is_a_photo_of_a;
+            this.hotelRoomButton.BackgroundImage = global::OOP_Project.Properties.Resources.Hotel;
             this.hotelRoomButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.hotelRoomButton.Font = new System.Drawing.Font("MS Reference Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
             this.hotelRoomButton.Location = new System.Drawing.Point(661, 11);
@@ -65,7 +65,7 @@
             // 
             // houseButton
             // 
-            this.houseButton.BackgroundImage = global::OOP_Project.Properties.Resources.pexels_photo_106399;
+            this.houseButton.BackgroundImage = global::OOP_Project.Properties.Resources.House;
             this.houseButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.houseButton.Font = new System.Drawing.Font("MS Reference Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
             this.houseButton.Location = new System.Drawing.Point(336, 11);

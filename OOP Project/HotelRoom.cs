@@ -7,10 +7,12 @@ using System.Drawing;
 using System.Linq;
 using System.Net;
 using System.Reflection.Emit;
+using System.Runtime.Serialization;
 using System.Text;
 
 namespace OOP_Project
 {
+    [Serializable]
     public class HotelRoom : Rentable
     {
         private string hotelName;
@@ -18,6 +20,26 @@ namespace OOP_Project
         private int roomNumber;
         private string pension;
         private byte hotelGrade;
+
+        public override void GetObjectData(SerializationInfo info, StreamingContext context)
+        {
+            base.GetObjectData(info, context);
+            info.AddValue("HotelName", HotelName);
+            info.AddValue("Gym", Gym);
+            info.AddValue("RoomNumber", RoomNumber);
+            info.AddValue("Pension", Pension);
+            info.AddValue("HotelGrade", HotelGrade);
+        }
+
+        public HotelRoom(SerializationInfo info, StreamingContext context) : base(info, context)
+        {
+            hotelName = (string)info.GetValue("HotelName", typeof(string));
+            gym = (bool)info.GetValue("Gym", typeof(bool));
+            roomNumber = (int)info.GetValue("RoomNumber", typeof(int));
+            pension = (string)info.GetValue("Pension", typeof(string));
+            hotelGrade = (byte)info.GetValue("HotelGrade", typeof(byte));
+        }
+
         public override string toString()
         {
             return base.toString()+"Hotel Information ::"+"\n"+"####################"+"\n"+"Hotel Name: "+hotelName+"\ngym: " +gym + "\nroomNumber: " + roomNumber + "\npension: " + pension + "\nhotelGrade: " + hotelGrade;

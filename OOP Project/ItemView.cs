@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OOP_Project.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -24,16 +25,24 @@ namespace OOP_Project
             {
                 renderButton(item);
             }
-
-
-
         }
         private void renderButton(Rentable item)
         {
             Button button = new Button();
-            //string uri = @"Resources\800px_COLOURBOX18688230.jpg";
-            //button.BackgroundImage= new Bitmap(uri);
-            //button.BackgroundImageLayout = ImageLayout.Zoom;
+            switch (item.GetType().Name)
+            {
+                case "Apartment":
+                    button.BackgroundImage = Properties.Resources.Apartment;
+                    break;
+                case "House":
+                    button.BackgroundImage = Properties.Resources.House;
+                    break;
+                case "HotelRoom":
+                    button.BackgroundImage = Properties.Resources.Hotel;
+                    break;
+
+            }
+            button.BackgroundImageLayout = ImageLayout.Zoom;
             button.Name = Convert.ToString(item.Id);
             button.Size = new Size(350, 250);
             button.Text = item.getText();

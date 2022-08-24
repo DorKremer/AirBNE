@@ -7,7 +7,6 @@ using System.Xml.Serialization;
 
 namespace OOP_Project
 {
-    [XmlInclude(typeof(Home))]
     [Serializable()]
     public abstract class Home:Rentable
     {
