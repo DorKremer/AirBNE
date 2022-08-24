@@ -8,7 +8,6 @@ using System.Xml.Serialization;
 
 namespace OOP_Project
 {
-    [XmlInclude(typeof(Rentable))]
     [Serializable()]
     public abstract class Rentable : ISerializable
     {

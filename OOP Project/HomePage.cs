@@ -18,7 +18,7 @@ namespace OOP_Project
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void itemChoiceButton_Click(object sender, EventArgs e)
         {
                 ItemChoice form = new ItemChoice();
                 form.Location = this.Location;
@@ -28,7 +28,7 @@ namespace OOP_Project
                 this.Hide();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void itemViewButton_Click(object sender, EventArgs e)
         {
             //Random random = new Random();
             //for (int i = 0; i < 20; i++)
@@ -56,7 +56,7 @@ namespace OOP_Project
             this.Hide();
         }
 
-        private void btnorder_Click(object sender, EventArgs e)
+        private void orderButton_Click(object sender, EventArgs e)
         {
             Order form = new Order();
             form.Location = this.Location;
@@ -69,16 +69,8 @@ namespace OOP_Project
 
         private void saveButton_Click(object sender, EventArgs e)
         {
-            //Stream stream = File.Open(@"log.xml", FileMode.OpenOrCreate);
-            //BinaryFormatter formatter=new BinaryFormatter();
-            //foreach(Rentable item in list)
-            //    formatter.Serialize(stream, item);
-            //Stream stream = new FileStream(@"log.xml", FileMode.OpenOrCreate);
-            //XmlSerializer serializer=new XmlSerializer(typeof(List<Rentable>));
-            //serializer.Serialize(stream, list);
-            //label1.Text = "END?";
             SaveFileDialog saveFileDialog1 = new SaveFileDialog();
-            saveFileDialog1.InitialDirectory = Directory.GetCurrentDirectory();// + "..\\myModels";
+            saveFileDialog1.InitialDirectory = Directory.GetCurrentDirectory();
             saveFileDialog1.Filter = "model files (*.mdl)|*.mdl|All files (*.*)|*.*";
             saveFileDialog1.FilterIndex = 1;
             saveFileDialog1.RestoreDirectory = true;
@@ -95,10 +87,21 @@ namespace OOP_Project
 
         private void loadButton_Click(object sender, EventArgs e)
         {
-            //Stream stream = File.Open("log.dat", FileMode.OpenOrCreate);
-            //BinaryFormatter formatter = new BinaryFormatter();
-            //formatter.
-            
+            if(list.Count!=0)
+                list.Clear();
+            OpenFileDialog openFileDialog1 = new OpenFileDialog();
+            openFileDialog1.InitialDirectory = Directory.GetCurrentDirectory();
+            openFileDialog1.Filter = "model files (*.mdl)|*.mdl|All files (*.*)|*.*";
+            openFileDialog1.FilterIndex = 1;
+            openFileDialog1.RestoreDirectory = true;
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                Stream stream = File.Open(openFileDialog1.FileName, FileMode.Open);
+                var binaryFormatter = new System.Runtime.Serialization.Formatters.Binary.BinaryFormatter();
+                while(stream.Position < stream.Length)
+                    list.Add((Rentable)binaryFormatter.Deserialize(stream));
+                pictureBox1.Invalidate();
+            }
         }
     }
 }

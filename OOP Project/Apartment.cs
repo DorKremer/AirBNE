@@ -12,7 +12,6 @@ using System.Xml.Serialization;
 
 namespace OOP_Project
 {
-    [XmlInclude(typeof(Apartment))]
     [Serializable()]
     public class Apartment:Home
     {
