@@ -35,6 +35,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.saveButton = new System.Windows.Forms.Button();
             this.loadButton = new System.Windows.Forms.Button();
+            this.orderButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -94,6 +95,16 @@
             this.loadButton.UseVisualStyleBackColor = true;
             this.loadButton.Click += new System.EventHandler(this.loadButton_Click);
             // 
+            // orderButton
+            // 
+            this.orderButton.Location = new System.Drawing.Point(651, 138);
+            this.orderButton.Name = "orderButton";
+            this.orderButton.Size = new System.Drawing.Size(93, 143);
+            this.orderButton.TabIndex = 47;
+            this.orderButton.Text = "BENJAMIN NETANYAHU :))))))))))))))))";
+            this.orderButton.UseVisualStyleBackColor = true;
+            this.orderButton.Click += new System.EventHandler(this.orderButton_Click);
+            // 
             // AirBNE
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -101,6 +112,7 @@
             this.BackColor = System.Drawing.Color.DimGray;
             this.BackgroundImage = global::OOP_Project.Properties.Resources.milky_way_2695569_1280;
             this.ClientSize = new System.Drawing.Size(787, 450);
+            this.Controls.Add(this.orderButton);
             this.Controls.Add(this.loadButton);
             this.Controls.Add(this.saveButton);
             this.Controls.Add(this.pictureBox1);
@@ -121,6 +133,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button saveButton;
         private System.Windows.Forms.Button loadButton;
+        private System.Windows.Forms.Button orderButton;
     }
 }
 
