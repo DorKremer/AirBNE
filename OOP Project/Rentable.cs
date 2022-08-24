@@ -22,10 +22,14 @@ namespace OOP_Project
 
         public virtual string toString()
         {
-            return "ID: " + id +"\nOccupied: "+ occupied + "\naddress: " + address + "\n" + "description: " + description + "\n" + "zip Code: " + zipCode + "\n" + "price: " + price + "\n" + "residents:" + residents + "\n" + "pets: " + pets + "\n" + "pool: " + pool + "\n" + "wifi: " + wifi + "\n";
+            return "Rentable Information ::"+"\n"+"########################"+"\n"+"ID: " + id +"\nOccupied: "+ occupied + "\naddress: " + address + "\n" + "zip Code: " + zipCode + "\n" + "price: " + price + "\n" + "residents:" + residents + "\n" + "pets: " + pets + "\n" + "pool: " + pool + "\n" + "wifi: " + wifi + "\n" + "description: " + description + "\n"+"###########"+"\n";
         }
         public string getText()
         {
+            if (this.occupied == true)
+            {
+                return Address + "\n" + price + "\n" + "Not Avelible";
+            }
             return Address + "\n" + Price;
         }
         public Rentable()

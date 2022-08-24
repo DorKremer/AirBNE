@@ -12,7 +12,7 @@ namespace OOP_Project
 
         public override string toString()
         {
-            return base.toString() + "Floors: " + floors + "\nYard: " + yard;
+            return base.toString() + "House Information ::"+"\n"+"##################"+"\n"+"Floors: " + floors + "\nYard: " + yard;
         }
 
         public House() : base()

@@ -58,7 +58,6 @@ namespace OOP_Project
                    }
                  }
             label1.Text = item.toString();
-
         }
     }
 }

@@ -20,7 +20,7 @@ namespace OOP_Project
         private byte hotelGrade;
         public override string toString()
         {
-            return base.toString()+"\nHotel Name: "+hotelName+"\ngym: " +gym + "\nroomNumber: " + roomNumber + "\npension: " + pension + "\nhotelGrade: " + hotelGrade;
+            return base.toString()+"Hotel Information ::"+"\n"+"####################"+"\n"+"Hotel Name: "+hotelName+"\ngym: " +gym + "\nroomNumber: " + roomNumber + "\npension: " + pension + "\nhotelGrade: " + hotelGrade;
         }
         public HotelRoom() : base()
         {
