@@ -61,6 +61,7 @@ namespace OOP_Project
 
         private void deleteBtn_Click(object sender, EventArgs e)
         {
+            Order.order = null;
             AirBNE.list.Remove(item);
             MessageBox.Show("Item Removed");
             this.Close();
