@@ -26,7 +26,7 @@ namespace OOP_Project
         }
         public string getText()
         {
-            if (this.occupied == true)
+            if (this.occupied )
             {
                 return Address + "\n" + price + "\n" + "Not Avelible";
             }

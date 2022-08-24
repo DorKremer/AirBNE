@@ -33,6 +33,7 @@
             this.orderBox = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.deleteBtn = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -51,10 +52,10 @@
             // 
             // orderBox
             // 
-            this.orderBox.Location = new System.Drawing.Point(128, 423);
+            this.orderBox.Location = new System.Drawing.Point(38, 434);
             this.orderBox.Margin = new System.Windows.Forms.Padding(4);
             this.orderBox.Name = "orderBox";
-            this.orderBox.Size = new System.Drawing.Size(452, 98);
+            this.orderBox.Size = new System.Drawing.Size(262, 74);
             this.orderBox.TabIndex = 1;
             this.orderBox.Text = "Order";
             this.orderBox.UseVisualStyleBackColor = true;
@@ -84,6 +85,16 @@
             this.panel1.Size = new System.Drawing.Size(752, 361);
             this.panel1.TabIndex = 1;
             // 
+            // deleteBtn
+            // 
+            this.deleteBtn.Location = new System.Drawing.Point(465, 434);
+            this.deleteBtn.Name = "deleteBtn";
+            this.deleteBtn.Size = new System.Drawing.Size(258, 74);
+            this.deleteBtn.TabIndex = 3;
+            this.deleteBtn.Text = "Delete";
+            this.deleteBtn.UseVisualStyleBackColor = true;
+            this.deleteBtn.Click += new System.EventHandler(this.deleteBtn_Click);
+            // 
             // ItemInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -91,6 +102,7 @@
             this.BackColor = System.Drawing.Color.DimGray;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(788, 545);
+            this.Controls.Add(this.deleteBtn);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.orderBox);
             this.DoubleBuffered = true;
@@ -112,5 +124,6 @@
         private System.Windows.Forms.Button orderBox;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button deleteBtn;
     }
 }

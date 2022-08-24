@@ -59,5 +59,12 @@ namespace OOP_Project
                  }
             label1.Text = item.toString();
         }
+
+        private void deleteBtn_Click(object sender, EventArgs e)
+        {
+            AirBNE.list.Remove(item);
+            MessageBox.Show("Item Removed");
+            this.Close();
+        }
     }
 }

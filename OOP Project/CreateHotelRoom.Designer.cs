@@ -45,13 +45,13 @@
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.comboBoxPenion = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.comboBoxPenion = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.zipCodeBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.roomNumberBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.residentsBox)).BeginInit();
@@ -261,6 +261,19 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Register Hotel room";
             // 
+            // comboBoxPenion
+            // 
+            this.comboBoxPenion.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.comboBoxPenion.FormattingEnabled = true;
+            this.comboBoxPenion.Items.AddRange(new object[] {
+            "Only Breakfast",
+            "Breakfast and Dinner",
+            "Full Pension"});
+            this.comboBoxPenion.Location = new System.Drawing.Point(7, 197);
+            this.comboBoxPenion.Name = "comboBoxPenion";
+            this.comboBoxPenion.Size = new System.Drawing.Size(248, 24);
+            this.comboBoxPenion.TabIndex = 34;
+            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -326,18 +339,6 @@
             this.label3.Size = new System.Drawing.Size(116, 25);
             this.label3.TabIndex = 34;
             this.label3.Text = "Enter price";
-            // 
-            // comboBoxPenion
-            // 
-            this.comboBoxPenion.FormattingEnabled = true;
-            this.comboBoxPenion.Items.AddRange(new object[] {
-            "Only Breakfast",
-            "Breakfast and Dinner",
-            "Full Pension"});
-            this.comboBoxPenion.Location = new System.Drawing.Point(7, 195);
-            this.comboBoxPenion.Name = "comboBoxPenion";
-            this.comboBoxPenion.Size = new System.Drawing.Size(247, 28);
-            this.comboBoxPenion.TabIndex = 34;
             // 
             // CreateHotelRoom
             // 
