@@ -64,7 +64,6 @@ namespace OOP_Project
             form.FormClosing += delegate { this.Show(); };
             form.Show();
             this.Hide();
-
         }
 
         private void saveButton_Click(object sender, EventArgs e)
