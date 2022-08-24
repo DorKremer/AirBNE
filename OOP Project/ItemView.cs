@@ -48,7 +48,6 @@ namespace OOP_Project
             button.Text = item.getText();
             button.Click += new EventHandler(this.itemClick);
             flowLayoutPanel1.Controls.Add(button);
-
         }
         private void itemClick(object sender, EventArgs e)
         {
