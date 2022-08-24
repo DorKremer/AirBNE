@@ -24,7 +24,6 @@ namespace OOP_Project
             {
                 label1.Text = item.toString();
             }
-            
         }
 
         private void button1_Click(object sender, EventArgs e)

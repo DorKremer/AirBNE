@@ -31,6 +31,7 @@ namespace OOP_Project
         private void renderButton(Rentable item)
         {
                 Button button = new Button();
+            
                 button.Name = Convert.ToString(item.Id);
                 button.Size = new Size(350, 250);
                 button.Text = item.getText();

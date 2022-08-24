@@ -44,10 +44,10 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = global::OOP_Project.Properties.Resources.BETransparentBlackLogocopy;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(138, 111);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Location = new System.Drawing.Point(184, 137);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(486, 267);
+            this.pictureBox1.Size = new System.Drawing.Size(648, 329);
             this.pictureBox1.TabIndex = 44;
             this.pictureBox1.TabStop = false;
             // 
@@ -55,9 +55,10 @@
             // 
             this.button1.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.button1.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            this.button1.Location = new System.Drawing.Point(77, 16);
+            this.button1.Location = new System.Drawing.Point(103, 20);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(634, 41);
+            this.button1.Size = new System.Drawing.Size(845, 50);
             this.button1.TabIndex = 43;
             this.button1.Text = "View Items";
             this.button1.UseVisualStyleBackColor = false;
@@ -67,9 +68,10 @@
             // 
             this.button2.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.button2.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            this.button2.Location = new System.Drawing.Point(77, 63);
+            this.button2.Location = new System.Drawing.Point(103, 78);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(634, 41);
+            this.button2.Size = new System.Drawing.Size(845, 50);
             this.button2.TabIndex = 42;
             this.button2.Text = "Add Items";
             this.button2.UseVisualStyleBackColor = false;
@@ -77,9 +79,10 @@
             // 
             // saveButton
             // 
-            this.saveButton.Location = new System.Drawing.Point(23, 146);
+            this.saveButton.Location = new System.Drawing.Point(31, 180);
+            this.saveButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.saveButton.Name = "saveButton";
-            this.saveButton.Size = new System.Drawing.Size(88, 29);
+            this.saveButton.Size = new System.Drawing.Size(117, 36);
             this.saveButton.TabIndex = 45;
             this.saveButton.Text = "Save";
             this.saveButton.UseVisualStyleBackColor = true;
@@ -87,9 +90,10 @@
             // 
             // loadButton
             // 
-            this.loadButton.Location = new System.Drawing.Point(23, 195);
+            this.loadButton.Location = new System.Drawing.Point(31, 240);
+            this.loadButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.loadButton.Name = "loadButton";
-            this.loadButton.Size = new System.Drawing.Size(88, 29);
+            this.loadButton.Size = new System.Drawing.Size(117, 36);
             this.loadButton.TabIndex = 46;
             this.loadButton.Text = "Load";
             this.loadButton.UseVisualStyleBackColor = true;
@@ -97,21 +101,25 @@
             // 
             // orderButton
             // 
-            this.orderButton.Location = new System.Drawing.Point(651, 138);
+            this.orderButton.BackgroundImage = global::OOP_Project.Properties.Resources.BETransparentBlackLogocopy;
+            this.orderButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.orderButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.orderButton.Location = new System.Drawing.Point(872, 210);
+            this.orderButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.orderButton.Name = "orderButton";
-            this.orderButton.Size = new System.Drawing.Size(93, 143);
+            this.orderButton.Size = new System.Drawing.Size(124, 45);
             this.orderButton.TabIndex = 47;
-            this.orderButton.Text = "BENJAMIN NETANYAHU :))))))))))))))))";
+            this.orderButton.Text = "My Order";
             this.orderButton.UseVisualStyleBackColor = true;
             this.orderButton.Click += new System.EventHandler(this.orderButton_Click);
             // 
             // AirBNE
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DimGray;
             this.BackgroundImage = global::OOP_Project.Properties.Resources.milky_way_2695569_1280;
-            this.ClientSize = new System.Drawing.Size(787, 450);
+            this.ClientSize = new System.Drawing.Size(1049, 554);
             this.Controls.Add(this.orderButton);
             this.Controls.Add(this.loadButton);
             this.Controls.Add(this.saveButton);
@@ -119,6 +127,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button2);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "AirBNE";
             this.Text = "AirBNE";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
