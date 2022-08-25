@@ -73,11 +73,11 @@ namespace OOP_Project
             form.Show();
             this.Hide();
         }
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void searchBox_TextChanged(object sender, EventArgs e)
         {
             flowLayoutPanel1.Controls.Clear();
             string name1 = "";
-            string name2 = textBox1.Text.ToLower();
+            string name2 = searchBox.Text.ToLower();
             foreach (Rentable item in AirBNE.list)
             {
                 name1 = item.Address.ToLower();
