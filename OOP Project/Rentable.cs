@@ -32,7 +32,7 @@ namespace OOP_Project
         {
             if (this.occupied )
             {
-                return Address + "\n" + price + "\n" + "Not Avelible";
+                return Address + "\n" + price + "\n" + "Not Available";
             }
             return Address + "\n" + Price;
         }

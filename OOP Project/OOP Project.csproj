@@ -170,5 +170,8 @@
   <ItemGroup>
     <None Include="Resources\800px_COLOURBOX18688230.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackArrow.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

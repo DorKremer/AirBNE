@@ -23,8 +23,6 @@ namespace OOP_Project
             HotelRoom hotelRoom = new HotelRoom(hotelNameBox.Text, addressBox.Text, descriptionBox.Text, Convert.ToInt32(zipCodeBox.Value), Convert.ToDouble(priceBox.Value), Convert.ToInt32(residentsBox.Value), petsBox.Checked, poolBox.Checked, wifiBox.Checked, gymBox.Checked, Convert.ToInt32(roomNumberBox.Value), comboBoxPenion.Text, Convert.ToByte(hotelGrade.Value));
             AirBNE.list.Add(hotelRoom);
             MessageBox.Show("Hotel Room Created");
-
-
         }
 
         private void hotelNameBox_Enter(object sender, EventArgs e)
@@ -61,6 +59,15 @@ namespace OOP_Project
         {
             if (descriptionBox.Text == "")
                 descriptionBox.Text = "Enter Description...";
+        }
+
+        private void backButton_Click(object sender, EventArgs e)
+        {
+            ItemChoice form = new ItemChoice();
+            form.Location = this.Location;
+            form.StartPosition = FormStartPosition.Manual;
+            form.Show();
+            this.Close();
         }
     }
 }

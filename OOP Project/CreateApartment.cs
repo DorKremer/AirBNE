@@ -48,5 +48,14 @@ namespace OOP_Project
             if (descriptionBox.Text == "")
                 descriptionBox.Text = "Enter Description...";
         }
+
+        private void backButton_Click(object sender, EventArgs e)
+        {
+            ItemChoice form = new ItemChoice();
+            form.Location = this.Location;
+            form.StartPosition = FormStartPosition.Manual;
+            form.Show();
+            this.Close();
+        }
     }
 }

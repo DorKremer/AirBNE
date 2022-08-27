@@ -23,9 +23,8 @@ namespace OOP_Project
             CreateApartment form = new CreateApartment();
             form.Location = this.Location;
             form.StartPosition = FormStartPosition.Manual;
-            form.FormClosing += delegate { this.Show(); };
             form.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void houseButton_Click(object sender, EventArgs e)
@@ -33,9 +32,8 @@ namespace OOP_Project
             CreateHouse form = new CreateHouse();
             form.Location = this.Location;
             form.StartPosition = FormStartPosition.Manual;
-            form.FormClosing += delegate { this.Show(); };
             form.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void hotelRoomButton_Click(object sender, EventArgs e)
@@ -43,9 +41,17 @@ namespace OOP_Project
             CreateHotelRoom form = new CreateHotelRoom();
             form.Location = this.Location;
             form.StartPosition = FormStartPosition.Manual;
-            form.FormClosing += delegate { this.Show(); };
             form.Show();
-            this.Hide();
+            this.Close();
+        }
+
+        private void backButton_Click(object sender, EventArgs e)
+        {
+            AirBNE form = new AirBNE();
+            form.Location = this.Location;
+            form.StartPosition = FormStartPosition.Manual;
+            form.Show();
+            this.Close();
         }
     }
 }

@@ -51,6 +51,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.backButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.priceBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.residentsBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.roomCountBox)).BeginInit();
@@ -220,10 +221,10 @@
             this.groupBox1.Controls.Add(this.floorBox);
             this.groupBox1.Controls.Add(this.roomCountBox);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.groupBox1.Location = new System.Drawing.Point(22, 2);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Location = new System.Drawing.Point(87, 11);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(433, 281);
             this.groupBox1.TabIndex = 15;
             this.groupBox1.TabStop = false;
@@ -313,14 +314,29 @@
             this.groupBox2.Controls.Add(this.porchBox);
             this.groupBox2.Controls.Add(this.elevatorBox);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.groupBox2.Location = new System.Drawing.Point(488, 10);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Location = new System.Drawing.Point(553, 19);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox2.Size = new System.Drawing.Size(160, 156);
             this.groupBox2.TabIndex = 16;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Inofrmation ";
+            // 
+            // backButton
+            // 
+            this.backButton.BackColor = System.Drawing.Color.DimGray;
+            this.backButton.BackgroundImage = global::OOP_Project.Properties.Resources.BackArrow;
+            this.backButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.backButton.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.backButton.FlatAppearance.BorderSize = 0;
+            this.backButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.backButton.Location = new System.Drawing.Point(12, 12);
+            this.backButton.Name = "backButton";
+            this.backButton.Size = new System.Drawing.Size(46, 39);
+            this.backButton.TabIndex = 17;
+            this.backButton.UseVisualStyleBackColor = false;
+            this.backButton.Click += new System.EventHandler(this.backButton_Click);
             // 
             // CreateApartment
             // 
@@ -330,6 +346,7 @@
             this.BackgroundImage = global::OOP_Project.Properties.Resources.BETransparentBlackLogocopy;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(753, 386);
+            this.Controls.Add(this.backButton);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.createBox);
@@ -374,5 +391,6 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button backButton;
     }
 }

@@ -66,5 +66,14 @@ namespace OOP_Project
             MessageBox.Show("Item Removed");
             this.Close();
         }
+
+        private void backButton_Click(object sender, EventArgs e)
+        {
+            ItemView form = new ItemView();
+            form.Location = this.Location;
+            form.StartPosition = FormStartPosition.Manual;
+            form.Show();
+            this.Close();
+        }
     }
 }

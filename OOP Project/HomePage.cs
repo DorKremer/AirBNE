@@ -23,7 +23,6 @@ namespace OOP_Project
                 ItemChoice form = new ItemChoice();
                 form.Location = this.Location;
                 form.StartPosition = FormStartPosition.Manual;
-                form.FormClosing += delegate { this.Show(); };
                 form.Show();
                 this.Hide();
         }
@@ -33,7 +32,6 @@ namespace OOP_Project
             ItemView form = new ItemView();
             form.Location = this.Location;
             form.StartPosition = FormStartPosition.Manual;
-            form.FormClosing += delegate { this.Show(); };
             form.Show();
             this.Hide();
         }
@@ -43,7 +41,6 @@ namespace OOP_Project
             Order form = new Order();
             form.Location = this.Location;
             form.StartPosition = FormStartPosition.Manual;
-            form.FormClosing += delegate { this.Show(); };
             form.Show();
             this.Hide();
         }

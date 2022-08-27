@@ -48,6 +48,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.backButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.zipCodeBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.roomCountBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.residentsBox)).BeginInit();
@@ -208,7 +209,7 @@
             this.groupBox2.Controls.Add(this.yardBox);
             this.groupBox2.Controls.Add(this.wifiBox);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.groupBox2.Location = new System.Drawing.Point(664, 32);
+            this.groupBox2.Location = new System.Drawing.Point(719, 26);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
@@ -233,7 +234,7 @@
             this.groupBox1.Controls.Add(this.floorsBox);
             this.groupBox1.Controls.Add(this.roomCountBox);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.groupBox1.Location = new System.Drawing.Point(13, 19);
+            this.groupBox1.Location = new System.Drawing.Point(68, 13);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
@@ -293,6 +294,21 @@
             this.label3.TabIndex = 27;
             this.label3.Text = "Price";
             // 
+            // backButton
+            // 
+            this.backButton.BackColor = System.Drawing.Color.DimGray;
+            this.backButton.BackgroundImage = global::OOP_Project.Properties.Resources.BackArrow;
+            this.backButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.backButton.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.backButton.FlatAppearance.BorderSize = 0;
+            this.backButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.backButton.Location = new System.Drawing.Point(12, 12);
+            this.backButton.Name = "backButton";
+            this.backButton.Size = new System.Drawing.Size(46, 39);
+            this.backButton.TabIndex = 35;
+            this.backButton.UseVisualStyleBackColor = false;
+            this.backButton.Click += new System.EventHandler(this.backButton_Click);
+            // 
             // CreateHouse
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
@@ -300,7 +316,8 @@
             this.BackColor = System.Drawing.Color.DimGray;
             this.BackgroundImage = global::OOP_Project.Properties.Resources.BETransparentBlackLogocopy;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(973, 541);
+            this.ClientSize = new System.Drawing.Size(1024, 541);
+            this.Controls.Add(this.backButton);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.createBox);
@@ -344,5 +361,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button backButton;
     }
 }

@@ -52,6 +52,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.backButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.zipCodeBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.roomNumberBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.residentsBox)).BeginInit();
@@ -216,10 +217,10 @@
             this.groupBox1.Controls.Add(this.gymBox);
             this.groupBox1.Controls.Add(this.wifiBox);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.groupBox1.Location = new System.Drawing.Point(471, 10);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Location = new System.Drawing.Point(521, 11);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(150, 130);
             this.groupBox1.TabIndex = 32;
             this.groupBox1.TabStop = false;
@@ -244,10 +245,10 @@
             this.groupBox2.Controls.Add(this.residentsBox);
             this.groupBox2.Controls.Add(this.roomNumberBox);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.groupBox2.Location = new System.Drawing.Point(23, 10);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Location = new System.Drawing.Point(73, 11);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox2.Size = new System.Drawing.Size(400, 297);
             this.groupBox2.TabIndex = 33;
             this.groupBox2.TabStop = false;
@@ -262,7 +263,7 @@
             "Breakfast and Dinner",
             "Full Pension"});
             this.comboBoxPenion.Location = new System.Drawing.Point(5, 160);
-            this.comboBoxPenion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxPenion.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxPenion.Name = "comboBoxPenion";
             this.comboBoxPenion.Size = new System.Drawing.Size(187, 21);
             this.comboBoxPenion.TabIndex = 34;
@@ -339,6 +340,21 @@
             this.label3.TabIndex = 34;
             this.label3.Text = "Enter price";
             // 
+            // backButton
+            // 
+            this.backButton.BackColor = System.Drawing.Color.DimGray;
+            this.backButton.BackgroundImage = global::OOP_Project.Properties.Resources.BackArrow;
+            this.backButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.backButton.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.backButton.FlatAppearance.BorderSize = 0;
+            this.backButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.backButton.Location = new System.Drawing.Point(12, 9);
+            this.backButton.Name = "backButton";
+            this.backButton.Size = new System.Drawing.Size(46, 39);
+            this.backButton.TabIndex = 34;
+            this.backButton.UseVisualStyleBackColor = false;
+            this.backButton.Click += new System.EventHandler(this.backButton_Click);
+            // 
             // CreateHotelRoom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -347,6 +363,7 @@
             this.BackgroundImage = global::OOP_Project.Properties.Resources.BETransparentBlackLogocopy;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(721, 384);
+            this.Controls.Add(this.backButton);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.createBox);
@@ -392,5 +409,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox comboBoxPenion;
+        private System.Windows.Forms.Button backButton;
     }
 }

@@ -41,13 +41,22 @@ namespace OOP_Project
                     {
                         item.Occupied = false;
                         label1.Text = "Empty";
-                        MessageBox.Show("Check out Complate");
+                        MessageBox.Show("Check out Complete");
                         break;
                     }
 
                 }
                 item = null;
             }
+        }
+
+        private void backButton_Click(object sender, EventArgs e)
+        {
+            AirBNE form = new AirBNE();
+            form.Location = this.Location;
+            form.StartPosition = FormStartPosition.Manual;
+            form.Show();
+            this.Close();
         }
     }
 }

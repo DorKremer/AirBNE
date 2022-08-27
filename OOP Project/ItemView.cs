@@ -40,7 +40,6 @@ namespace OOP_Project
                 case "HotelRoom":
                     button.BackgroundImage = Properties.Resources.Hotel;
                     break;
-
             }
             button.BackgroundImageLayout = ImageLayout.Zoom;
             button.Name = Convert.ToString(item.Id);
@@ -62,16 +61,8 @@ namespace OOP_Project
             ItemInfo form = new ItemInfo();
             form.Location = this.Location;
             form.StartPosition = FormStartPosition.Manual;
-            form.FormClosing += delegate { 
-                flowLayoutPanel1.Controls.Clear();
-                foreach (Rentable item in AirBNE.list)
-                {
-                    renderButton(item);
-                }
-                this.Show();
-            };
             form.Show();
-            this.Hide();
+            this.Close();
         }
         private void searchBox_TextChanged(object sender, EventArgs e)
         {
@@ -93,6 +84,15 @@ namespace OOP_Project
             {
                 renderButton(item);
             }
+        }
+
+        private void backButton_Click(object sender, EventArgs e)
+        {
+            AirBNE form = new AirBNE();
+            form.Location = this.Location;
+            form.StartPosition = FormStartPosition.Manual;
+            form.Show();
+            this.Close();
         }
     }
 }
