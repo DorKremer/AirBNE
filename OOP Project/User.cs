@@ -17,6 +17,7 @@ namespace OOP_Project
         private int id;
         private string username;
         private string password;
+        private string name;
         private Rentable item;
 
         public User()
@@ -24,6 +25,7 @@ namespace OOP_Project
             id = idCounter++;
             username = "";
             password = "";
+            name = "";
             item = null;
         }
 
@@ -33,14 +35,16 @@ namespace OOP_Project
             id = (int)info.GetValue("Id", typeof(int));
             username = (string)info.GetValue("Username", typeof(string));
             password = (string)info.GetValue("Password", typeof(string));
+            name = (string)info.GetValue("Name", typeof(string));
             item = (Rentable)info.GetValue("Item", typeof(Rentable));
         }
 
-        public User(string username,string password)
+        public User(string username, string password, string name)
         {
             this.id = idCounter++;
             this.username = username;
             this.password = password;
+            this.name = name;
             item = null;
         }
 
@@ -49,6 +53,7 @@ namespace OOP_Project
             info.AddValue("IdCounter", idCounter);
             info.AddValue("Id", Id);
             info.AddValue("Username", username);
+            info.AddValue("Name", name);
             info.AddValue("Password", password);
             info.AddValue("Item", item);
         }
@@ -63,6 +68,12 @@ namespace OOP_Project
             set { password = value; }
         }
 
+        public string Name
+        {
+            get { return name; }
+            set { name = value; }
+        }
+
         public Rentable Item
         {
             get { return item; }
@@ -71,7 +82,7 @@ namespace OOP_Project
 
         public string toString()
         {
-            return id+""+username;
+            return id+"\n"+username + "\n" +password + "\n" +name + "\n";
         }
 
     }

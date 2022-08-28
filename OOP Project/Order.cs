@@ -15,14 +15,28 @@ namespace OOP_Project
         public Order()
         {
             InitializeComponent();
+            if(AirBNE.user.Item!=null)
+                item=AirBNE.user.Item;
+            else
+            {
+                item=null;
+                label1.Text = "Empty";
+            }
         }
-        public static Rentable item=null;
+        public static Rentable item= null;
 
         private void Order_Load(object sender, EventArgs e)
         {
+            if (AirBNE.user.Item != null)
+                item = AirBNE.user.Item;
             if (item != null)
             {
                 label1.Text = item.toString();
+            }
+            else
+            {
+                item = null;
+                label1.Text = "Empty";
             }
         }
 
@@ -31,7 +45,6 @@ namespace OOP_Project
             if (item == null)
             {
                 MessageBox.Show("Your Order List Is Empty");
-
             }
             else
             {
@@ -44,7 +57,6 @@ namespace OOP_Project
                         MessageBox.Show("Check out Complete");
                         break;
                     }
-
                 }
                 item = null;
             }

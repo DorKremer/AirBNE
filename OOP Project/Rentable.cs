@@ -26,7 +26,7 @@ namespace OOP_Project
 
         public virtual string toString()
         {
-            return "Rentable Information ::"+"\n"+"########################"+"\n"+"ID: " + id +"\nOccupied: "+ occupied + "\naddress: " + address + "\n" + "zip Code: " + zipCode + "\n" + "price: " + price + "\n" + "residents:" + residents + "\n" + "pets: " + pets + "\n" + "pool: " + pool + "\n" + "wifi: " + wifi + "\n" + "description: " + description + "\n"+"###########"+"\n";
+            return "Rentable Information ::"+"\n"+"########################"+"\n"+"ID: " + id +"\nOccupied: "+ occupied+"\nUser: "+user.UserName + "\naddress: " + address + "\n" + "zip Code: " + zipCode + "\n" + "price: " + price + "\n" + "residents:" + residents + "\n" + "pets: " + pets + "\n" + "pool: " + pool + "\n" + "wifi: " + wifi + "\n" + "description: " + description + "\n"+"###########"+"\n";
         }
         public string getText()
         {

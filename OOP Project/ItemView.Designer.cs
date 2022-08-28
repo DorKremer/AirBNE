@@ -81,7 +81,7 @@
             // 
             // backButton
             // 
-            this.backButton.BackColor = System.Drawing.Color.DimGray;
+            this.backButton.BackColor = System.Drawing.Color.Transparent;
             this.backButton.BackgroundImage = global::OOP_Project.Properties.Resources.BackArrow;
             this.backButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.backButton.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
@@ -105,6 +105,7 @@
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(999, 388);
             this.flowLayoutPanel1.TabIndex = 5;
+            this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 
             // ItemView
             // 

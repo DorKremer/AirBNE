@@ -12,20 +12,35 @@ namespace OOP_Project
     public partial class AirBNE : Form
     {
         public static List<Rentable> list = new List<Rentable>();
+        public static List<User> users = new List<User>();
         public static User user = null;
 
         public AirBNE()
         {
             InitializeComponent();
+            if (user == null)
+            {
+                orderButton.Visible = false;
+                addItemsButton.Visible = false;
+            }
+            else
+            {
+                welcomeText.Text="Welcome, "+user.Name+"!";
+                orderButton.Visible = true;
+                registerButton.Visible = false;
+                loginButton.Visible = false;
+                addItemsButton.Visible = true;
+                label1.Text = user.Id+"";
+            }
         }
 
         private void itemChoiceButton_Click(object sender, EventArgs e)
         {
-                ItemChoice form = new ItemChoice();
-                form.Location = this.Location;
-                form.StartPosition = FormStartPosition.Manual;
-                form.Show();
-                this.Hide();
+            ItemChoice form = new ItemChoice();
+            form.Location = this.Location;
+            form.StartPosition = FormStartPosition.Manual;
+            form.Show();
+            this.Close();
         }
 
         private void itemViewButton_Click(object sender, EventArgs e)
@@ -34,7 +49,7 @@ namespace OOP_Project
             form.Location = this.Location;
             form.StartPosition = FormStartPosition.Manual;
             form.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void orderButton_Click(object sender, EventArgs e)
@@ -43,7 +58,7 @@ namespace OOP_Project
             form.Location = this.Location;
             form.StartPosition = FormStartPosition.Manual;
             form.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void saveButton_Click(object sender, EventArgs e)
@@ -61,6 +76,14 @@ namespace OOP_Project
                     foreach(Rentable item in list)
                         formatter.Serialize(stream, item);
                 }
+            }
+            saveFileDialog1 = new SaveFileDialog();
+            saveFileDialog1.FileName = "users.mdl";
+            IFormatter otherFormatter = new BinaryFormatter();
+            using (Stream stream = new FileStream(saveFileDialog1.FileName, FileMode.OpenOrCreate, FileAccess.Write, FileShare.None))
+            {
+                foreach (User user in users)
+                    otherFormatter.Serialize(stream, user);
             }
         }
 
@@ -87,6 +110,34 @@ namespace OOP_Project
                 }
                 pictureBox1.Invalidate();
             }
+            openFileDialog1 = new OpenFileDialog();
+            openFileDialog1.FileName = "users.mdl";
+            Stream otherStream = File.Open(openFileDialog1.FileName, FileMode.Open);
+            var otherFormatter = new System.Runtime.Serialization.Formatters.Binary.BinaryFormatter();
+            User user;
+            while (otherStream.Position < otherStream.Length)
+            {
+                user = (User)otherFormatter.Deserialize(otherStream);
+                users.Add(user);
+            }
+        }
+
+        private void registerButton_Click(object sender, EventArgs e)
+        {
+            Registration form = new Registration();
+            form.Location = this.Location;
+            form.StartPosition = FormStartPosition.Manual;
+            form.Show();
+            this.Close();
+        }
+
+        private void loginButton_Click(object sender, EventArgs e)
+        {
+            Login form = new Login();
+            form.Location = this.Location;
+            form.StartPosition = FormStartPosition.Manual;
+            form.Show();
+            this.Close();
         }
     }
 }

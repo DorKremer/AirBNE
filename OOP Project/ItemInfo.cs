@@ -17,11 +17,7 @@ namespace OOP_Project
         public ItemInfo()
         {
             InitializeComponent();
-        }
-
-        private void ItemInfo_Load(object sender, EventArgs e)
-        {
-            foreach(Rentable item in AirBNE.list)
+            foreach (Rentable item in AirBNE.list)
             {
                 if (itemID == item.Id)
                 {
@@ -29,7 +25,21 @@ namespace OOP_Project
                     break;
                 }
             }
-            label1.Text =item.toString();
+            label1.Text = item.toString();
+        }
+
+        private void ItemInfo_Load(object sender, EventArgs e)
+        {
+
+            if (item.User.UserName == AirBNE.user.UserName)
+            {
+                deleteButton.Visible = true;
+            }
+            else
+            {
+                deleteButton.Visible = false;
+            }
+
         }
 
         private void orderBox_Click(object sender, EventArgs e)
@@ -39,23 +49,24 @@ namespace OOP_Project
                 if (itemID != item.Id)
                     item.Occupied = false;
             }
-                foreach (Rentable item in AirBNE.list)
+            foreach (Rentable item in AirBNE.list)
             {
-                if(itemID == item.Id)
+                if (itemID == item.Id)
                 {
                     if (item.Occupied == true)
                     {
                         MessageBox.Show("Not Available");
                     }
 
-                    else 
-                    { 
-                    item.Occupied = true;
-                    Order.item = item;
-                    break;
+                    else
+                    {
+                        item.Occupied = true;
+                        //Order.item = item;
+                        AirBNE.user.Item = item;
+                        break;
                     }
-                   }
-                 }
+                }
+            }
             label1.Text = item.toString();
         }
 
