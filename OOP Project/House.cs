@@ -37,7 +37,7 @@ namespace OOP_Project
             yard = false;
         }
 
-        public House(string address, string description, int zipCode, double price, int residents, bool pets, bool pool, bool wifi, int floors, bool yard, int roomCount):base(address, description, zipCode, price, residents, pets, pool, wifi, roomCount)
+        public House(string address, string description, int zipCode, double price, int residents, bool pets, bool pool, bool wifi,User user, int floors, bool yard, int roomCount):base(address, description, zipCode, price, residents, pets, pool, wifi,user, roomCount)
         {
             this.floors = floors;
             this.yard = yard;

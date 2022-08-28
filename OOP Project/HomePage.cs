@@ -12,6 +12,7 @@ namespace OOP_Project
     public partial class AirBNE : Form
     {
         public static List<Rentable> list = new List<Rentable>();
+        public static User user = null;
 
         public AirBNE()
         {

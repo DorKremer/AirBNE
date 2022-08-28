@@ -53,7 +53,7 @@ namespace OOP_Project
             pension = "";
             hotelGrade = 0;
         }
-        public HotelRoom(string hotelName, string address, string description, int zipCode, double price, int residents, bool pets, bool pool, bool wifi,bool gym, int roomNumber,string pension,byte hotelGrade) : base(address, description, zipCode, price, residents, pets, pool, wifi)
+        public HotelRoom(string hotelName, string address, string description, int zipCode, double price, int residents, bool pets, bool pool, bool wifi,User user,bool gym, int roomNumber,string pension,byte hotelGrade) : base(address, description, zipCode, price, residents, pets, pool, wifi,user)
         {
             this.hotelName = hotelName;
             this.gym = gym;

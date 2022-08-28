@@ -27,7 +27,7 @@ namespace OOP_Project
             roomCount = 0;
         }
 
-        public Home(string address, string description, int zipCode, double price, int residents, bool pets, bool pool, bool wifi,int roomCount) : base(address, description, zipCode, price, residents, pets, pool, wifi)
+        public Home(string address, string description, int zipCode, double price, int residents, bool pets, bool pool, bool wifi,User user, int roomCount) : base(address, description, zipCode, price, residents, pets, pool, wifi, user)
         {
             this.roomCount = roomCount;
         }

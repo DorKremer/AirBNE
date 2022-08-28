@@ -12,7 +12,6 @@ namespace OOP_Project
     public abstract class Rentable : ISerializable
     {
         private static int idCounter = 0;
-        //Picture
         private int id;
         private string address;
         private string description;
@@ -23,6 +22,7 @@ namespace OOP_Project
         private bool occupied;
         private bool pool;
         private bool wifi;
+        private User user;
 
         public virtual string toString()
         {
@@ -49,6 +49,7 @@ namespace OOP_Project
             pets=(bool)info.GetValue("Pets",typeof(bool));
             occupied = (bool)info.GetValue("Occupied", typeof(bool));
             wifi = (bool)info.GetValue("Wifi", typeof(bool));
+            user = (User)info.GetValue("User", typeof(User));
         }
 
         public virtual void GetObjectData(SerializationInfo info, StreamingContext context)
@@ -64,6 +65,7 @@ namespace OOP_Project
             info.AddValue("Occupied", Occupied);
             info.AddValue("Pool", Pool);
             info.AddValue("Wifi", Wifi);
+            info.AddValue("User", user);
         }
 
         public Rentable()
@@ -78,8 +80,9 @@ namespace OOP_Project
             this.pool = false;
             this.wifi = false;
             this.occupied = false;
+            this.user = null;
         }
-        public Rentable(string address,string description,int zipCode,double price, int residents, bool pets, bool pool,bool wifi)
+        public Rentable(string address,string description,int zipCode,double price, int residents, bool pets, bool pool,bool wifi,User user)
         {
             this.id = idCounter++;
             this.address = address;
@@ -91,6 +94,7 @@ namespace OOP_Project
             this.pool = pool;
             this.wifi = wifi;
             this.occupied = false;
+            this.user = user;
         }
 
         public bool Occupied
@@ -144,6 +148,12 @@ namespace OOP_Project
         {
             get { return wifi; }
             set { wifi = value; }
+        }
+
+        public User User
+        {
+            get { return user; }
+            set { user = value; }
         }
 
     }
