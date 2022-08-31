@@ -14,6 +14,7 @@ namespace OOP_Project
         public static List<Rentable> list = new List<Rentable>();
         public static List<User> users = new List<User>();
         public static User user = null;
+        public static bool addedContent = false;
 
         public AirBNE()
         {

@@ -23,7 +23,7 @@ namespace OOP_Project
             House house = new House(addressBox.Text,descriptionBox.Text,Convert.ToInt32(zipCodeBox.Value),Convert.ToDouble(priceBox.Value),Convert.ToInt32(residentsBox.Value),petsBox.Checked,poolBox.Checked,wifiBox.Checked,AirBNE.user, Convert.ToInt32(floorsBox.Value),yardBox.Checked,Convert.ToInt32(roomCountBox.Value));
             AirBNE.list.Add(house);
             MessageBox.Show("House Created");
-           
+            AirBNE.addedContent = true;
         }
 
         private void addressBox_Leave(object sender, EventArgs e)

@@ -42,6 +42,8 @@ namespace OOP_Project
                     break;
             }
             button.BackgroundImageLayout = ImageLayout.Zoom;
+            button.TextAlign = ContentAlignment.MiddleCenter;
+            button.TextImageRelation = TextImageRelation.TextBeforeImage;
             button.Name = Convert.ToString(item.Id);
             button.Size = new Size(350, 250);
             button.Text = item.getText();

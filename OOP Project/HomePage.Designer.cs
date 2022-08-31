@@ -54,7 +54,7 @@
             // 
             // viewItemsButton
             // 
-            this.viewItemsButton.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.viewItemsButton.BackColor = System.Drawing.Color.DimGray;
             this.viewItemsButton.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.viewItemsButton.Location = new System.Drawing.Point(79, 58);
             this.viewItemsButton.Name = "viewItemsButton";
@@ -66,7 +66,7 @@
             // 
             // addItemsButton
             // 
-            this.addItemsButton.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.addItemsButton.BackColor = System.Drawing.Color.DimGray;
             this.addItemsButton.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.addItemsButton.Location = new System.Drawing.Point(79, 105);
             this.addItemsButton.Name = "addItemsButton";

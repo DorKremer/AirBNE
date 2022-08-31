@@ -30,7 +30,16 @@ namespace OOP_Project
 
         private void ItemInfo_Load(object sender, EventArgs e)
         {
-
+            if (AirBNE.user == null)
+            {
+                deleteButton.Visible = false;
+                orderBox.Visible = false;
+                return;
+            }
+            else
+            {
+                orderBox.Visible = true;
+            }
             if (item.User.UserName == AirBNE.user.UserName)
             {
                 deleteButton.Visible = true;
