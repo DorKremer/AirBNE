@@ -88,5 +88,4 @@ namespace OOP_Project
             set { hotelGrade = value; }
         }
     }
-
 }

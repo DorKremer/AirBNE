@@ -30,7 +30,31 @@ namespace OOP_Project
                 registerButton.Visible = false;
                 loginButton.Visible = false;
                 addItemsButton.Visible = true;
-                label1.Text = user.Id+"";
+            }
+            Stream stream;
+            if (list.Count == 0)
+            {
+                stream = File.Open("items.mdl", FileMode.Open);
+                var binaryFormatter = new System.Runtime.Serialization.Formatters.Binary.BinaryFormatter();
+                Rentable item;
+                while (stream.Position < stream.Length)
+                {
+                    item = (Rentable)binaryFormatter.Deserialize(stream);
+                    if (item.Occupied)
+                        Order.item = item;
+                    list.Add(item);
+                }
+            }
+            if (users.Count == 0)
+            {
+                stream = File.Open("users.mdl", FileMode.Open);
+                var binaryFormatter = new System.Runtime.Serialization.Formatters.Binary.BinaryFormatter();
+                User userData;
+                while (stream.Position < stream.Length)
+                {
+                    userData = (User)binaryFormatter.Deserialize(stream);
+                    users.Add(userData);
+                }
             }
         }
 
@@ -59,67 +83,6 @@ namespace OOP_Project
             form.StartPosition = FormStartPosition.Manual;
             form.Show();
             this.Close();
-        }
-
-        private void saveButton_Click(object sender, EventArgs e)
-        {
-            SaveFileDialog saveFileDialog1 = new SaveFileDialog();
-            saveFileDialog1.InitialDirectory = Directory.GetCurrentDirectory();
-            saveFileDialog1.Filter = "model files (*.mdl)|*.mdl|All files (*.*)|*.*";
-            saveFileDialog1.FilterIndex = 1;
-            saveFileDialog1.RestoreDirectory = true;
-            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
-            {
-                IFormatter formatter = new BinaryFormatter();
-                using (Stream stream = new FileStream(saveFileDialog1.FileName, FileMode.Create, FileAccess.Write, FileShare.None))
-                {
-                    foreach(Rentable item in list)
-                        formatter.Serialize(stream, item);
-                }
-            }
-            saveFileDialog1 = new SaveFileDialog();
-            saveFileDialog1.FileName = "users.mdl";
-            IFormatter otherFormatter = new BinaryFormatter();
-            using (Stream stream = new FileStream(saveFileDialog1.FileName, FileMode.OpenOrCreate, FileAccess.Write, FileShare.None))
-            {
-                foreach (User user in users)
-                    otherFormatter.Serialize(stream, user);
-            }
-        }
-
-        private void loadButton_Click(object sender, EventArgs e)
-        {
-            if(list.Count!=0)
-                list.Clear();
-            OpenFileDialog openFileDialog1 = new OpenFileDialog();
-            openFileDialog1.InitialDirectory = Directory.GetCurrentDirectory();
-            openFileDialog1.Filter = "model files (*.mdl)|*.mdl|All files (*.*)|*.*";
-            openFileDialog1.FilterIndex = 1;
-            openFileDialog1.RestoreDirectory = true;
-            if (openFileDialog1.ShowDialog() == DialogResult.OK)
-            {
-                Stream stream = File.Open(openFileDialog1.FileName, FileMode.Open);
-                var binaryFormatter = new System.Runtime.Serialization.Formatters.Binary.BinaryFormatter();
-                Rentable item;
-                while(stream.Position < stream.Length)
-                {
-                    item = (Rentable)binaryFormatter.Deserialize(stream);
-                    if (item.Occupied)
-                        Order.item = item;
-                    list.Add(item);
-                }
-                pictureBox1.Invalidate();
-            }
-            openFileDialog1 = new OpenFileDialog();
-            openFileDialog1.FileName = "users.mdl";
-            Stream otherStream = File.Open(openFileDialog1.FileName, FileMode.Open);
-            var otherFormatter = new System.Runtime.Serialization.Formatters.Binary.BinaryFormatter();
-            User user;
-            while (otherStream.Position < otherStream.Length)
-            {
-                user = (User)otherFormatter.Deserialize(otherStream);
-                users.Add(user);
-            }
         }
 
         private void registerButton_Click(object sender, EventArgs e)

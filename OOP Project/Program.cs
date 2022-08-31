@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.Runtime.Serialization;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -25,8 +28,18 @@ namespace OOP_Project
         static void FormClosed(object sender, FormClosedEventArgs e)
         {
             ((Form)sender).FormClosed -= FormClosed;
-            if (Application.OpenForms.Count == 0) Application.ExitThread();
-            else Application.OpenForms[0].FormClosed += FormClosed;
+            if (Application.OpenForms.Count == 0)
+            {
+                IFormatter formatter = new BinaryFormatter();
+                using (Stream stream = new FileStream("items.mdl", FileMode.Append, FileAccess.Write, FileShare.None))
+                {
+                    foreach (Rentable item in AirBNE.list)
+                        formatter.Serialize(stream, item);
+                }
+                Application.ExitThread();
+            }
+            else
+                Application.OpenForms[0].FormClosed += FormClosed;
         }
     }
 }
