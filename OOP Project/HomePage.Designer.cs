@@ -33,8 +33,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.viewItemsButton = new System.Windows.Forms.Button();
             this.addItemsButton = new System.Windows.Forms.Button();
-            this.saveButton = new System.Windows.Forms.Button();
-            this.loadButton = new System.Windows.Forms.Button();
             this.orderButton = new System.Windows.Forms.Button();
             this.registerButton = new System.Windows.Forms.Button();
             this.welcomeText = new System.Windows.Forms.Label();
@@ -77,26 +75,6 @@
             this.addItemsButton.Text = "Add Items";
             this.addItemsButton.UseVisualStyleBackColor = false;
             this.addItemsButton.Click += new System.EventHandler(this.itemChoiceButton_Click);
-            // 
-            // saveButton
-            // 
-            this.saveButton.Location = new System.Drawing.Point(25, 188);
-            this.saveButton.Name = "saveButton";
-            this.saveButton.Size = new System.Drawing.Size(88, 29);
-            this.saveButton.TabIndex = 45;
-            this.saveButton.Text = "Save";
-            this.saveButton.UseVisualStyleBackColor = true;
-            this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
-            // 
-            // loadButton
-            // 
-            this.loadButton.Location = new System.Drawing.Point(25, 237);
-            this.loadButton.Name = "loadButton";
-            this.loadButton.Size = new System.Drawing.Size(88, 29);
-            this.loadButton.TabIndex = 46;
-            this.loadButton.Text = "Load";
-            this.loadButton.UseVisualStyleBackColor = true;
-            this.loadButton.Click += new System.EventHandler(this.loadButton_Click);
             // 
             // orderButton
             // 
@@ -159,8 +137,6 @@
             this.Controls.Add(this.welcomeText);
             this.Controls.Add(this.registerButton);
             this.Controls.Add(this.orderButton);
-            this.Controls.Add(this.loadButton);
-            this.Controls.Add(this.saveButton);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.viewItemsButton);
             this.Controls.Add(this.addItemsButton);
@@ -178,8 +154,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button viewItemsButton;
         private System.Windows.Forms.Button addItemsButton;
-        private System.Windows.Forms.Button saveButton;
-        private System.Windows.Forms.Button loadButton;
         private System.Windows.Forms.Button orderButton;
         private System.Windows.Forms.Button registerButton;
         private System.Windows.Forms.Label welcomeText;
