@@ -113,6 +113,16 @@ namespace OOP_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap breaking_and_entering_german_logo_sm {
+            get {
+                object obj = ResourceManager.GetObject("breaking-and-entering-german-logo-sm", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap Hotel {
             get {
                 object obj = ResourceManager.GetObject("Hotel", resourceCulture);
