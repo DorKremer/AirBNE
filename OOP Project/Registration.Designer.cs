@@ -38,10 +38,13 @@
             // 
             // usernameBox
             // 
+            this.usernameBox.BackColor = System.Drawing.SystemColors.InfoText;
             this.usernameBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.usernameBox.Location = new System.Drawing.Point(307, 23);
+            this.usernameBox.ForeColor = System.Drawing.Color.Lime;
+            this.usernameBox.Location = new System.Drawing.Point(409, 42);
+            this.usernameBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.usernameBox.Name = "usernameBox";
-            this.usernameBox.Size = new System.Drawing.Size(174, 29);
+            this.usernameBox.Size = new System.Drawing.Size(231, 34);
             this.usernameBox.TabIndex = 0;
             this.usernameBox.Text = "Enter Username...";
             this.usernameBox.Enter += new System.EventHandler(this.usernameBox_Enter);
@@ -49,10 +52,13 @@
             // 
             // passwordBox
             // 
+            this.passwordBox.BackColor = System.Drawing.SystemColors.InfoText;
             this.passwordBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.passwordBox.Location = new System.Drawing.Point(307, 69);
+            this.passwordBox.ForeColor = System.Drawing.Color.Lime;
+            this.passwordBox.Location = new System.Drawing.Point(409, 97);
+            this.passwordBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.passwordBox.Name = "passwordBox";
-            this.passwordBox.Size = new System.Drawing.Size(174, 29);
+            this.passwordBox.Size = new System.Drawing.Size(231, 34);
             this.passwordBox.TabIndex = 1;
             this.passwordBox.Text = "Enter Password...";
             this.passwordBox.Enter += new System.EventHandler(this.passwordBox_Enter);
@@ -60,10 +66,13 @@
             // 
             // nameBox
             // 
+            this.nameBox.BackColor = System.Drawing.SystemColors.InfoText;
             this.nameBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nameBox.Location = new System.Drawing.Point(307, 115);
+            this.nameBox.ForeColor = System.Drawing.Color.Lime;
+            this.nameBox.Location = new System.Drawing.Point(409, 160);
+            this.nameBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.nameBox.Name = "nameBox";
-            this.nameBox.Size = new System.Drawing.Size(174, 29);
+            this.nameBox.Size = new System.Drawing.Size(231, 34);
             this.nameBox.TabIndex = 2;
             this.nameBox.Text = "Enter Name...";
             this.nameBox.Enter += new System.EventHandler(this.nameBox_Enter);
@@ -71,12 +80,13 @@
             // 
             // registerButton
             // 
-            this.registerButton.BackColor = System.Drawing.Color.Purple;
-            this.registerButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.registerButton.ForeColor = System.Drawing.Color.Magenta;
-            this.registerButton.Location = new System.Drawing.Point(12, 150);
+            this.registerButton.BackColor = System.Drawing.Color.Black;
+            this.registerButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.registerButton.ForeColor = System.Drawing.Color.Lime;
+            this.registerButton.Location = new System.Drawing.Point(409, 243);
+            this.registerButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.registerButton.Name = "registerButton";
-            this.registerButton.Size = new System.Drawing.Size(776, 288);
+            this.registerButton.Size = new System.Drawing.Size(235, 82);
             this.registerButton.TabIndex = 3;
             this.registerButton.Text = "Register!";
             this.registerButton.UseVisualStyleBackColor = false;
@@ -90,25 +100,28 @@
             this.backButton.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.backButton.FlatAppearance.BorderSize = 0;
             this.backButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.backButton.Location = new System.Drawing.Point(12, 13);
+            this.backButton.Location = new System.Drawing.Point(16, 16);
+            this.backButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.backButton.Name = "backButton";
-            this.backButton.Size = new System.Drawing.Size(46, 39);
+            this.backButton.Size = new System.Drawing.Size(61, 48);
             this.backButton.TabIndex = 9;
             this.backButton.UseVisualStyleBackColor = false;
             this.backButton.Click += new System.EventHandler(this.backButton_Click);
             // 
             // Registration
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DimGray;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackgroundImage = global::OOP_Project.Properties.Resources.milky_way_2695569_1280;
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.backButton);
             this.Controls.Add(this.registerButton);
             this.Controls.Add(this.nameBox);
             this.Controls.Add(this.passwordBox);
             this.Controls.Add(this.usernameBox);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Registration";
             this.Text = "Registration";
             this.ResumeLayout(false);
