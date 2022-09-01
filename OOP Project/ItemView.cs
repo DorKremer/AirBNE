@@ -13,7 +13,6 @@ namespace OOP_Project
 {
     public partial class ItemView : Form
     {
-        public static int itemID = -1;
         public ItemView()
         {
             InitializeComponent();

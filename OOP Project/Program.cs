@@ -38,6 +38,14 @@ namespace OOP_Project
                         foreach (Rentable item in AirBNE.list)
                             formatter.Serialize(stream, item);
                     }
+                }else if (AirBNE.removedContent)
+                {
+                    IFormatter formatter = new BinaryFormatter();
+                    using (Stream stream = new FileStream("items.mdl", FileMode.Create, FileAccess.Write, FileShare.None))
+                    {
+                        foreach (Rentable item in AirBNE.list)
+                            formatter.Serialize(stream, item);
+                    }
                 }
                 Application.ExitThread();
             }

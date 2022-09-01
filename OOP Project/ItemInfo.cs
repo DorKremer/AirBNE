@@ -84,6 +84,11 @@ namespace OOP_Project
             Order.item = null;
             AirBNE.list.Remove(item);
             MessageBox.Show("Item Removed");
+            AirBNE.removedContent = true;
+            ItemView form = new ItemView();
+            form.Location = this.Location;
+            form.StartPosition = FormStartPosition.Manual;
+            form.Show();
             this.Close();
         }
 
