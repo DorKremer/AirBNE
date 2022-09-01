@@ -35,6 +35,10 @@ namespace OOP_Project
             Stream stream;
             if (list.Count == 0)
             {
+                if (!File.Exists("items.mdl"))
+                {
+                    File.Create("items.mdl");
+                }
                 stream = File.Open("items.mdl", FileMode.Open);
                 var binaryFormatter = new System.Runtime.Serialization.Formatters.Binary.BinaryFormatter();
                 Rentable item;
