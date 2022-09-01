@@ -52,6 +52,10 @@ namespace OOP_Project
             }
             if (users.Count == 0)
             {
+                if (!File.Exists("users.mdl"))
+                {
+                    File.Create("users.mdl");
+                }
                 stream = File.Open("users.mdl", FileMode.Open);
                 var binaryFormatter = new System.Runtime.Serialization.Formatters.Binary.BinaryFormatter();
                 User userData;
