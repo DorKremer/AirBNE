@@ -34,8 +34,8 @@ namespace OOP_Project
         {
             if (passwordBox.Text == "Enter Password...")
             {
-                passwordBox.UseSystemPasswordChar = true;
                 passwordBox.Text = "";
+                passwordBox.UseSystemPasswordChar = true;
             }
         }
 
@@ -65,6 +65,11 @@ namespace OOP_Project
                     AirBNE form = new AirBNE();
                     form.Location = this.Location;
                     form.StartPosition = FormStartPosition.Manual;
+                    //foreach(Rentable item in AirBNE.list)
+                    //{
+                    //    if (item.Id == user.Item.Id)
+                    //        Order.item = item;
+                    //}
                     form.Show();
                     this.Close();
                     return;

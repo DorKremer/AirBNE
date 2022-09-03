@@ -98,7 +98,6 @@
             // 
             this.flowLayoutPanel1.AutoScroll = true;
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.flowLayoutPanel1.BackgroundImage = global::OOP_Project.Properties.Resources.BETransparentBlackLogocopy;
             this.flowLayoutPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.flowLayoutPanel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 65);
@@ -113,14 +112,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.DimGray;
+            this.BackgroundImage = global::OOP_Project.Properties.Resources.BETransparentBlackLogocopy;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1023, 465);
             this.Controls.Add(this.backButton);
             this.Controls.Add(this.buttonRefresh);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.flowLayoutPanel1);
+            this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ItemView";
-            this.Text = "View Items";
+            this.Text = "View Items!";
             this.Load += new System.EventHandler(this.ItemView_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

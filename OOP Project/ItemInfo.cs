@@ -76,6 +76,7 @@ namespace OOP_Project
                 }
             }
             label1.Text = item.toString();
+            AirBNE.removedContent = true;
         }
 
         private void deleteButton_Click(object sender, EventArgs e)

@@ -46,7 +46,7 @@ namespace OOP_Project
                 while (stream.Position < stream.Length)
                 {
                     item = (Rentable)binaryFormatter.Deserialize(stream);
-                    if (item.Occupied)
+                    if (user!=null&&item.Id==user.Item.Id)
                         Order.item = item;
                     list.Add(item);
                 }

@@ -44,7 +44,7 @@ namespace OOP_Project
             button.TextAlign = ContentAlignment.MiddleCenter;
             button.TextImageRelation = TextImageRelation.TextBeforeImage;
             button.Name = Convert.ToString(item.Id);
-            button.Size = new Size(350, 250);
+            button.Size = new Size(225, 250);
             button.Text = item.getText();
             button.Click += new EventHandler(this.itemClick);
             flowLayoutPanel1.Controls.Add(button);

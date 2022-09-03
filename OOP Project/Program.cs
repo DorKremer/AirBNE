@@ -30,15 +30,7 @@ namespace OOP_Project
             ((Form)sender).FormClosed -= FormClosed;
             if (Application.OpenForms.Count == 0)
             {
-                if (AirBNE.addedContent)
-                {
-                    IFormatter formatter = new BinaryFormatter();
-                    using (Stream stream = new FileStream("items.mdl", FileMode.Append, FileAccess.Write, FileShare.None))
-                    {
-                        foreach (Rentable item in AirBNE.list)
-                            formatter.Serialize(stream, item);
-                    }
-                }else if (AirBNE.removedContent)
+                if (AirBNE.user != null)
                 {
                     IFormatter formatter = new BinaryFormatter();
                     using (Stream stream = new FileStream("items.mdl", FileMode.Create, FileAccess.Write, FileShare.None))
@@ -46,7 +38,13 @@ namespace OOP_Project
                         foreach (Rentable item in AirBNE.list)
                             formatter.Serialize(stream, item);
                     }
+                    using (Stream stream = new FileStream("users.mdl", FileMode.Create, FileAccess.Write, FileShare.None))
+                    {
+                        foreach (User user in AirBNE.users)
+                            formatter.Serialize(stream, user);
+                    }
                 }
+                
                 Application.ExitThread();
             }
             else

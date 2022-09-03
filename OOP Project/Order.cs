@@ -12,6 +12,7 @@ namespace OOP_Project
 {
     public partial class Order : Form
     {
+        public static Rentable item= null;
         public Order()
         {
             InitializeComponent();
@@ -23,7 +24,6 @@ namespace OOP_Project
                 label1.Text = "Empty";
             }
         }
-        public static Rentable item= null;
 
         private void Order_Load(object sender, EventArgs e)
         {

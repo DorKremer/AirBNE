@@ -43,7 +43,7 @@
             // 
             this.loginButton.BackColor = System.Drawing.Color.Black;
             this.loginButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loginButton.ForeColor = System.Drawing.Color.Lime;
+            this.loginButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(94)))), ((int)(((byte)(0)))));
             this.loginButton.Location = new System.Drawing.Point(251, 215);
             this.loginButton.Name = "loginButton";
             this.loginButton.Size = new System.Drawing.Size(134, 50);
@@ -56,7 +56,7 @@
             // 
             this.usernameBox.BackColor = System.Drawing.SystemColors.InfoText;
             this.usernameBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.usernameBox.ForeColor = System.Drawing.Color.Lime;
+            this.usernameBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(94)))), ((int)(((byte)(0)))));
             this.usernameBox.Location = new System.Drawing.Point(251, 102);
             this.usernameBox.Name = "usernameBox";
             this.usernameBox.Size = new System.Drawing.Size(171, 29);
@@ -69,7 +69,7 @@
             // 
             this.passwordBox.BackColor = System.Drawing.SystemColors.InfoText;
             this.passwordBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.passwordBox.ForeColor = System.Drawing.Color.Lime;
+            this.passwordBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(94)))), ((int)(((byte)(0)))));
             this.passwordBox.Location = new System.Drawing.Point(251, 153);
             this.passwordBox.Name = "passwordBox";
             this.passwordBox.Size = new System.Drawing.Size(171, 29);
@@ -127,7 +127,7 @@
             this.Controls.Add(this.loginButton);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Login";
-            this.Text = "Login";
+            this.Text = "Login!";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);

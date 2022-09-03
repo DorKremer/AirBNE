@@ -36,8 +36,8 @@ namespace OOP_Project
         {
             if (passwordBox.Text == "Enter Password...")
             {
-                passwordBox.UseSystemPasswordChar = true;
                 passwordBox.Text = "";
+                passwordBox.UseSystemPasswordChar = true;
             }
         }
 
