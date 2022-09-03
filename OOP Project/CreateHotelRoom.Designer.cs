@@ -359,10 +359,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DimGray;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))));
             this.BackgroundImage = global::OOP_Project.Properties.Resources.BETransparentBlackLogocopy;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(721, 384);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.backButton);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -370,6 +370,7 @@
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MinimizeBox = false;
             this.Name = "CreateHotelRoom";
             this.Text = "Create A Hotel Room!";
             ((System.ComponentModel.ISupportInitialize)(this.zipCodeBox)).EndInit();

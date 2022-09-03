@@ -42,7 +42,7 @@
             // 
             // usernameBox
             // 
-            this.usernameBox.BackColor = System.Drawing.SystemColors.InfoText;
+            this.usernameBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))));
             this.usernameBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.usernameBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(94)))), ((int)(((byte)(0)))));
             this.usernameBox.Location = new System.Drawing.Point(234, 101);
@@ -55,7 +55,7 @@
             // 
             // passwordBox
             // 
-            this.passwordBox.BackColor = System.Drawing.SystemColors.InfoText;
+            this.passwordBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))));
             this.passwordBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.passwordBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(94)))), ((int)(((byte)(0)))));
             this.passwordBox.Location = new System.Drawing.Point(234, 146);
@@ -68,7 +68,7 @@
             // 
             // nameBox
             // 
-            this.nameBox.BackColor = System.Drawing.SystemColors.InfoText;
+            this.nameBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))));
             this.nameBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nameBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(94)))), ((int)(((byte)(0)))));
             this.nameBox.Location = new System.Drawing.Point(234, 197);
@@ -81,7 +81,7 @@
             // 
             // registerButton
             // 
-            this.registerButton.BackColor = System.Drawing.Color.Black;
+            this.registerButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))));
             this.registerButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.registerButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(94)))), ((int)(((byte)(0)))));
             this.registerButton.Location = new System.Drawing.Point(234, 264);
@@ -94,15 +94,15 @@
             // 
             // backButton
             // 
-            this.backButton.BackColor = System.Drawing.Color.DimGray;
-            this.backButton.BackgroundImage = global::OOP_Project.Properties.Resources.BackArrow;
-            this.backButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.backButton.BackColor = System.Drawing.Color.Black;
+            this.backButton.BackgroundImage = global::OOP_Project.Properties.Resources.BackArrowWhite;
+            this.backButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.backButton.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.backButton.FlatAppearance.BorderSize = 0;
             this.backButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.backButton.Location = new System.Drawing.Point(12, 12);
             this.backButton.Name = "backButton";
-            this.backButton.Size = new System.Drawing.Size(46, 39);
+            this.backButton.Size = new System.Drawing.Size(46, 46);
             this.backButton.TabIndex = 9;
             this.backButton.UseVisualStyleBackColor = false;
             this.backButton.Click += new System.EventHandler(this.backButton_Click);
@@ -114,14 +114,14 @@
             this.panel1.Controls.Add(this.backButton);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(228, 453);
+            this.panel1.Size = new System.Drawing.Size(170, 453);
             this.panel1.TabIndex = 12;
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = global::OOP_Project.Properties.Resources.breaking_and_entering_german_logo_sm;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(120, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(63, 0);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(106, 449);
@@ -133,7 +133,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DimGray;
-            this.BackgroundImage = global::OOP_Project.Properties.Resources.milky_way_2695569_1280;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.registerButton);
@@ -141,6 +140,7 @@
             this.Controls.Add(this.passwordBox);
             this.Controls.Add(this.usernameBox);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MinimizeBox = false;
             this.Name = "Registration";
             this.Text = "Registration!";
             this.panel1.ResumeLayout(false);

@@ -54,7 +54,7 @@
             // 
             // viewItemsButton
             // 
-            this.viewItemsButton.BackColor = System.Drawing.Color.Black;
+            this.viewItemsButton.BackColor = System.Drawing.Color.DimGray;
             this.viewItemsButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.viewItemsButton.Font = new System.Drawing.Font("Nirmala UI", 16F, System.Drawing.FontStyle.Bold);
             this.viewItemsButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(94)))), ((int)(((byte)(0)))));
@@ -68,7 +68,7 @@
             // 
             // addItemsButton
             // 
-            this.addItemsButton.BackColor = System.Drawing.Color.Black;
+            this.addItemsButton.BackColor = System.Drawing.Color.DimGray;
             this.addItemsButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.addItemsButton.Font = new System.Drawing.Font("Nirmala UI", 16F, System.Drawing.FontStyle.Bold);
             this.addItemsButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(94)))), ((int)(((byte)(0)))));
@@ -82,8 +82,7 @@
             // 
             // orderButton
             // 
-            this.orderButton.BackColor = System.Drawing.Color.Black;
-            this.orderButton.BackgroundImage = global::OOP_Project.Properties.Resources.BETransparentBlackLogocopy;
+            this.orderButton.BackColor = System.Drawing.Color.DimGray;
             this.orderButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.orderButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.orderButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
@@ -101,8 +100,7 @@
             // 
             // registerButton
             // 
-            this.registerButton.BackColor = System.Drawing.Color.Black;
-            this.registerButton.BackgroundImage = global::OOP_Project.Properties.Resources.BETransparentBlackLogocopy;
+            this.registerButton.BackColor = System.Drawing.Color.DimGray;
             this.registerButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.registerButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.registerButton.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
@@ -130,8 +128,7 @@
             // 
             // loginButton
             // 
-            this.loginButton.BackColor = System.Drawing.Color.Black;
-            this.loginButton.BackgroundImage = global::OOP_Project.Properties.Resources.BETransparentBlackLogocopy;
+            this.loginButton.BackColor = System.Drawing.Color.DimGray;
             this.loginButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.loginButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.loginButton.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
@@ -149,9 +146,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))));
-            this.BackgroundImage = global::OOP_Project.Properties.Resources.milky_way_2695569_1280;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(787, 450);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.loginButton);
             this.Controls.Add(this.welcomeText);
             this.Controls.Add(this.registerButton);
@@ -161,6 +157,7 @@
             this.Controls.Add(this.addItemsButton);
             this.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MinimizeBox = false;
             this.Name = "AirBNE";
             this.Text = "AirBNE";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

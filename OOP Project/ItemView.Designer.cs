@@ -57,6 +57,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.searchBox);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.groupBox1.Location = new System.Drawing.Point(79, 10);
@@ -104,7 +105,6 @@
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(999, 388);
             this.flowLayoutPanel1.TabIndex = 5;
-            this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 
             // ItemView
             // 
@@ -121,6 +121,7 @@
             this.Controls.Add(this.flowLayoutPanel1);
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MinimizeBox = false;
             this.Name = "ItemView";
             this.Text = "View Items!";
             this.Load += new System.EventHandler(this.ItemView_Load);

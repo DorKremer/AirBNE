@@ -52,6 +52,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.backButton = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.priceBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.residentsBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.roomCountBox)).BeginInit();
@@ -59,12 +61,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.zipCodeBox)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // createBox
             // 
             this.createBox.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            this.createBox.Location = new System.Drawing.Point(242, 303);
+            this.createBox.Location = new System.Drawing.Point(330, 303);
             this.createBox.Name = "createBox";
             this.createBox.Size = new System.Drawing.Size(186, 61);
             this.createBox.TabIndex = 0;
@@ -221,7 +225,7 @@
             this.groupBox1.Controls.Add(this.floorBox);
             this.groupBox1.Controls.Add(this.roomCountBox);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.groupBox1.Location = new System.Drawing.Point(87, 11);
+            this.groupBox1.Location = new System.Drawing.Point(175, 11);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
@@ -314,7 +318,7 @@
             this.groupBox2.Controls.Add(this.porchBox);
             this.groupBox2.Controls.Add(this.elevatorBox);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.groupBox2.Location = new System.Drawing.Point(553, 19);
+            this.groupBox2.Location = new System.Drawing.Point(641, 19);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
@@ -326,32 +330,54 @@
             // backButton
             // 
             this.backButton.BackColor = System.Drawing.Color.DimGray;
-            this.backButton.BackgroundImage = global::OOP_Project.Properties.Resources.BackArrow;
-            this.backButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.backButton.BackgroundImage = global::OOP_Project.Properties.Resources.BackArrowWhite;
+            this.backButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.backButton.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.backButton.FlatAppearance.BorderSize = 0;
             this.backButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.backButton.Location = new System.Drawing.Point(12, 12);
+            this.backButton.Location = new System.Drawing.Point(9, 13);
             this.backButton.Name = "backButton";
-            this.backButton.Size = new System.Drawing.Size(46, 39);
+            this.backButton.Size = new System.Drawing.Size(46, 45);
             this.backButton.TabIndex = 17;
             this.backButton.UseVisualStyleBackColor = false;
             this.backButton.Click += new System.EventHandler(this.backButton_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.backButton);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(170, 453);
+            this.panel1.TabIndex = 18;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::OOP_Project.Properties.Resources.breaking_and_entering_german_logo_sm;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(63, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(106, 449);
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
             // 
             // CreateApartment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DimGray;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))));
             this.BackgroundImage = global::OOP_Project.Properties.Resources.BETransparentBlackLogocopy;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(753, 386);
-            this.Controls.Add(this.backButton);
+            this.ClientSize = new System.Drawing.Size(812, 450);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.createBox);
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MinimizeBox = false;
             this.Name = "CreateApartment";
             this.Text = "Add An Apartment!";
             ((System.ComponentModel.ISupportInitialize)(this.priceBox)).EndInit();
@@ -363,6 +389,8 @@
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -392,5 +420,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button backButton;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

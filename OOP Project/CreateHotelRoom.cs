@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -69,6 +70,16 @@ namespace OOP_Project
             form.StartPosition = FormStartPosition.Manual;
             form.Show();
             this.Close();
+        }
+        protected override void OnPaintBackground(PaintEventArgs e)
+        {
+            if (this.ClientRectangle.Width > 0 && this.ClientRectangle.Height > 0)
+            {
+                using (LinearGradientBrush brush = new LinearGradientBrush(this.ClientRectangle, Color.FromArgb(234, 234, 234), Color.FromArgb(255, 94, 0), 65F))
+                {
+                    e.Graphics.FillRectangle(brush, this.ClientRectangle);
+                }
+            }
         }
     }
 }

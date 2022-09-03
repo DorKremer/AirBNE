@@ -91,7 +91,7 @@
             // 
             // backButton
             // 
-            this.backButton.BackColor = System.Drawing.Color.DimGray;
+            this.backButton.BackColor = System.Drawing.Color.Transparent;
             this.backButton.BackgroundImage = global::OOP_Project.Properties.Resources.BackArrow;
             this.backButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.backButton.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
@@ -110,13 +110,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DimGray;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(600, 418);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.backButton);
             this.Controls.Add(this.cancelButton);
             this.Controls.Add(this.groupBox1);
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
+            this.MinimizeBox = false;
             this.Name = "Order";
             this.Text = "Order";
             this.Load += new System.EventHandler(this.Order_Load);

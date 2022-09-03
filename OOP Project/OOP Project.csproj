@@ -195,5 +195,17 @@
   <ItemGroup>
     <None Include="Resources\breaking-and-entering-german-logo-sm.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhiteBackArrow.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Back_Arrow_White.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackArrow2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackArrowWhite.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -82,7 +82,7 @@
             // 
             // backButton
             // 
-            this.backButton.BackColor = System.Drawing.Color.DimGray;
+            this.backButton.BackColor = System.Drawing.Color.Transparent;
             this.backButton.BackgroundImage = global::OOP_Project.Properties.Resources.BackArrow;
             this.backButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.backButton.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
@@ -101,13 +101,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DimGray;
-            this.BackgroundImage = global::OOP_Project.Properties.Resources.milky_way_2695569_1280;
             this.ClientSize = new System.Drawing.Size(1022, 434);
             this.Controls.Add(this.backButton);
             this.Controls.Add(this.apartmentButton);
             this.Controls.Add(this.hotelRoomButton);
             this.Controls.Add(this.houseButton);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MinimizeBox = false;
             this.Name = "ItemChoice";
             this.Text = "Choose Item Type";
             this.ResumeLayout(false);
