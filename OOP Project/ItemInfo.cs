@@ -70,7 +70,6 @@ namespace OOP_Project
                     else
                     {
                         item.Occupied = true;
-                        //Order.item = item;
                         AirBNE.user.Item = item;
                         break;
                     }
@@ -85,6 +84,10 @@ namespace OOP_Project
             AirBNE.list.Remove(item);
             MessageBox.Show("Item Removed");
             AirBNE.removedContent = true;
+            if (item == AirBNE.user.Item)
+            {
+                AirBNE.user.Item = null;
+            }
             ItemView form = new ItemView();
             form.Location = this.Location;
             form.StartPosition = FormStartPosition.Manual;
