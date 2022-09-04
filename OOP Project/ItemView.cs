@@ -106,5 +106,18 @@ namespace OOP_Project
                 }
             }
         }
+
+        private void numericUpDownSearchValue_ValueChanged(object sender, EventArgs e)
+        {
+            flowLayoutPanel1.Controls.Clear();
+            double tmp =Convert.ToDouble(numericUpDownSearchValue.Value);
+            foreach(Rentable item in AirBNE.list)
+            {
+                if (item.Price < tmp)
+                {
+                    renderButton(item);
+                }
+            }
+        }
     }
 }
