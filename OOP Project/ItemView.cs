@@ -121,7 +121,7 @@ namespace OOP_Project
             double tmp =Convert.ToDouble(maxPriceBox.Value);
             foreach(Rentable item in AirBNE.list)
             {
-                if (item.Price < tmp)
+                if (item.Price <= tmp)
                 {
                     renderButton(item);
                 }

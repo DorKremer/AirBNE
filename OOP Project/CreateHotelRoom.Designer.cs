@@ -52,7 +52,9 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.backButton = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.zipCodeBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.roomNumberBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.residentsBox)).BeginInit();
@@ -60,6 +62,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.hotelGrade)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // wifiBox
@@ -67,7 +71,7 @@
             this.wifiBox.AutoSize = true;
             this.wifiBox.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.wifiBox.Location = new System.Drawing.Point(7, 82);
-            this.wifiBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.wifiBox.Margin = new System.Windows.Forms.Padding(4);
             this.wifiBox.Name = "wifiBox";
             this.wifiBox.Size = new System.Drawing.Size(141, 22);
             this.wifiBox.TabIndex = 25;
@@ -79,7 +83,7 @@
             this.poolBox.AutoSize = true;
             this.poolBox.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.poolBox.Location = new System.Drawing.Point(7, 52);
-            this.poolBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.poolBox.Margin = new System.Windows.Forms.Padding(4);
             this.poolBox.Name = "poolBox";
             this.poolBox.Size = new System.Drawing.Size(161, 22);
             this.poolBox.TabIndex = 24;
@@ -90,7 +94,7 @@
             // 
             this.zipCodeBox.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.zipCodeBox.Location = new System.Drawing.Point(5, 230);
-            this.zipCodeBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.zipCodeBox.Margin = new System.Windows.Forms.Padding(4);
             this.zipCodeBox.Maximum = new decimal(new int[] {
             1000000,
             0,
@@ -104,7 +108,7 @@
             // 
             this.roomNumberBox.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.roomNumberBox.Location = new System.Drawing.Point(5, 166);
-            this.roomNumberBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.roomNumberBox.Margin = new System.Windows.Forms.Padding(4);
             this.roomNumberBox.Name = "roomNumberBox";
             this.roomNumberBox.Size = new System.Drawing.Size(248, 24);
             this.roomNumberBox.TabIndex = 21;
@@ -113,7 +117,7 @@
             // 
             this.residentsBox.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.residentsBox.Location = new System.Drawing.Point(5, 134);
-            this.residentsBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.residentsBox.Margin = new System.Windows.Forms.Padding(4);
             this.residentsBox.Name = "residentsBox";
             this.residentsBox.Size = new System.Drawing.Size(248, 24);
             this.residentsBox.TabIndex = 20;
@@ -125,7 +129,7 @@
             this.priceBox.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.priceBox.ForeColor = System.Drawing.Color.Black;
             this.priceBox.Location = new System.Drawing.Point(7, 102);
-            this.priceBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.priceBox.Margin = new System.Windows.Forms.Padding(4);
             this.priceBox.Maximum = new decimal(new int[] {
             100000,
             0,
@@ -139,7 +143,7 @@
             // 
             this.descriptionBox.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.descriptionBox.Location = new System.Drawing.Point(7, 294);
-            this.descriptionBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.descriptionBox.Margin = new System.Windows.Forms.Padding(4);
             this.descriptionBox.Multiline = true;
             this.descriptionBox.Name = "descriptionBox";
             this.descriptionBox.Size = new System.Drawing.Size(247, 54);
@@ -152,7 +156,7 @@
             // 
             this.addressBox.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.addressBox.Location = new System.Drawing.Point(7, 70);
-            this.addressBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.addressBox.Margin = new System.Windows.Forms.Padding(4);
             this.addressBox.Name = "addressBox";
             this.addressBox.Size = new System.Drawing.Size(247, 24);
             this.addressBox.TabIndex = 17;
@@ -165,7 +169,7 @@
             this.petsBox.AutoSize = true;
             this.petsBox.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.petsBox.Location = new System.Drawing.Point(7, 22);
-            this.petsBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.petsBox.Margin = new System.Windows.Forms.Padding(4);
             this.petsBox.Name = "petsBox";
             this.petsBox.Size = new System.Drawing.Size(172, 22);
             this.petsBox.TabIndex = 16;
@@ -175,8 +179,8 @@
             // createBox
             // 
             this.createBox.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            this.createBox.Location = new System.Drawing.Point(307, 385);
-            this.createBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.createBox.Location = new System.Drawing.Point(455, 382);
+            this.createBox.Margin = new System.Windows.Forms.Padding(4);
             this.createBox.Name = "createBox";
             this.createBox.Size = new System.Drawing.Size(248, 75);
             this.createBox.TabIndex = 15;
@@ -188,7 +192,7 @@
             // 
             this.hotelNameBox.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.hotelNameBox.Location = new System.Drawing.Point(7, 38);
-            this.hotelNameBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.hotelNameBox.Margin = new System.Windows.Forms.Padding(4);
             this.hotelNameBox.Name = "hotelNameBox";
             this.hotelNameBox.Size = new System.Drawing.Size(247, 24);
             this.hotelNameBox.TabIndex = 29;
@@ -201,7 +205,7 @@
             this.gymBox.AutoSize = true;
             this.gymBox.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.gymBox.Location = new System.Drawing.Point(7, 112);
-            this.gymBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gymBox.Margin = new System.Windows.Forms.Padding(4);
             this.gymBox.Name = "gymBox";
             this.gymBox.Size = new System.Drawing.Size(163, 22);
             this.gymBox.TabIndex = 30;
@@ -212,7 +216,7 @@
             // 
             this.hotelGrade.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.hotelGrade.Location = new System.Drawing.Point(5, 262);
-            this.hotelGrade.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.hotelGrade.Margin = new System.Windows.Forms.Padding(4);
             this.hotelGrade.Maximum = new decimal(new int[] {
             10,
             0,
@@ -230,7 +234,7 @@
             this.groupBox1.Controls.Add(this.gymBox);
             this.groupBox1.Controls.Add(this.wifiBox);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.groupBox1.Location = new System.Drawing.Point(695, 14);
+            this.groupBox1.Location = new System.Drawing.Point(843, 11);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -258,7 +262,7 @@
             this.groupBox2.Controls.Add(this.residentsBox);
             this.groupBox2.Controls.Add(this.roomNumberBox);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.groupBox2.Location = new System.Drawing.Point(97, 14);
+            this.groupBox2.Location = new System.Drawing.Point(245, 11);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -347,21 +351,43 @@
             this.label3.TabIndex = 34;
             this.label3.Text = "Enter price";
             // 
-            // backButton
+            // panel1
             // 
-            this.backButton.BackColor = System.Drawing.Color.DimGray;
-            this.backButton.BackgroundImage = global::OOP_Project.Properties.Resources.BackArrow;
-            this.backButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.backButton.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.backButton.FlatAppearance.BorderSize = 0;
-            this.backButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.backButton.Location = new System.Drawing.Point(16, 11);
-            this.backButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.backButton.Name = "backButton";
-            this.backButton.Size = new System.Drawing.Size(61, 48);
-            this.backButton.TabIndex = 34;
-            this.backButton.UseVisualStyleBackColor = false;
-            this.backButton.Click += new System.EventHandler(this.backButton_Click);
+            this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(227, 558);
+            this.panel1.TabIndex = 37;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::OOP_Project.Properties.Resources.breaking_and_entering_german_logo_sm;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(84, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(141, 553);
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.DimGray;
+            this.button1.BackgroundImage = global::OOP_Project.Properties.Resources.BackArrowWhite;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(12, 16);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(61, 55);
+            this.button1.TabIndex = 17;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.backButton_Click);
             // 
             // CreateHotelRoom
             // 
@@ -370,15 +396,15 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))));
             this.BackgroundImage = global::OOP_Project.Properties.Resources.BETransparentBlackLogocopy;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(1083, 554);
-            this.Controls.Add(this.backButton);
+            this.ClientSize = new System.Drawing.Size(1296, 574);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.createBox);
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MinimizeBox = false;
             this.Name = "CreateHotelRoom";
             this.Text = "Create A Hotel Room!";
@@ -391,6 +417,8 @@
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -419,6 +447,8 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox comboBoxPenion;
-        private System.Windows.Forms.Button backButton;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button1;
     }
 }
