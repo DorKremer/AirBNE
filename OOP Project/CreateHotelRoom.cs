@@ -20,11 +20,51 @@ namespace OOP_Project
 
         private void createBox_Click(object sender, EventArgs e)
         {
-            int size = AirBNE.list.Count;
+            if (hotelNameBox.Text.Length < 6 || hotelNameBox.Text.Equals("Enter Hotel Name..."))
+            {
+                MessageBox.Show("Bad Hotel Name");
+                return;
+            }
+            if (addressBox.Text.Length < 6 || addressBox.Text.Equals("Enter Address..."))
+            {
+                MessageBox.Show("Bad Address");
+                return;
+            }
+            if (priceBox.Value <50)
+            {
+                MessageBox.Show("Bad Price");
+                return;
+            }
+            if (residentsBox.Value == 0)
+            {
+                MessageBox.Show("You Must Be Able To Host Residents");
+                return;
+            }
+            if (roomNumberBox.Value == 0)
+            {
+                MessageBox.Show("You Must Have At Least One Room");
+                return;
+            }
+            if (comboBoxPenion.Text != "Only Breakfast"&& comboBoxPenion.Text != "Breakfast and Dinner"&& comboBoxPenion.Text != "Full Pension")
+            {
+                MessageBox.Show("You Must Set A Pension Level");
+                return;
+            }
+            if (zipCodeBox.Value == 0)
+            {
+                MessageBox.Show("You Must Enter A Zip Code");
+                return;
+            }
+            if (hotelGrade.Value == 0)
+            {
+                MessageBox.Show("You Must Enter The Hotel's Grade");
+                return;
+            }
+            if (descriptionBox.Text.Equals("Enter Description..."))
+                descriptionBox.Text = "";
             HotelRoom hotelRoom = new HotelRoom(hotelNameBox.Text, addressBox.Text, descriptionBox.Text, Convert.ToInt32(zipCodeBox.Value), Convert.ToDouble(priceBox.Value), Convert.ToInt32(residentsBox.Value), petsBox.Checked, poolBox.Checked, wifiBox.Checked,AirBNE.user, gymBox.Checked, Convert.ToInt32(roomNumberBox.Value), comboBoxPenion.Text, Convert.ToByte(hotelGrade.Value));
             AirBNE.list.Add(hotelRoom);
             MessageBox.Show("Hotel Room Created");
-            AirBNE.addedContent = true;
         }
 
         private void hotelNameBox_Enter(object sender, EventArgs e)
@@ -77,6 +117,7 @@ namespace OOP_Project
             {
                 using (LinearGradientBrush brush = new LinearGradientBrush(this.ClientRectangle, Color.FromArgb(234, 234, 234), Color.FromArgb(255, 94, 0), 65F))
                 {
+                    this.DoubleBuffered = true;
                     e.Graphics.FillRectangle(brush, this.ClientRectangle);
                 }
             }

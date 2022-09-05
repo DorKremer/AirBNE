@@ -65,9 +65,9 @@ namespace OOP_Project
 
         private void registerButton_Click(object sender, EventArgs e)
         {
-            if (usernameBox.Text.Length < 6)
+            if (usernameBox.Text.Length < 6|| usernameBox.Text.Equals("Enter Username..."))
             {
-                MessageBox.Show("Username Too Short!");
+                MessageBox.Show("Bad Username!");
                 return;
             }
             if (passwordBox.Text.Length < 6)
@@ -75,9 +75,9 @@ namespace OOP_Project
                 MessageBox.Show("Password Too Short!");
                 return;
             }
-            if (nameBox.Text.Length < 2)
+            if (nameBox.Text.Length < 2||nameBox.Text.Equals("Enter Name..."))
             {
-                MessageBox.Show(nameBox.Text + " Can't Possibly Be Your Name!");
+                MessageBox.Show("\""+nameBox.Text + "\""+ " Can't Possibly Be Your Name!");
                 return;
             }
             string username = usernameBox.Text.ToLower();
@@ -116,6 +116,7 @@ namespace OOP_Project
             {
                 using (LinearGradientBrush brush = new LinearGradientBrush(this.ClientRectangle, Color.FromArgb(234, 234, 234), Color.FromArgb(255, 94, 0), 65F))
                 {
+                    this.DoubleBuffered = true;
                     e.Graphics.FillRectangle(brush, this.ClientRectangle);
                 }
             }

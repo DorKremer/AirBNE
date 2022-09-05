@@ -32,11 +32,41 @@ namespace OOP_Project
 
         private void createBox_Click(object sender, EventArgs e)
         {
-            int size=AirBNE.list.Count;
+            if (addressBox.Text.Length < 6 || addressBox.Text.Equals("Enter Address..."))
+            {
+                MessageBox.Show("Bad Address");
+                return;
+            }
+            if (priceBox.Value <50)
+            {
+                MessageBox.Show("Bad Price");
+                return;
+            }
+            if (residentsBox.Value == 0)
+            {
+                MessageBox.Show("You Must Be Able To Host Residents");
+                return;
+            }
+            if (roomCountBox.Value == 0)
+            {
+                MessageBox.Show("You Must Have At Least One Room");
+                return;
+            }
+            if (floorBox.Value == 0)
+            {
+                MessageBox.Show("You Must Have At Least One Floor");
+                return;
+            }
+            if (zipCodeBox.Value == 0)
+            {
+                MessageBox.Show("You Must Enter A Zip Code");
+                return;
+            }
+            if (descriptionBox.Text.Equals("Enter Description..."))
+                descriptionBox.Text = "";
             Apartment apartment = new Apartment(addressBox.Text, descriptionBox.Text, Convert.ToInt32(zipCodeBox.Value), Convert.ToDouble(priceBox.Value), Convert.ToInt32(residentsBox.Value), petsBox.Checked, poolBox.Checked, wifiBox.Checked, AirBNE.user, Convert.ToInt32(roomCountBox.Value), Convert.ToInt32(floorBox.Value), porchBox.Checked, elevatorBox.Checked);
             AirBNE.list.Add(apartment);
             MessageBox.Show("Apartment Created ");
-            AirBNE.addedContent = true;
         }
 
         private void descriptionBox_Enter(object sender, EventArgs e)
@@ -65,6 +95,7 @@ namespace OOP_Project
             {
                 using (LinearGradientBrush brush = new LinearGradientBrush(this.ClientRectangle, Color.FromArgb(234, 234, 234), Color.FromArgb(255, 94, 0), 65F))
                 {
+                    this.DoubleBuffered = true;
                     e.Graphics.FillRectangle(brush, this.ClientRectangle);
                 }
             }

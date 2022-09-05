@@ -140,7 +140,6 @@
             this.Controls.Add(this.passwordBox);
             this.Controls.Add(this.usernameBox);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MinimizeBox = false;
             this.Name = "Registration";
             this.Text = "Registration!";
             this.panel1.ResumeLayout(false);

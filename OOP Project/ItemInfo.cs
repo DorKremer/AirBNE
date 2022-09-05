@@ -27,10 +27,6 @@ namespace OOP_Project
                 }
             }
             label1.Text = item.toString();
-        }
-
-        private void ItemInfo_Load(object sender, EventArgs e)
-        {
             if (AirBNE.user == null)
             {
                 deleteButton.Visible = false;
@@ -79,26 +75,18 @@ namespace OOP_Project
 
         private void deleteButton_Click(object sender, EventArgs e)
         {
-            if (item.Occupied == true)
+            Order.item = null;
+            AirBNE.list.Remove(item);
+            MessageBox.Show("Item Removed");
+            if (item == AirBNE.user.Item)
             {
-                MessageBox.Show("Cant Delete Occupaid item");
+                AirBNE.user.Item = null;
             }
-            else
-            {
-                Order.item = null;
-                AirBNE.list.Remove(item);
-                MessageBox.Show("Item Removed");
-                AirBNE.removedContent = true;
-                if (item == AirBNE.user.Item)
-                {
-                    AirBNE.user.Item = null;
-                }
-                ItemView form = new ItemView();
-                form.Location = this.Location;
-                form.StartPosition = FormStartPosition.Manual;
-                form.Show();
-                this.Close();
-            }
+            ItemView form = new ItemView();
+            form.Location = this.Location;
+            form.StartPosition = FormStartPosition.Manual;
+            form.Show();
+            this.Close();
         }
 
         private void backButton_Click(object sender, EventArgs e)
@@ -116,6 +104,7 @@ namespace OOP_Project
             {
                 using (LinearGradientBrush brush = new LinearGradientBrush(this.ClientRectangle, Color.FromArgb(234, 234, 234), Color.FromArgb(255, 94, 0), 65F))
                 {
+                    this.DoubleBuffered = true;
                     e.Graphics.FillRectangle(brush, this.ClientRectangle);
                 }
             }

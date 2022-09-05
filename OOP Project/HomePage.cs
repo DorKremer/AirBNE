@@ -16,8 +16,6 @@ namespace OOP_Project
         public static List<Rentable> list = new List<Rentable>();
         public static List<User> users = new List<User>();
         public static User user = null;
-        public static bool addedContent = false;
-        public static bool removedContent = false;
 
         public AirBNE()
         {
@@ -123,6 +121,7 @@ namespace OOP_Project
             {
                 using (LinearGradientBrush brush = new LinearGradientBrush(this.ClientRectangle, Color.FromArgb(234, 234, 234), Color.FromArgb(255, 94, 0), 65F))
                 {
+                    this.DoubleBuffered = true;
                     e.Graphics.FillRectangle(brush, this.ClientRectangle);
                 }
             }

@@ -121,7 +121,7 @@
             this.welcomeText.Cursor = System.Windows.Forms.Cursors.Default;
             this.welcomeText.Font = new System.Drawing.Font("Nirmala UI", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.welcomeText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(94)))), ((int)(((byte)(0)))));
-            this.welcomeText.Location = new System.Drawing.Point(344, 9);
+            this.welcomeText.Location = new System.Drawing.Point(307, 9);
             this.welcomeText.Name = "welcomeText";
             this.welcomeText.Size = new System.Drawing.Size(145, 37);
             this.welcomeText.TabIndex = 49;
@@ -173,7 +173,6 @@
             this.Controls.Add(this.addItemsButton);
             this.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MinimizeBox = false;
             this.Name = "AirBNE";
             this.Text = "AirBNE";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
