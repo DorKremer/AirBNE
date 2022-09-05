@@ -160,7 +160,6 @@
             this.MinimizeBox = false;
             this.Name = "ItemView";
             this.Text = "View Items!";
-            this.Load += new System.EventHandler(this.ItemView_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.maxPriceBox)).EndInit();
