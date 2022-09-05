@@ -139,15 +139,15 @@
             // 
             // itemContainer
             // 
-            this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.flowLayoutPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.flowLayoutPanel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 80);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1332, 478);
-            this.flowLayoutPanel1.TabIndex = 5;
+            this.itemContainer.AutoScroll = true;
+            this.itemContainer.BackColor = System.Drawing.Color.Transparent;
+            this.itemContainer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.itemContainer.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.itemContainer.Location = new System.Drawing.Point(16, 80);
+            this.itemContainer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.itemContainer.Name = "flowLayoutPanel1";
+            this.itemContainer.Size = new System.Drawing.Size(1332, 478);
+            this.itemContainer.TabIndex = 5;
             // 
             // ItemView
             // 
