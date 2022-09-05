@@ -37,6 +37,7 @@
             this.registerButton = new System.Windows.Forms.Button();
             this.welcomeText = new System.Windows.Forms.Label();
             this.loginButton = new System.Windows.Forms.Button();
+            this.buttonLOGOUT = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -90,7 +91,7 @@
             this.orderButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.orderButton.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.orderButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(94)))), ((int)(((byte)(0)))));
-            this.orderButton.Location = new System.Drawing.Point(656, 213);
+            this.orderButton.Location = new System.Drawing.Point(654, 201);
             this.orderButton.Name = "orderButton";
             this.orderButton.Size = new System.Drawing.Size(93, 37);
             this.orderButton.TabIndex = 47;
@@ -105,7 +106,7 @@
             this.registerButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.registerButton.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.registerButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(94)))), ((int)(((byte)(0)))));
-            this.registerButton.Location = new System.Drawing.Point(656, 278);
+            this.registerButton.Location = new System.Drawing.Point(654, 266);
             this.registerButton.Name = "registerButton";
             this.registerButton.Size = new System.Drawing.Size(93, 37);
             this.registerButton.TabIndex = 48;
@@ -122,7 +123,7 @@
             this.welcomeText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(94)))), ((int)(((byte)(0)))));
             this.welcomeText.Location = new System.Drawing.Point(344, 9);
             this.welcomeText.Name = "welcomeText";
-            this.welcomeText.Size = new System.Drawing.Size(115, 30);
+            this.welcomeText.Size = new System.Drawing.Size(145, 37);
             this.welcomeText.TabIndex = 49;
             this.welcomeText.Text = "Welcome!";
             // 
@@ -133,7 +134,7 @@
             this.loginButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.loginButton.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.loginButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(94)))), ((int)(((byte)(0)))));
-            this.loginButton.Location = new System.Drawing.Point(656, 344);
+            this.loginButton.Location = new System.Drawing.Point(654, 332);
             this.loginButton.Name = "loginButton";
             this.loginButton.Size = new System.Drawing.Size(93, 37);
             this.loginButton.TabIndex = 50;
@@ -141,13 +142,28 @@
             this.loginButton.UseVisualStyleBackColor = false;
             this.loginButton.Click += new System.EventHandler(this.loginButton_Click);
             // 
+            // buttonLOGOUT
+            // 
+            this.buttonLOGOUT.BackColor = System.Drawing.Color.DimGray;
+            this.buttonLOGOUT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonLOGOUT.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Bold);
+            this.buttonLOGOUT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(94)))), ((int)(((byte)(0)))));
+            this.buttonLOGOUT.Location = new System.Drawing.Point(654, 253);
+            this.buttonLOGOUT.Name = "buttonLOGOUT";
+            this.buttonLOGOUT.Size = new System.Drawing.Size(93, 37);
+            this.buttonLOGOUT.TabIndex = 52;
+            this.buttonLOGOUT.Text = "Log Out";
+            this.buttonLOGOUT.UseVisualStyleBackColor = false;
+            this.buttonLOGOUT.Click += new System.EventHandler(this.buttonLOGOUT_Click);
+            // 
             // AirBNE
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.buttonLOGOUT);
             this.Controls.Add(this.loginButton);
             this.Controls.Add(this.welcomeText);
             this.Controls.Add(this.registerButton);
@@ -175,6 +191,7 @@
         private System.Windows.Forms.Button registerButton;
         private System.Windows.Forms.Label welcomeText;
         private System.Windows.Forms.Button loginButton;
+        private System.Windows.Forms.Button buttonLOGOUT;
     }
 }
 

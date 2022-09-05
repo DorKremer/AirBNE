@@ -79,19 +79,26 @@ namespace OOP_Project
 
         private void deleteButton_Click(object sender, EventArgs e)
         {
-            Order.item = null;
-            AirBNE.list.Remove(item);
-            MessageBox.Show("Item Removed");
-            AirBNE.removedContent = true;
-            if (item == AirBNE.user.Item)
+            if (item.Occupied == true)
             {
-                AirBNE.user.Item = null;
+                MessageBox.Show("Cant Delete Occupaid item");
             }
-            ItemView form = new ItemView();
-            form.Location = this.Location;
-            form.StartPosition = FormStartPosition.Manual;
-            form.Show();
-            this.Close();
+            else
+            {
+                Order.item = null;
+                AirBNE.list.Remove(item);
+                MessageBox.Show("Item Removed");
+                AirBNE.removedContent = true;
+                if (item == AirBNE.user.Item)
+                {
+                    AirBNE.user.Item = null;
+                }
+                ItemView form = new ItemView();
+                form.Location = this.Location;
+                form.StartPosition = FormStartPosition.Manual;
+                form.Show();
+                this.Close();
+            }
         }
 
         private void backButton_Click(object sender, EventArgs e)

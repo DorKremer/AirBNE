@@ -26,6 +26,7 @@ namespace OOP_Project
             {
                 orderButton.Visible = false;
                 addItemsButton.Visible = false;
+                buttonLOGOUT.Visible = false;
             }
             else
             {
@@ -125,6 +126,16 @@ namespace OOP_Project
                     e.Graphics.FillRectangle(brush, this.ClientRectangle);
                 }
             }
+        }
+
+        private void buttonLOGOUT_Click(object sender, EventArgs e)
+        {
+            user = null;
+            AirBNE form=new AirBNE();
+            form.Location = this.Location;
+            form.StartPosition = FormStartPosition.Manual;
+            form.Show();
+            this.Close();
         }
     }
 }
