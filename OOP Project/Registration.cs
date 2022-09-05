@@ -65,6 +65,21 @@ namespace OOP_Project
 
         private void registerButton_Click(object sender, EventArgs e)
         {
+            if (usernameBox.Text.Length < 6)
+            {
+                MessageBox.Show("Username Too Short!");
+                return;
+            }
+            if (passwordBox.Text.Length < 6)
+            {
+                MessageBox.Show("Password Too Short!");
+                return;
+            }
+            if (nameBox.Text.Length < 2)
+            {
+                MessageBox.Show(nameBox.Text + " Can't Possibly Be Your Name!");
+                return;
+            }
             string username = usernameBox.Text.ToLower();
             if (AirBNE.users.Count != 0)
             {
@@ -80,11 +95,6 @@ namespace OOP_Project
             User createdUser = new User(usernameBox.Text,passwordBox.Text,nameBox.Text);
             AirBNE.users.Add(createdUser);
             AirBNE.user=createdUser;
-            IFormatter otherFormatter = new BinaryFormatter();
-            using (Stream stream = new FileStream("users.mdl", FileMode.Append, FileAccess.Write, FileShare.None))
-            {
-                otherFormatter.Serialize(stream, createdUser);
-            }
             AirBNE form = new AirBNE();
             form.Location = this.Location;
             form.StartPosition = FormStartPosition.Manual;

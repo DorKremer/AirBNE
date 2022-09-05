@@ -49,7 +49,6 @@ namespace OOP_Project
             {
                 deleteButton.Visible = false;
             }
-
         }
 
         private void orderBox_Click(object sender, EventArgs e)
@@ -67,7 +66,6 @@ namespace OOP_Project
                     {
                         MessageBox.Show("Not Available");
                     }
-
                     else
                     {
                         item.Occupied = true;
@@ -77,7 +75,6 @@ namespace OOP_Project
                 }
             }
             label1.Text = item.toString();
-            AirBNE.removedContent = true;
         }
 
         private void deleteButton_Click(object sender, EventArgs e)

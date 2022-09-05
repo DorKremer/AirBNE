@@ -52,6 +52,7 @@ namespace OOP_Project
                         Order.item = item;
                     list.Add(item);
                 }
+                stream.Dispose();
             }
             if (users.Count == 0)
             {
@@ -67,6 +68,7 @@ namespace OOP_Project
                     userData = (User)binaryFormatter.Deserialize(stream);
                     users.Add(userData);
                 }
+                stream.Dispose();
             }
         }
 

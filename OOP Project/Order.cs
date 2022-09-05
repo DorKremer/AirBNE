@@ -17,28 +17,31 @@ namespace OOP_Project
         public Order()
         {
             InitializeComponent();
-            if(AirBNE.user.Item!=null)
+            if (AirBNE.user.Item != null)
+            {
                 item=AirBNE.user.Item;
+                label1.Text = item.toString();
+            }
             else
             {
                 item=null;
-                label1.Text = "Empty";
+                label1.Text = "You Still Didnt Order Anything...";
             }
         }
 
         private void Order_Load(object sender, EventArgs e)
         {
-            if (AirBNE.user.Item != null)
-                item = AirBNE.user.Item;
-            if (item != null)
-            {
-                label1.Text = item.toString();
-            }
-            else
-            {
-                item = null;
-                label1.Text = "Empty";
-            }
+            //if (AirBNE.user.Item != null)
+            //    item = AirBNE.user.Item;
+            //if (item != null)
+            //{
+            //    label1.Text = item.toString();
+            //}
+            //else
+            //{
+            //    item = null;
+            //    label1.Text = "You Still Didnt Order Anything...";
+            //}
         }
 
         private void button1_Click(object sender, EventArgs e)

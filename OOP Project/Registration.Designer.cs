@@ -43,11 +43,11 @@
             // usernameBox
             // 
             this.usernameBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))));
-            this.usernameBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usernameBox.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.usernameBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(94)))), ((int)(((byte)(0)))));
-            this.usernameBox.Location = new System.Drawing.Point(234, 101);
+            this.usernameBox.Location = new System.Drawing.Point(234, 95);
             this.usernameBox.Name = "usernameBox";
-            this.usernameBox.Size = new System.Drawing.Size(174, 29);
+            this.usernameBox.Size = new System.Drawing.Size(174, 35);
             this.usernameBox.TabIndex = 0;
             this.usernameBox.Text = "Enter Username...";
             this.usernameBox.Enter += new System.EventHandler(this.usernameBox_Enter);
@@ -56,11 +56,11 @@
             // passwordBox
             // 
             this.passwordBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))));
-            this.passwordBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passwordBox.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Bold);
             this.passwordBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(94)))), ((int)(((byte)(0)))));
             this.passwordBox.Location = new System.Drawing.Point(234, 146);
             this.passwordBox.Name = "passwordBox";
-            this.passwordBox.Size = new System.Drawing.Size(174, 29);
+            this.passwordBox.Size = new System.Drawing.Size(174, 35);
             this.passwordBox.TabIndex = 1;
             this.passwordBox.Text = "Enter Password...";
             this.passwordBox.Enter += new System.EventHandler(this.passwordBox_Enter);
@@ -69,11 +69,11 @@
             // nameBox
             // 
             this.nameBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))));
-            this.nameBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nameBox.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Bold);
             this.nameBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(94)))), ((int)(((byte)(0)))));
             this.nameBox.Location = new System.Drawing.Point(234, 197);
             this.nameBox.Name = "nameBox";
-            this.nameBox.Size = new System.Drawing.Size(174, 29);
+            this.nameBox.Size = new System.Drawing.Size(174, 35);
             this.nameBox.TabIndex = 2;
             this.nameBox.Text = "Enter Name...";
             this.nameBox.Enter += new System.EventHandler(this.nameBox_Enter);
@@ -82,7 +82,7 @@
             // registerButton
             // 
             this.registerButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))));
-            this.registerButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.registerButton.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Bold);
             this.registerButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(94)))), ((int)(((byte)(0)))));
             this.registerButton.Location = new System.Drawing.Point(234, 264);
             this.registerButton.Name = "registerButton";

@@ -17,14 +17,29 @@ namespace OOP_Project
         public ItemView()
         {
             InitializeComponent();
-        }
-
-        private void ItemView_Load(object sender, EventArgs e)
-        {
+            foreach(User user in AirBNE.users)
+            {
+                if (user.Item != null)
+                {
+                    foreach(Rentable item in AirBNE.list)
+                    {
+                        if (user.Item.Id == item.Id)
+                            item.Occupied = true;
+                    }
+                }
+            }
             foreach (Rentable item in AirBNE.list)
             {
                 renderButton(item);
             }
+        }
+
+        private void ItemView_Load(object sender, EventArgs e)
+        {
+            //foreach (Rentable item in AirBNE.list)
+            //{
+            //    renderButton(item);
+            //}
         }
         private void renderButton(Rentable item)
         {
@@ -42,7 +57,7 @@ namespace OOP_Project
                     break;
             }
             button.BackgroundImageLayout = ImageLayout.Stretch;
-            button.TextAlign = ContentAlignment.MiddleCenter;
+            button.TextAlign = ContentAlignment.TopCenter;
             button.TextImageRelation = TextImageRelation.TextBeforeImage;
             button.Name = Convert.ToString(item.Id);
             button.Size = new Size(225, 250);
@@ -52,14 +67,7 @@ namespace OOP_Project
         }
         private void itemClick(object sender, EventArgs e)
         {
-            foreach(Control control in flowLayoutPanel1.Controls)
-            {
-                if (sender.Equals(control))
-                {
-                    ItemInfo.itemID = Convert.ToInt32(control.Name);
-                    break;
-                }
-            }
+            ItemInfo.itemID = Convert.ToInt32(((Control)sender).Name);
             ItemInfo form = new ItemInfo();
             form.Location = this.Location;
             form.StartPosition = FormStartPosition.Manual;
@@ -107,10 +115,10 @@ namespace OOP_Project
             }
         }
 
-        private void numericUpDownSearchValue_ValueChanged(object sender, EventArgs e)
+        private void maxPriceBox_ValueChanged(object sender, EventArgs e)
         {
             flowLayoutPanel1.Controls.Clear();
-            double tmp =Convert.ToDouble(numericUpDownSearchValue.Value);
+            double tmp =Convert.ToDouble(maxPriceBox.Value);
             foreach(Rentable item in AirBNE.list)
             {
                 if (item.Price < tmp)
