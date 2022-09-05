@@ -27,10 +27,6 @@ namespace OOP_Project
                 }
             }
             label1.Text = item.toString();
-        }
-
-        private void ItemInfo_Load(object sender, EventArgs e)
-        {
             if (AirBNE.user == null)
             {
                 deleteButton.Visible = false;
@@ -82,7 +78,6 @@ namespace OOP_Project
             Order.item = null;
             AirBNE.list.Remove(item);
             MessageBox.Show("Item Removed");
-            AirBNE.removedContent = true;
             if (item == AirBNE.user.Item)
             {
                 AirBNE.user.Item = null;

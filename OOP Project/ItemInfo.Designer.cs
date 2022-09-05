@@ -130,7 +130,6 @@
             this.MinimizeBox = false;
             this.Name = "ItemInfo";
             this.Text = "ItemInfo";
-            this.Load += new System.EventHandler(this.ItemInfo_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

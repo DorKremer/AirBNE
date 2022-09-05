@@ -56,7 +56,7 @@ namespace OOP_Project
             button.Size = new Size(225, 250);
             button.Text = item.getText();
             button.Click += new EventHandler(this.itemClick);
-            flowLayoutPanel1.Controls.Add(button);
+            itemContainer.Controls.Add(button);
         }
         private void itemClick(object sender, EventArgs e)
         {
@@ -69,7 +69,7 @@ namespace OOP_Project
         }
         private void searchBox_TextChanged(object sender, EventArgs e)
         {
-            flowLayoutPanel1.Controls.Clear();
+            itemContainer.Controls.Clear();
             string name1 = "";
             string name2 = searchBox.Text.ToLower();
             foreach (Rentable item in AirBNE.list)
@@ -82,7 +82,7 @@ namespace OOP_Project
 
         private void buttonRefresh_Click(object sender, EventArgs e)
         {
-            flowLayoutPanel1.Controls.Clear();
+            itemContainer.Controls.Clear();
             foreach (Rentable item in AirBNE.list)
             {
                 renderButton(item);
@@ -110,7 +110,7 @@ namespace OOP_Project
 
         private void maxPriceBox_ValueChanged(object sender, EventArgs e)
         {
-            flowLayoutPanel1.Controls.Clear();
+            itemContainer.Controls.Clear();
             double tmp =Convert.ToDouble(maxPriceBox.Value);
             foreach(Rentable item in AirBNE.list)
             {

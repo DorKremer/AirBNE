@@ -37,7 +37,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.buttonRefresh = new System.Windows.Forms.Button();
             this.backButton = new System.Windows.Forms.Button();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.itemContainer = new System.Windows.Forms.FlowLayoutPanel();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.maxPriceBox)).BeginInit();
             this.SuspendLayout();
@@ -138,15 +138,15 @@
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.flowLayoutPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.flowLayoutPanel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 80);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1332, 478);
-            this.flowLayoutPanel1.TabIndex = 5;
+            this.itemContainer.AutoScroll = true;
+            this.itemContainer.BackColor = System.Drawing.Color.Transparent;
+            this.itemContainer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.itemContainer.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.itemContainer.Location = new System.Drawing.Point(16, 80);
+            this.itemContainer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.itemContainer.Name = "flowLayoutPanel1";
+            this.itemContainer.Size = new System.Drawing.Size(1332, 478);
+            this.itemContainer.TabIndex = 5;
             // 
             // ItemView
             // 
@@ -160,7 +160,7 @@
             this.Controls.Add(this.backButton);
             this.Controls.Add(this.buttonRefresh);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.itemContainer);
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -176,7 +176,7 @@
 
         #endregion
         private System.Windows.Forms.TextBox searchBox;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.FlowLayoutPanel itemContainer;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button buttonRefresh;
