@@ -123,7 +123,6 @@
             this.MinimizeBox = false;
             this.Name = "Order";
             this.Text = "Order";
-            this.Load += new System.EventHandler(this.Order_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

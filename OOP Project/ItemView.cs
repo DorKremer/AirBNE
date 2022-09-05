@@ -34,13 +34,6 @@ namespace OOP_Project
             }
         }
 
-        private void ItemView_Load(object sender, EventArgs e)
-        {
-            //foreach (Rentable item in AirBNE.list)
-            //{
-            //    renderButton(item);
-            //}
-        }
         private void renderButton(Rentable item)
         {
             Button button = new Button();
