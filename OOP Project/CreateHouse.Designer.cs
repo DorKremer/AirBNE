@@ -241,7 +241,7 @@
             this.groupBox1.Size = new System.Drawing.Size(609, 395);
             this.groupBox1.TabIndex = 31;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "House Registretion";
+            this.groupBox1.Text = "Register House";
             this.groupBox1.UseCompatibleTextRendering = true;
             // 
             // label5
@@ -280,9 +280,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.label1.Location = new System.Drawing.Point(340, 141);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(218, 20);
+            this.label1.Size = new System.Drawing.Size(222, 20);
             this.label1.TabIndex = 28;
-            this.label1.Text = "Max Capacty of Residents";
+            this.label1.Text = "Max Capacity of Residents";
             // 
             // label3
             // 
