@@ -69,7 +69,7 @@
             this.wifiBox.Location = new System.Drawing.Point(29, 122);
             this.wifiBox.Margin = new System.Windows.Forms.Padding(5);
             this.wifiBox.Name = "wifiBox";
-            this.wifiBox.Size = new System.Drawing.Size(141, 22);
+            this.wifiBox.Size = new System.Drawing.Size(119, 19);
             this.wifiBox.TabIndex = 25;
             this.wifiBox.Text = "Is There Wifi?";
             this.wifiBox.UseVisualStyleBackColor = true;
@@ -81,7 +81,7 @@
             this.poolBox.Location = new System.Drawing.Point(29, 85);
             this.poolBox.Margin = new System.Windows.Forms.Padding(5);
             this.poolBox.Name = "poolBox";
-            this.poolBox.Size = new System.Drawing.Size(161, 22);
+            this.poolBox.Size = new System.Drawing.Size(136, 19);
             this.poolBox.TabIndex = 24;
             this.poolBox.Text = "Is There A Pool?";
             this.poolBox.UseVisualStyleBackColor = true;
@@ -97,7 +97,7 @@
             0,
             0});
             this.zipCodeBox.Name = "zipCodeBox";
-            this.zipCodeBox.Size = new System.Drawing.Size(310, 24);
+            this.zipCodeBox.Size = new System.Drawing.Size(310, 21);
             this.zipCodeBox.TabIndex = 23;
             // 
             // roomCountBox
@@ -106,7 +106,7 @@
             this.roomCountBox.Location = new System.Drawing.Point(6, 181);
             this.roomCountBox.Margin = new System.Windows.Forms.Padding(5);
             this.roomCountBox.Name = "roomCountBox";
-            this.roomCountBox.Size = new System.Drawing.Size(310, 24);
+            this.roomCountBox.Size = new System.Drawing.Size(310, 21);
             this.roomCountBox.TabIndex = 21;
             // 
             // residentsBox
@@ -115,7 +115,7 @@
             this.residentsBox.Location = new System.Drawing.Point(6, 141);
             this.residentsBox.Margin = new System.Windows.Forms.Padding(5);
             this.residentsBox.Name = "residentsBox";
-            this.residentsBox.Size = new System.Drawing.Size(310, 24);
+            this.residentsBox.Size = new System.Drawing.Size(310, 21);
             this.residentsBox.TabIndex = 20;
             // 
             // priceBox
@@ -132,7 +132,7 @@
             0,
             0});
             this.priceBox.Name = "priceBox";
-            this.priceBox.Size = new System.Drawing.Size(310, 24);
+            this.priceBox.Size = new System.Drawing.Size(310, 21);
             this.priceBox.TabIndex = 19;
             // 
             // descriptionBox
@@ -154,7 +154,7 @@
             this.addressBox.Location = new System.Drawing.Point(6, 61);
             this.addressBox.Margin = new System.Windows.Forms.Padding(5);
             this.addressBox.Name = "addressBox";
-            this.addressBox.Size = new System.Drawing.Size(308, 24);
+            this.addressBox.Size = new System.Drawing.Size(308, 21);
             this.addressBox.TabIndex = 17;
             this.addressBox.Text = "Enter Address...";
             this.addressBox.Enter += new System.EventHandler(this.addressBox_Enter);
@@ -167,7 +167,7 @@
             this.petsBox.Location = new System.Drawing.Point(29, 48);
             this.petsBox.Margin = new System.Windows.Forms.Padding(5);
             this.petsBox.Name = "petsBox";
-            this.petsBox.Size = new System.Drawing.Size(172, 22);
+            this.petsBox.Size = new System.Drawing.Size(145, 19);
             this.petsBox.TabIndex = 16;
             this.petsBox.Text = "Are Pets Allowed?";
             this.petsBox.UseVisualStyleBackColor = true;
@@ -190,7 +190,7 @@
             this.floorsBox.Location = new System.Drawing.Point(6, 221);
             this.floorsBox.Margin = new System.Windows.Forms.Padding(5);
             this.floorsBox.Name = "floorsBox";
-            this.floorsBox.Size = new System.Drawing.Size(310, 24);
+            this.floorsBox.Size = new System.Drawing.Size(310, 21);
             this.floorsBox.TabIndex = 22;
             // 
             // yardBox
@@ -200,7 +200,7 @@
             this.yardBox.Location = new System.Drawing.Point(29, 160);
             this.yardBox.Margin = new System.Windows.Forms.Padding(5);
             this.yardBox.Name = "yardBox";
-            this.yardBox.Size = new System.Drawing.Size(164, 22);
+            this.yardBox.Size = new System.Drawing.Size(138, 19);
             this.yardBox.TabIndex = 26;
             this.yardBox.Text = "Is There A Yard?";
             this.yardBox.UseVisualStyleBackColor = true;
@@ -254,7 +254,7 @@
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.label5.Location = new System.Drawing.Point(340, 261);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(100, 25);
+            this.label5.Size = new System.Drawing.Size(81, 20);
             this.label5.TabIndex = 31;
             this.label5.Text = "Zip Code";
             // 
@@ -264,7 +264,7 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.label4.Location = new System.Drawing.Point(340, 220);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(179, 25);
+            this.label4.Size = new System.Drawing.Size(146, 20);
             this.label4.TabIndex = 30;
             this.label4.Text = "How Many Floors";
             // 
@@ -274,7 +274,7 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.label2.Location = new System.Drawing.Point(340, 180);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(184, 25);
+            this.label2.Size = new System.Drawing.Size(152, 20);
             this.label2.TabIndex = 29;
             this.label2.Text = "How many Rooms";
             // 
@@ -284,7 +284,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.label1.Location = new System.Drawing.Point(340, 141);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(264, 25);
+            this.label1.Size = new System.Drawing.Size(222, 20);
             this.label1.TabIndex = 28;
             this.label1.Text = "Max Capacity of Residents";
             // 
@@ -294,7 +294,7 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.label3.Location = new System.Drawing.Point(340, 101);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(61, 25);
+            this.label3.Size = new System.Drawing.Size(49, 20);
             this.label3.TabIndex = 27;
             this.label3.Text = "Price";
             // 
@@ -306,17 +306,17 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(227, 558);
+            this.panel1.Size = new System.Drawing.Size(204, 576);
             this.panel1.TabIndex = 36;
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = global::OOP_Project.Properties.Resources.breaking_and_entering_german_logo_sm;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(84, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(86, 0);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(141, 553);
+            this.pictureBox1.Size = new System.Drawing.Size(141, 574);
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
             // 
@@ -338,7 +338,7 @@
             // 
             // CreateHouse
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))));
             this.BackgroundImage = global::OOP_Project.Properties.Resources.BETransparentBlackLogocopy;
