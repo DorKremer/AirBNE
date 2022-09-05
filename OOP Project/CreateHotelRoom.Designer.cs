@@ -435,7 +435,6 @@
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.MinimizeBox = false;
             this.Name = "CreateHotelRoom";
             this.Text = "Create A Hotel Room!";
             ((System.ComponentModel.ISupportInitialize)(this.zipCodeBox)).EndInit();

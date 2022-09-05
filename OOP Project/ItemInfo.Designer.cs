@@ -127,7 +127,6 @@
             this.Controls.Add(this.orderBox);
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MinimizeBox = false;
             this.Name = "ItemInfo";
             this.Text = "ItemInfo";
             this.groupBox1.ResumeLayout(false);

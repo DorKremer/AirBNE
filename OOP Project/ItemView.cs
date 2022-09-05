@@ -103,6 +103,7 @@ namespace OOP_Project
             {
                 using (LinearGradientBrush brush = new LinearGradientBrush(this.ClientRectangle, Color.FromArgb(234, 234, 234), Color.FromArgb(255, 94, 0), 65F))
                 {
+                    this.DoubleBuffered = true;
                     e.Graphics.FillRectangle(brush, this.ClientRectangle);
                 }
             }

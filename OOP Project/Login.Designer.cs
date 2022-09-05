@@ -126,7 +126,6 @@
             this.Controls.Add(this.loginButton);
             this.ForeColor = System.Drawing.Color.DimGray;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MinimizeBox = false;
             this.Name = "Login";
             this.Text = "Login!";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

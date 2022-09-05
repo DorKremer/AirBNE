@@ -107,7 +107,6 @@
             this.Controls.Add(this.hotelRoomButton);
             this.Controls.Add(this.houseButton);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MinimizeBox = false;
             this.Name = "ItemChoice";
             this.Text = "Choose Item Type";
             this.ResumeLayout(false);
