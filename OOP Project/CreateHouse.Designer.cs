@@ -97,7 +97,7 @@
             0,
             0});
             this.zipCodeBox.Name = "zipCodeBox";
-            this.zipCodeBox.Size = new System.Drawing.Size(310, 21);
+            this.zipCodeBox.Size = new System.Drawing.Size(446, 21);
             this.zipCodeBox.TabIndex = 23;
             // 
             // roomCountBox
@@ -106,7 +106,7 @@
             this.roomCountBox.Location = new System.Drawing.Point(6, 181);
             this.roomCountBox.Margin = new System.Windows.Forms.Padding(5);
             this.roomCountBox.Name = "roomCountBox";
-            this.roomCountBox.Size = new System.Drawing.Size(310, 21);
+            this.roomCountBox.Size = new System.Drawing.Size(446, 21);
             this.roomCountBox.TabIndex = 21;
             // 
             // residentsBox
@@ -115,7 +115,7 @@
             this.residentsBox.Location = new System.Drawing.Point(6, 141);
             this.residentsBox.Margin = new System.Windows.Forms.Padding(5);
             this.residentsBox.Name = "residentsBox";
-            this.residentsBox.Size = new System.Drawing.Size(310, 21);
+            this.residentsBox.Size = new System.Drawing.Size(446, 21);
             this.residentsBox.TabIndex = 20;
             // 
             // priceBox
@@ -132,7 +132,7 @@
             0,
             0});
             this.priceBox.Name = "priceBox";
-            this.priceBox.Size = new System.Drawing.Size(310, 21);
+            this.priceBox.Size = new System.Drawing.Size(446, 21);
             this.priceBox.TabIndex = 19;
             // 
             // descriptionBox
@@ -142,7 +142,7 @@
             this.descriptionBox.Margin = new System.Windows.Forms.Padding(5);
             this.descriptionBox.Multiline = true;
             this.descriptionBox.Name = "descriptionBox";
-            this.descriptionBox.Size = new System.Drawing.Size(308, 84);
+            this.descriptionBox.Size = new System.Drawing.Size(444, 84);
             this.descriptionBox.TabIndex = 18;
             this.descriptionBox.Text = "Enter Description...";
             this.descriptionBox.Enter += new System.EventHandler(this.descriptionBox_Enter);
@@ -154,7 +154,7 @@
             this.addressBox.Location = new System.Drawing.Point(6, 61);
             this.addressBox.Margin = new System.Windows.Forms.Padding(5);
             this.addressBox.Name = "addressBox";
-            this.addressBox.Size = new System.Drawing.Size(308, 21);
+            this.addressBox.Size = new System.Drawing.Size(444, 21);
             this.addressBox.TabIndex = 17;
             this.addressBox.Text = "Enter Address...";
             this.addressBox.Enter += new System.EventHandler(this.addressBox_Enter);
@@ -175,10 +175,10 @@
             // createBox
             // 
             this.createBox.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            this.createBox.Location = new System.Drawing.Point(599, 431);
+            this.createBox.Location = new System.Drawing.Point(672, 466);
             this.createBox.Margin = new System.Windows.Forms.Padding(5);
             this.createBox.Name = "createBox";
-            this.createBox.Size = new System.Drawing.Size(310, 94);
+            this.createBox.Size = new System.Drawing.Size(201, 59);
             this.createBox.TabIndex = 15;
             this.createBox.Text = "Add House";
             this.createBox.UseVisualStyleBackColor = true;
@@ -190,7 +190,7 @@
             this.floorsBox.Location = new System.Drawing.Point(6, 221);
             this.floorsBox.Margin = new System.Windows.Forms.Padding(5);
             this.floorsBox.Name = "floorsBox";
-            this.floorsBox.Size = new System.Drawing.Size(310, 21);
+            this.floorsBox.Size = new System.Drawing.Size(446, 21);
             this.floorsBox.TabIndex = 22;
             // 
             // yardBox
@@ -238,11 +238,11 @@
             this.groupBox1.Controls.Add(this.floorsBox);
             this.groupBox1.Controls.Add(this.roomCountBox);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.groupBox1.Location = new System.Drawing.Point(290, 13);
+            this.groupBox1.Location = new System.Drawing.Point(212, 13);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(609, 395);
+            this.groupBox1.Size = new System.Drawing.Size(687, 395);
             this.groupBox1.TabIndex = 31;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Register House";
@@ -252,7 +252,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.label5.Location = new System.Drawing.Point(340, 261);
+            this.label5.Location = new System.Drawing.Point(456, 263);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(81, 20);
             this.label5.TabIndex = 31;
@@ -262,7 +262,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.label4.Location = new System.Drawing.Point(340, 220);
+            this.label4.Location = new System.Drawing.Point(456, 222);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(146, 20);
             this.label4.TabIndex = 30;
@@ -272,7 +272,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.label2.Location = new System.Drawing.Point(340, 180);
+            this.label2.Location = new System.Drawing.Point(456, 182);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(152, 20);
             this.label2.TabIndex = 29;
@@ -282,7 +282,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.label1.Location = new System.Drawing.Point(340, 141);
+            this.label1.Location = new System.Drawing.Point(456, 143);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(222, 20);
             this.label1.TabIndex = 28;
@@ -292,7 +292,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.label3.Location = new System.Drawing.Point(340, 101);
+            this.label3.Location = new System.Drawing.Point(456, 103);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(49, 20);
             this.label3.TabIndex = 27;
