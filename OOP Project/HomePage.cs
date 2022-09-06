@@ -24,7 +24,7 @@ namespace OOP_Project
             {
                 orderButton.Visible = false;
                 addItemsButton.Visible = false;
-                buttonLOGOUT.Visible = false;
+                logoutButton.Visible = false;
             }
             else
             {
@@ -127,7 +127,7 @@ namespace OOP_Project
             }
         }
 
-        private void buttonLOGOUT_Click(object sender, EventArgs e)
+        private void logoutButton_Click(object sender, EventArgs e)
         {
             user = null;
             AirBNE form=new AirBNE();

@@ -37,7 +37,7 @@
             this.registerButton = new System.Windows.Forms.Button();
             this.welcomeText = new System.Windows.Forms.Label();
             this.loginButton = new System.Windows.Forms.Button();
-            this.buttonLOGOUT = new System.Windows.Forms.Button();
+            this.logoutButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -123,7 +123,7 @@
             this.welcomeText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(94)))), ((int)(((byte)(0)))));
             this.welcomeText.Location = new System.Drawing.Point(307, 9);
             this.welcomeText.Name = "welcomeText";
-            this.welcomeText.Size = new System.Drawing.Size(145, 37);
+            this.welcomeText.Size = new System.Drawing.Size(115, 30);
             this.welcomeText.TabIndex = 49;
             this.welcomeText.Text = "Welcome!";
             // 
@@ -142,28 +142,28 @@
             this.loginButton.UseVisualStyleBackColor = false;
             this.loginButton.Click += new System.EventHandler(this.loginButton_Click);
             // 
-            // buttonLOGOUT
+            // logoutButton
             // 
-            this.buttonLOGOUT.BackColor = System.Drawing.Color.DimGray;
-            this.buttonLOGOUT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonLOGOUT.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Bold);
-            this.buttonLOGOUT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(94)))), ((int)(((byte)(0)))));
-            this.buttonLOGOUT.Location = new System.Drawing.Point(654, 253);
-            this.buttonLOGOUT.Name = "buttonLOGOUT";
-            this.buttonLOGOUT.Size = new System.Drawing.Size(93, 37);
-            this.buttonLOGOUT.TabIndex = 52;
-            this.buttonLOGOUT.Text = "Log Out";
-            this.buttonLOGOUT.UseVisualStyleBackColor = false;
-            this.buttonLOGOUT.Click += new System.EventHandler(this.buttonLOGOUT_Click);
+            this.logoutButton.BackColor = System.Drawing.Color.DimGray;
+            this.logoutButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.logoutButton.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Bold);
+            this.logoutButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(94)))), ((int)(((byte)(0)))));
+            this.logoutButton.Location = new System.Drawing.Point(654, 253);
+            this.logoutButton.Name = "logoutButton";
+            this.logoutButton.Size = new System.Drawing.Size(93, 37);
+            this.logoutButton.TabIndex = 52;
+            this.logoutButton.Text = "Log Out";
+            this.logoutButton.UseVisualStyleBackColor = false;
+            this.logoutButton.Click += new System.EventHandler(this.logoutButton_Click);
             // 
             // AirBNE
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.buttonLOGOUT);
+            this.Controls.Add(this.logoutButton);
             this.Controls.Add(this.loginButton);
             this.Controls.Add(this.welcomeText);
             this.Controls.Add(this.registerButton);
@@ -190,7 +190,7 @@
         private System.Windows.Forms.Button registerButton;
         private System.Windows.Forms.Label welcomeText;
         private System.Windows.Forms.Button loginButton;
-        private System.Windows.Forms.Button buttonLOGOUT;
+        private System.Windows.Forms.Button logoutButton;
     }
 }
 
