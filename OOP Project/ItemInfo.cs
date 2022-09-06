@@ -18,7 +18,7 @@ namespace OOP_Project
         public ItemInfo()
         {
             InitializeComponent();
-            foreach (Rentable item in AirBNE.list)
+            foreach (Rentable item in AirBNE.items)
             {
                 if (itemID == item.Id)
                 {
@@ -49,12 +49,12 @@ namespace OOP_Project
 
         private void orderBox_Click(object sender, EventArgs e)
         {
-            foreach (Rentable item in AirBNE.list)
+            foreach (Rentable item in AirBNE.items)
             {
                 if (itemID != item.Id)
                     item.Occupied = false;
             }
-            foreach (Rentable item in AirBNE.list)
+            foreach (Rentable item in AirBNE.items)
             {
                 if (itemID == item.Id)
                 {
@@ -75,8 +75,13 @@ namespace OOP_Project
 
         private void deleteButton_Click(object sender, EventArgs e)
         {
+            if (item.Occupied)
+            {
+                MessageBox.Show("Can't Delete Occupied Item!");
+                return;
+            }
             Order.item = null;
-            AirBNE.list.Remove(item);
+            AirBNE.items.Remove(item);
             MessageBox.Show("Item Removed");
             if (item == AirBNE.user.Item)
             {

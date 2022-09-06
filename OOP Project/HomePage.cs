@@ -13,7 +13,7 @@ namespace OOP_Project
 {
     public partial class AirBNE : Form
     {
-        public static List<Rentable> list = new List<Rentable>();
+        public static List<Rentable> items = new List<Rentable>();
         public static List<User> users = new List<User>();
         public static User user = null;
 
@@ -35,7 +35,7 @@ namespace OOP_Project
                 addItemsButton.Visible = true;
             }
             Stream stream;
-            if (list.Count == 0)
+            if (items.Count == 0)
             {
                 if (!File.Exists("items.mdl"))
                 {
@@ -49,7 +49,7 @@ namespace OOP_Project
                     item = (Rentable)binaryFormatter.Deserialize(stream);
                     if (user!=null&&item.Id==user.Item.Id)
                         Order.item = item;
-                    list.Add(item);
+                    items.Add(item);
                 }
                 stream.Dispose();
             }

@@ -68,9 +68,9 @@
             this.groupBox1.Controls.Add(this.searchBox);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.groupBox1.Location = new System.Drawing.Point(79, 10);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(545, 50);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
@@ -79,7 +79,7 @@
             // maxPriceBox
             // 
             this.maxPriceBox.Location = new System.Drawing.Point(350, 19);
-            this.maxPriceBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.maxPriceBox.Margin = new System.Windows.Forms.Padding(2);
             this.maxPriceBox.Maximum = new decimal(new int[] {
             1316134912,
             2328,
@@ -113,7 +113,7 @@
             // buttonRefresh
             // 
             this.buttonRefresh.Location = new System.Drawing.Point(705, 20);
-            this.buttonRefresh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonRefresh.Margin = new System.Windows.Forms.Padding(2);
             this.buttonRefresh.Name = "buttonRefresh";
             this.buttonRefresh.Size = new System.Drawing.Size(161, 33);
             this.buttonRefresh.TabIndex = 7;
@@ -130,7 +130,7 @@
             this.backButton.FlatAppearance.BorderSize = 0;
             this.backButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.backButton.Location = new System.Drawing.Point(16, 20);
-            this.backButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.backButton.Margin = new System.Windows.Forms.Padding(4);
             this.backButton.Name = "backButton";
             this.backButton.Size = new System.Drawing.Size(46, 39);
             this.backButton.TabIndex = 8;
@@ -143,10 +143,10 @@
             this.itemContainer.BackColor = System.Drawing.Color.Transparent;
             this.itemContainer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.itemContainer.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.itemContainer.Location = new System.Drawing.Point(16, 80);
-            this.itemContainer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.itemContainer.Name = "flowLayoutPanel1";
-            this.itemContainer.Size = new System.Drawing.Size(1332, 478);
+            this.itemContainer.Location = new System.Drawing.Point(16, 67);
+            this.itemContainer.Margin = new System.Windows.Forms.Padding(4);
+            this.itemContainer.Name = "itemContainer";
+            this.itemContainer.Size = new System.Drawing.Size(995, 383);
             this.itemContainer.TabIndex = 5;
             // 
             // ItemView
@@ -164,8 +164,7 @@
             this.Controls.Add(this.itemContainer);
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.MinimizeBox = false;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ItemView";
             this.Text = "View Items!";
             this.groupBox1.ResumeLayout(false);

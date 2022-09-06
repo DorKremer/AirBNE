@@ -21,14 +21,14 @@ namespace OOP_Project
             {
                 if (user.Item != null)
                 {
-                    foreach(Rentable item in AirBNE.list)
+                    foreach(Rentable item in AirBNE.items)
                     {
                         if (user.Item.Id == item.Id)
                             item.Occupied = true;
                     }
                 }
             }
-            foreach (Rentable item in AirBNE.list)
+            foreach (Rentable item in AirBNE.items)
             {
                 renderButton(item);
             }
@@ -72,7 +72,7 @@ namespace OOP_Project
             itemContainer.Controls.Clear();
             string name1 = "";
             string name2 = searchBox.Text.ToLower();
-            foreach (Rentable item in AirBNE.list)
+            foreach (Rentable item in AirBNE.items)
             {
                 name1 = item.Address.ToLower();
                 if (name1.Contains(name2))
@@ -83,7 +83,7 @@ namespace OOP_Project
         private void buttonRefresh_Click(object sender, EventArgs e)
         {
             itemContainer.Controls.Clear();
-            foreach (Rentable item in AirBNE.list)
+            foreach (Rentable item in AirBNE.items)
             {
                 renderButton(item);
             }
@@ -113,7 +113,15 @@ namespace OOP_Project
         {
             itemContainer.Controls.Clear();
             double tmp =Convert.ToDouble(maxPriceBox.Value);
-            foreach(Rentable item in AirBNE.list)
+            if (maxPriceBox.Value == 0)
+            {
+                foreach (Rentable item in AirBNE.items)
+                {
+                    renderButton(item);
+                }
+                return;
+            }
+            foreach(Rentable item in AirBNE.items)
             {
                 if (item.Price <= tmp)
                 {

@@ -53,7 +53,7 @@ namespace OOP_Project
             if (descriptionBox.Text.Equals("Enter Description..."))
                 descriptionBox.Text = "";
             House house = new House(addressBox.Text,descriptionBox.Text,Convert.ToInt32(zipCodeBox.Value),Convert.ToDouble(priceBox.Value),Convert.ToInt32(residentsBox.Value),petsBox.Checked,poolBox.Checked,wifiBox.Checked,AirBNE.user, Convert.ToInt32(floorsBox.Value),yardBox.Checked,Convert.ToInt32(roomCountBox.Value));
-            AirBNE.list.Add(house);
+            AirBNE.items.Add(house);
             MessageBox.Show("House Created");
         }
 

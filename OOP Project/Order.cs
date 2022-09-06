@@ -37,7 +37,7 @@ namespace OOP_Project
             }
             else
             {
-                foreach (Rentable item in AirBNE.list)
+                foreach (Rentable item in AirBNE.items)
                 {
                     if (Order.item.Id == item.Id)
                     {

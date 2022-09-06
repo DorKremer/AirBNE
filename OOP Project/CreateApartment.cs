@@ -65,7 +65,7 @@ namespace OOP_Project
             if (descriptionBox.Text.Equals("Enter Description..."))
                 descriptionBox.Text = "";
             Apartment apartment = new Apartment(addressBox.Text, descriptionBox.Text, Convert.ToInt32(zipCodeBox.Value), Convert.ToDouble(priceBox.Value), Convert.ToInt32(residentsBox.Value), petsBox.Checked, poolBox.Checked, wifiBox.Checked, AirBNE.user, Convert.ToInt32(roomCountBox.Value), Convert.ToInt32(floorBox.Value), porchBox.Checked, elevatorBox.Checked);
-            AirBNE.list.Add(apartment);
+            AirBNE.items.Add(apartment);
             MessageBox.Show("Apartment Created ");
         }
 

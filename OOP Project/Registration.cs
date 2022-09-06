@@ -65,7 +65,7 @@ namespace OOP_Project
 
         private void registerButton_Click(object sender, EventArgs e)
         {
-            if (usernameBox.Text.Length < 6|| usernameBox.Text.Equals("Enter Username..."))
+            if (usernameBox.Text.Length < 6 || usernameBox.Text.Equals("Enter Username..."))
             {
                 MessageBox.Show("Bad Username!");
                 return;
@@ -75,15 +75,15 @@ namespace OOP_Project
                 MessageBox.Show("Password Too Short!");
                 return;
             }
-            if (nameBox.Text.Length < 2||nameBox.Text.Equals("Enter Name..."))
+            if (nameBox.Text.Length < 2 || nameBox.Text.Equals("Enter Name..."))
             {
-                MessageBox.Show("\""+nameBox.Text + "\""+ " Can't Possibly Be Your Name!");
+                MessageBox.Show("\"" + nameBox.Text + "\"" + " Can't Possibly Be Your Name!");
                 return;
             }
             string username = usernameBox.Text.ToLower();
             if (AirBNE.users.Count != 0)
             {
-                foreach(User user in AirBNE.users)
+                foreach (User user in AirBNE.users)
                 {
                     if (user.UserName.ToLower().Equals(username))
                     {
@@ -92,9 +92,9 @@ namespace OOP_Project
                     }
                 }
             }
-            User createdUser = new User(usernameBox.Text,passwordBox.Text,nameBox.Text);
+            User createdUser = new User(usernameBox.Text, passwordBox.Text, nameBox.Text);
             AirBNE.users.Add(createdUser);
-            AirBNE.user=createdUser;
+            AirBNE.user = createdUser;
             AirBNE form = new AirBNE();
             form.Location = this.Location;
             form.StartPosition = FormStartPosition.Manual;

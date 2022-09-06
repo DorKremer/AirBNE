@@ -46,19 +46,19 @@ namespace OOP_Project
             porch = false;
             elevator = false;
         }
-        public Apartment(string address, string description, int zipCode, double price, int residents, bool pets, bool pool, bool wifi,User user,int roomCount,int floor, bool porch,bool elevator) : base(address, description, zipCode, price, residents, pets, pool, wifi,user,roomCount)
+        public Apartment(string address, string description, int zipCode, double price, int residents, bool pets, bool pool, bool wifi, User user, int roomCount, int floor, bool porch, bool elevator) : base(address, description, zipCode, price, residents, pets, pool, wifi, user, roomCount)
         {
             this.Address = address;
             this.Description = description;
             this.Price = price;
-            this.Residents=residents;
-            this.Pets=pets; 
-            this.Pool=pool;
-            this.Wifi=wifi;
+            this.Residents = residents;
+            this.Pets = pets;
+            this.Pool = pool;
+            this.Wifi = wifi;
             this.RoomCount = roomCount;
-            this.Floor=floor;
+            this.Floor = floor;
             this.porch = porch;
-            this.elevator=elevator;
+            this.elevator = elevator;
         }
         public int Floor
         {

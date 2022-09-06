@@ -33,7 +33,7 @@ namespace OOP_Project
                     IFormatter formatter = new BinaryFormatter();
                     using (Stream stream = new FileStream("items.mdl", FileMode.Create, FileAccess.Write, FileShare.None))
                     {
-                        foreach (Rentable item in AirBNE.list)
+                        foreach (Rentable item in AirBNE.items)
                             formatter.Serialize(stream, item);
                         stream.Dispose();
                     }

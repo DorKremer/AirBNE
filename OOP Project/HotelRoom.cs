@@ -42,7 +42,7 @@ namespace OOP_Project
 
         public override string toString()
         {
-            return base.toString()+"Hotel Information ::"+"\n"+"####################"+"\n"+"Hotel Name: "+hotelName+"\ngym: " +gym + "\nroomNumber: " + roomNumber + "\npension: " + pension + "\nhotelGrade: " + hotelGrade;
+            return base.toString()+"Hotel Information ::"+"\n"+"####################"+"\n"+"Hotel Name: "+hotelName+"\nGym: " +gym + "\nRoom Number: " + roomNumber + "\nPension: " + pension + "\nHotel Grade: " + hotelGrade;
         }
         public HotelRoom() : base()
         {

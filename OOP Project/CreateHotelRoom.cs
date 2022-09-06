@@ -63,7 +63,7 @@ namespace OOP_Project
             if (descriptionBox.Text.Equals("Enter Description..."))
                 descriptionBox.Text = "";
             HotelRoom hotelRoom = new HotelRoom(hotelNameBox.Text, addressBox.Text, descriptionBox.Text, Convert.ToInt32(zipCodeBox.Value), Convert.ToDouble(priceBox.Value), Convert.ToInt32(residentsBox.Value), petsBox.Checked, poolBox.Checked, wifiBox.Checked,AirBNE.user, gymBox.Checked, Convert.ToInt32(roomNumberBox.Value), comboBoxPenion.Text, Convert.ToByte(hotelGrade.Value));
-            AirBNE.list.Add(hotelRoom);
+            AirBNE.items.Add(hotelRoom);
             MessageBox.Show("Hotel Room Created");
         }
 
